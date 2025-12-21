@@ -7,6 +7,7 @@ Projects demonstrating continuous integration and deployment automation.
 - Unit testing & linting
 - Deployment automation
 - Monitoring pipeline success
+  
 
 ## Status
 🚧 In progress
