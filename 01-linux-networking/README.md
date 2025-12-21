@@ -8,6 +8,7 @@ Covers Linux fundamentals and networking concepts essential for DevOps and cloud
 - Process management
 - Shell scripting
 - Networking basics (TCP/IP, DNS, ports, SSH)
+  
 
 ## Status
 🚧 In progress
