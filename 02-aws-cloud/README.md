@@ -7,6 +7,7 @@ Hands-on AWS projects demonstrating core cloud services and architectures.
 - Security best practices
 - Networking in AWS
 - AWS Academy Cloud Architecting projects
+  
 
 ## Status
 🚧 In progress
