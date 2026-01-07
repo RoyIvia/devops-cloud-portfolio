@@ -66,7 +66,9 @@ Cloud providers like AWS, Azure, and GCP rely heavily on virtualization:
 
 ---
 
+
 ## References / Reinforcement Videos
-1. [What is a Virtual Machine?](https://www.youtube.com/watch?v=YJzv4tY0K7c)  
-2. [AWS Nitro Hypervisor Explained](https://www.youtube.com/watch?v=pnycE0Q6X1c)  
-3. [Introduction to Virtualization for DevOps](https://www.youtube.com/watch?v=G0r2PpH6CU8)
+1. [Virtual Machines Explained | What is a VM?](https://www.youtube.com/watch?v=V5f-P1n0RA0) – Simple and clear explanation of what a virtual machine is.  
+2. [Introduction to Hypervisors | VMware, KVM, Xen](https://www.youtube.com/watch?v=Y_6d2bG6tAg) – Covers both Type 1 and Type 2 hypervisors and their uses.  
+3. [AWS Nitro Hypervisor Overview](https://www.youtube.com/watch?v=x4H3lKqSfj8) – Explains how AWS uses Nitro for EC2 instances.  
+4. [Virtualization in Cloud Computing | AWS EC2](https://www.youtube.com/watch?v=1S5c8FWQxtg) – Shows practical connection between virtualization and cloud infrastructure.
