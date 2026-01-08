@@ -52,10 +52,14 @@ aws sts get-caller-identity
 ```
 
 EC2 Examples:
-# List all EC2 instances
-aws ec2 describe-instances
 
-# Launch an EC2 instance
+List all EC2 instances
+```
+aws ec2 describe-instances
+```
+
+Launch an EC2 instance
+```
 aws ec2 run-instances \
     --image-id ami-0abcdef1234567890 \
     --count 1 \
@@ -63,28 +67,36 @@ aws ec2 run-instances \
     --key-name my-key \
     --security-group-ids sg-0abc123 \
     --subnet-id subnet-0abc123
-
-# Connect via SSH
+```
+Connect via SSH
+```
 ssh -i "my-key.pem" ec2-user@<public-ip>
+```
 
-# Stop, start, terminate
+Stop, start, terminate
+
+```
 aws ec2 stop-instances --instance-ids i-0123456789abcdef0
 aws ec2 start-instances --instance-ids i-0123456789abcdef0
 aws ec2 terminate-instances --instance-ids i-0123456789abcdef0
+```
 
-# S3 Examples:
+S3 Examples:
 
+```
 aws s3 ls                       # List buckets
 aws s3 mb s3://royston-demo     # Create bucket
 aws s3 cp demo.txt s3://royston-demo/   # Upload file
 aws s3 cp s3://royston-demo/demo.txt ./ # Download file
 aws s3 sync ./local-folder s3://royston-demo/  # Sync folder
+```
 
+Explanation :
 
-# Explanation :
 - CLI allows fast, repeatable tasks across multiple resources.
 
 - Ideal for automation, CI/CD pipelines, and multi-cloud environments.
+  
 
 ## 3️⃣ CloudFormation
 
@@ -92,6 +104,7 @@ CloudFormation allows Infrastructure as Code (IaC) — declarative creation of A
 
 Example Template:
 
+```
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Simple S3 bucket creation
 
@@ -100,16 +113,19 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: royston-cft-demo
+```
 
 # Deploy via CLI:
 
+```
 aws cloudformation create-stack \
     --stack-name royston-demo-stack \
     --template-body file://s3_bucket_template.yaml
 
 aws cloudformation describe-stacks --stack-name royston-demo-stack
+```
 
-# Explanation :
+Explanation :
 
 - Allows repeatable and version-controlled infrastructure setup.
 
@@ -122,6 +138,7 @@ Shell scripting can automate repetitive AWS tasks using AWS CLI commands.
 
 Example: Launch EC2 and upload file to S3
 
+```
 #!/bin/bash
 
 # Launch EC2
@@ -133,17 +150,25 @@ INSTANCE_ID=$(aws ec2 run-instances \
     --output text)
 
 echo "EC2 Instance launched: $INSTANCE_ID"
+```
 
-# Wait for instance to be running
+
+Wait for instance to be running
+```
 aws ec2 wait instance-running --instance-ids $INSTANCE_ID
-
-# Create S3 bucket
+```
+Create S3 bucket
+```
 aws s3 mb s3://royston-shell-demo
+```
 
-# Upload file
+Upload file
+
+```
 aws s3 cp demo.txt s3://royston-shell-demo/
+```
 
-# Explanation:
+Explanation:
 
 - Combines multiple AWS operations in a single automated workflow.
 
@@ -156,6 +181,7 @@ Python with Boto3 enables programmatic AWS interactions, suitable for advanced a
 
 Example :
 
+```
 import boto3
 
 # Initialize clients
@@ -173,27 +199,26 @@ response = ec2.run_instances(
 )
 instance_id = response['Instances'][0]['InstanceId']
 print(f"Launched EC2: {instance_id}")
+```
 
-# Create S3 bucket
+Create S3 bucket
+```
 s3.create_bucket(Bucket='royston-python-demo')
+```
 
-# Upload a file
+Upload a file
+```
 s3.upload_file('demo.txt', 'royston-python-demo', 'demo.txt')
 
+```
 
-# Explanation:
+Explanation:
 
 - Shows full automation capability with Python.
 
 - Useful for scripting deployments, CI/CD pipelines, and multi-service operations.
 
-Summary
+# Summary
 
 This portfolio section demonstrates multiple ways to interact with AWS services:
 
-Method	Tools Used	Key Skill Demonstrated
-AWS Console	Browser UI	Manual setup and service management
-AWS CLI	Terminal / Shell	Automation, fast repeated tasks
-CloudFormation	YAML + CLI	Infrastructure as Code (IaC)
-Shell Scripting	Bash / CLI	Automated deployment and management
-Python Automation (Boto3)	Python + Boto3 module	Scripted programmatic interactions
