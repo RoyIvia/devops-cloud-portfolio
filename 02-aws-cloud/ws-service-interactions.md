@@ -1,6 +1,7 @@
 # AWS Service Interactions 
 
 ## Overview
+
 This section demonstrates practical ways to interact with **AWS services** using:
 
 1. AWS Management Console  
@@ -222,3 +223,6 @@ Explanation:
 
 This portfolio section demonstrates multiple ways to interact with AWS services:
 
+Real-world relevance:
+
+These interaction methods are used in production for provisioning infrastructure, managing environments and automating cloud operations across teams and accounts.
