@@ -3,11 +3,13 @@
 Covers Linux fundamentals and networking concepts essential for DevOps and cloud engineering.
 
 ## Topics
+- Linux Fundamentals
 - Linux file system & permissions
 - Package management
 - Process management
 - Shell scripting
 - Networking basics (TCP/IP, DNS, ports, SSH)
+  
   
 
 ## Status
