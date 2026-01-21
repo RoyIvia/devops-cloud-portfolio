@@ -3,7 +3,7 @@
 Scripts and projects automating infrastructure and DevOps tasks.
 
 ## Topics
-- Boto3 for AWS automation
+- Boto3 lib for AWS automation
 - Scripting repetitive tasks
 - API integrations
 - Automation best practices
