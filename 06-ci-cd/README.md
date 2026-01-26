@@ -9,7 +9,5 @@ Projects demonstrating continuous integration and deployment automation.
 - Monitoring pipeline success
   
 
-
-
 ## Status
 🚧 In progress
