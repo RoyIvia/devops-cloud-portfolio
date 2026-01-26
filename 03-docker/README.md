@@ -6,8 +6,9 @@ Containerization projects with Docker for reproducible environments.
 - Docker images & containers
 - Dockerfiles & multi-stage builds
 - Networking & volumes
-- Docker Best practices
+- Docker Best Practices
   
+
 
 ## Status
 🚧 In  progress
