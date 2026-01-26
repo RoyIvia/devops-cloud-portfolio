@@ -8,6 +8,5 @@ Automate cloud infrastructure deployment with Terraform.
 - Infrastructure versioning
 - State management & best practices
   
-
 ## Status
 🚧 In progress
