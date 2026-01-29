@@ -8,6 +8,5 @@ Scripts and projects automating infrastructure and DevOps tasks.
 - API integrations
 - Automation best practices
   
-
 ## Status
 🚧 In progress
