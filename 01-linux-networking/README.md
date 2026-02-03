@@ -78,7 +78,7 @@ The kernel mediates all access between software and hardware.
   Examples: Bash, Zsh, Fish, Dash, Ksh.
 - Converts user commands into system calls for the kernel - Interface between the user and the operating system
 
-
+;
 +----------------------------------------------------+
 | User Applications (Vim, Docker, Apache, etc.)     |
 +----------------------------------------------------+
