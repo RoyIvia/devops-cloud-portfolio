@@ -69,8 +69,8 @@ The kernel mediates all access between software and hardware.
 - System utilities
 - Background services (daemons)
 -  User Applications
-🔹 End-user programs like web browsers, text editors, DevOps tools, etc.
-🔹Applications interact with the OS using system calls via the shell or GUI.
+   End-user programs like web browsers, text editors, DevOps tools, etc.
+   Applications interact with the OS using system calls via the shell or GUI.
 
 ### 4. Shell
 
@@ -78,7 +78,8 @@ The kernel mediates all access between software and hardware.
   Examples: Bash, Zsh, Fish, Dash, Ksh.
 - Converts user commands into system calls for the kernel - Interface between the user and the operating system
 
-;
+
+
 +----------------------------------------------------+
 | User Applications (Vim, Docker, Apache, etc.)     |
 +----------------------------------------------------+
@@ -92,7 +93,6 @@ The kernel mediates all access between software and hardware.
 +----------------------------------------------------+
 | Hardware (CPU, RAM, Disk, Network, Peripherals)   |
 +----------------------------------------------------+
-
 
 
 
