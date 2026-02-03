@@ -88,21 +88,22 @@ I understand how services, users, and applications interact with these directori
 ---
 
 ## Command-Line Navigation & File Operations
-I am comfortable navigating and manipulating the Linux file system using the CLI.
 
-Commonly used commands:
+I am comfortable navigating and manipulating the Linux file system using the CLI. These commands are used daily for inspecting directories, managing files, and interacting with system resources in cloud and DevOps environments.
+
+### Commonly Used Commands and Their Functions
+
 ```bash
-ls
-cd
-pwd
-mkdir
-rm
-cp
-mv
-touch
-cat
-less
-
+ls       # Lists the contents of a directory; use flags -l for details, -a for hidden files
+cd       # Changes the current working directory
+pwd      # Prints the full path of the current working directory
+mkdir    # Creates a new directory
+rm       # Removes files or directories; use -r for directories, -f to force deletion
+cp       # Copies files or directories from one location to another
+mv       # Moves or renames files or directories
+touch    # Creates empty files or updates the timestamp of existing files
+cat      # Displays the contents of a file in the terminal
+less     # Views file contents page by page; allows scrolling and searching
 ```
 ## Role of Linux in DevOps & Cloud Engineering
 
