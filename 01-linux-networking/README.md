@@ -23,10 +23,24 @@ A DevOps engineer must understand Linux behavior to troubleshoot failures, optim
 ## Linux Distributions & Ecosystem
 Linux is not a single operating system but a family of distributions built around the Linux kernel.
 
-### Distributions I Understand
-- **Ubuntu** – Widely used in cloud and DevOps environments
-- **Amazon Linux** – Optimized for AWS infrastructure
-- **CentOS / RHEL (conceptual understanding)** – Enterprise Linux foundations
+Some popular Linux distributions include;
+```
+
+Ubuntu – One of the most beginner-friendly distros, widely used for personal and server use. It has great community support.
+
+CentOS (discontinued, replaced by AlmaLinux/Rocky Linux) – Previously a popular choice for servers, based on Red Hat Enterprise Linux (RHEL).
+
+Debian – A very stable and reliable distro, often used as a base for other distros like Ubuntu.
+
+Fedora – A cutting-edge distro that introduces new features before they reach RHEL.
+
+Arch Linux – A lightweight, rolling-release distro for advanced users who like customization.
+
+Kali Linux – Designed for cybersecurity and penetration testing.
+
+Alpine Linux – A lightweight, security-focused distro often used in containers.se Linux foundations
+
+```
 
 Key differences between distributions include:
 - Package managers
