@@ -79,7 +79,7 @@ The kernel mediates all access between software and hardware.
 - Converts user commands into system calls for the kernel - Interface between the user and the operating system
 
 
-
+```
 +----------------------------------------------------+
 | User Applications (Vim, Docker, Apache, etc.)     |
 +----------------------------------------------------+
@@ -94,7 +94,7 @@ The kernel mediates all access between software and hardware.
 | Hardware (CPU, RAM, Disk, Network, Peripherals)   |
 +----------------------------------------------------+
 
-
+```
 
 
 Understanding this architecture is critical when diagnosing system performance issues or application failures.
