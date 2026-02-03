@@ -3,11 +3,7 @@
 ## Overview
 Linux is the operating system that underpins modern infrastructure, cloud platforms, and DevOps tooling. From cloud virtual machines to containers, CI/CD runners, and orchestration platforms, Linux is the default execution environment.
 
-This section documents my structured and hands-on mastery of Linux fundamentals, developed through:
-- Abhishek Veeramalla’s DevOps-focused Linux tutorials
-- AWS re/Start Linux curriculum
-- Practical command-line usage and system-level reasoning aligned with real production environments
-
+This section documents my structured and hands-on mastery of Linux fundamentals.
 The focus is not only on commands, but on understanding how Linux works internally and how it is used in DevOps and cloud operations.
 
 ---
