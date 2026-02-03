@@ -38,29 +38,46 @@ Despite these differences, core Linux concepts remain consistent.
 
 ---
 
-## Linux Architecture (System-Level Understanding)
+## Linux Architecture 
 Linux follows a layered architecture:
 
 ### 1. Hardware Layer
+
 - CPU, memory, disks, and network interfaces
+- The physical components of the computer (CPU, RAM, disk, network interfaces, etc.).
+- The OS interacts with hardware using device drivers.
 
 ### 2. Kernel
-- Process scheduling
-- Memory management
-- Device drivers
-- File system abstraction
-- Networking stack
+
+The Linux Kernel is responsible for directly managing system resources, including:
+
+    Process Management – Schedules processes and handles multitasking.
+
+    Memory Management – Allocates and deallocates RAM efficiently.
+
+    Device Drivers – Acts as an interface between software and hardware.
+
+    File System Management – Manages how data is stored and retrieved.
+
+    Network Management – Handles communication between systems.
 
 The kernel mediates all access between software and hardware.
 
 ### 3. User Space
+
 - System libraries
 - System utilities
 - Background services (daemons)
+-  User Applications
+🔹 End-user programs like web browsers, text editors, DevOps tools, etc.
+🔹Applications interact with the OS using system calls via the shell or GUI.
 
 ### 4. Shell
-- Command interpreter (e.g., Bash)
-- Interface between the user and the operating system
+
+- A command interpreter that allows users to interact with the kernel.
+  Examples: Bash, Zsh, Fish, Dash, Ksh.
+- Converts user commands into system calls for the kernel - Interface between the user and the operating system
+
 
 +----------------------------------------------------+
 | User Applications (Vim, Docker, Apache, etc.)     |
@@ -77,34 +94,9 @@ The kernel mediates all access between software and hardware.
 +----------------------------------------------------+
 
 
-(a) Hardware Layer
 
-🔹 The physical components of the computer (CPU, RAM, disk, network interfaces, etc.).
-🔹 The OS interacts with hardware using device drivers.
-(b) Kernel (Core of Linux OS)
 
-🔹 The Linux Kernel is responsible for directly managing system resources, including:
 
-    Process Management – Schedules processes and handles multitasking.
-
-    Memory Management – Allocates and deallocates RAM efficiently.
-
-    Device Drivers – Acts as an interface between software and hardware.
-
-    File System Management – Manages how data is stored and retrieved.
-
-    Network Management – Handles communication between systems.
-
-(c) Shell (Command Line Interface - CLI)
-
-🔹 A command interpreter that allows users to interact with the kernel.
-🔹 Examples: Bash, Zsh, Fish, Dash, Ksh.
-🔹 Converts user commands into system calls for the kernel.
-
-(d) User Applications
-
-🔹 End-user programs like web browsers, text editors, DevOps tools, etc.
-🔹 Applications interact with the OS using system calls via the shell or GUI.
 Understanding this architecture is critical when diagnosing system performance issues or application failures.
 
 ---
