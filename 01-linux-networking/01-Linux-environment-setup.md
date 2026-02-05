@@ -45,10 +45,10 @@ Using Docker gives you:
 
 Create a folder to persist Linux data:
 
-```powershell
+```
 mkdir C:\Users\<your-username>\Downloads\ubuntu-data
 
-
+```
 Step 2: Run Ubuntu Linux Container (Windows)
 
 Open PowerShell and run the command below
@@ -68,7 +68,8 @@ docker run -dit `
   --env LANG=en_US.UTF-8 `
   ubuntu: latest /bin/bash
 ```
-macOS or Linux Host Setup
+MacOS or Linux Host Setup
+
 Step 1: Create a Data Directory
 ```
 mkdir -p ~/ubuntu-data
@@ -133,11 +134,11 @@ wsl --install
 ```
 This will:
 
-Enable required Windows features
+- Enable required Windows features
 
-Install WSL2
+- Install WSL2
 
-Install Ubuntu by default
+- Install Ubuntu by default
 
 Restart your computer when prompted.
 
@@ -171,7 +172,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 
 ## Comparison of Linux Setup Methods;
-
+```
 Method	                     Best Use Case	                       Pros                          Cons
 
 Docker Containers           DevOps, CI/CD, microservices           Lightweight, reproducible      No full systemd
@@ -183,7 +184,7 @@ Virtual Machines	            OS-level learning	                   Full Linux OS	
 Cloud VMs	                    Production practice	                 Real infrastructure	          Cost & internet
 
 HyperKit	                    macOS virtualization	               Fast	                           Limited tooling
-
+```
 # Recommendations
 
 WSL2 (Windows users) – daily Linux usage
