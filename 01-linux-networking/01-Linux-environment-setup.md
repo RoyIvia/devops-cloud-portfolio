@@ -105,17 +105,17 @@ Explanation of Docker Parameters
 
 ```
 Parameter	                    Description
--dit	                         Detached, interactive terminal mode
+-dit	                       Detached, interactive terminal mode
 --name ubuntu-container	       Names the container
---hostname ubuntu-dev	         Sets hostname inside container
---restart unless-stopped	     Auto-restart container
+--hostname ubuntu-dev	       Sets hostname inside container
+--restart unless-stopped	   Auto-restart container
 --cpus="2"	                   Limits CPU usage
---memory="4g"	                 Limits memory usage
---mount type=bind	             Persists data on host
+--memory="4g"	               Limits memory usage
+--mount type=bind	           Persists data on host
 -v /var/run/docker.sock	       Enables Docker inside container
 -p 2222:22	                   SSH port mapping
 -p 8080:80	                   Web service port mapping
---env TZ	                     Timezone configuration
+--env TZ	                   Timezone configuration
 --env LANG	                   Language configuration
 ubuntu:latest /bin/bash	       Ubuntu image with Bash shell
 
@@ -175,15 +175,15 @@ sudo apt update && sudo apt upgrade -y
 ```
 Method	                     Best Use Case	                       Pros                          Cons
 
-Docker Containers           DevOps, CI/CD, microservices           Lightweight, reproducible      No full systemd
+Docker Containers            DevOps, CI/CD, microservices          Lightweight, reproducible      No full systemd
 
 WSL2                         Windows development                   Fast, native	                  Windows-only
 	
-Virtual Machines	            OS-level learning	                   Full Linux OS	                Heavy resources
+Virtual Machines	         OS-level learning	                   Full Linux OS	              Heavy resources
 
-Cloud VMs	                    Production practice	                 Real infrastructure	          Cost & internet
+Cloud VMs	                 Production practice	               Real infrastructure	          Cost & internet
 
-HyperKit	                    macOS virtualization	               Fast	                           Limited tooling
+HyperKit	                 macOS virtualization	               Fast	                          Limited tooling
 ```
 # Recommendations
 
