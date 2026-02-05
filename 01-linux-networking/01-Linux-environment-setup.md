@@ -1,4 +1,4 @@
-# Setup Linux Environment on Windows and macOS
+# Setting up Linux Environment on Windows and macOS
 
 A Linux environment is foundational for DevOps, Cloud, and Backend Engineering.  
 This guide covers **multiple ways to run Linux on Windows and macOS**, with a strong recommendation for **Docker-based Linux containers** for long-term, cost-free, and reproducible environments.
