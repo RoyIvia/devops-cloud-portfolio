@@ -104,7 +104,7 @@ apt update && apt upgrade -y
 Explanation of Docker Parameters
 
 ```
-Parameter	                    Description
+Parameter	                   Description
 -dit	                       Detached, interactive terminal mode
 --name ubuntu-container	       Names the container
 --hostname ubuntu-dev	       Sets hostname inside container
