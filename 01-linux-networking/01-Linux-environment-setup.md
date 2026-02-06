@@ -170,8 +170,22 @@ Step 4: Update Packages
 ```
 sudo apt update && sudo apt upgrade -y
 ```
+## Accessing the next time you log in ;
+
+On windows, if you have installed through wsl , on cmd run;
+```
+wsl
+```
+or just access Ubuntu which is now in your computer.
+
+On MacOs, open terminal and run;
+
+```
+docker run -it ubuntu bash
+```
 
 ## Comparison of Linux Setup Methods;
+
 ```
 Method	                     Best Use Case	                       Pros                          Cons
 
