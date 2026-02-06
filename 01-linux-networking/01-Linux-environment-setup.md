@@ -95,7 +95,7 @@ Step 3: Access the Linux Container
 ```
 docker exec -it (ubuntu-container) bash
 ```
-(ubuntu-container) is the long address at the end after initializing the docker command, copy iot and paste in place of (ubuntu-container)
+(ubuntu-container) is the long address at the end after initializing the Docker command, copy it and paste in place of (ubuntu-container)
 Step 4: Update Linux Packages
 ```
 apt update && apt upgrade -y
