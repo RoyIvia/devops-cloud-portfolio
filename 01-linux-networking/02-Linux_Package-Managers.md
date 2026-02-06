@@ -1,4 +1,4 @@
-### Linux Package Managers
+## Linux Package Managers
 
 ## What is a Package Manager?
 
