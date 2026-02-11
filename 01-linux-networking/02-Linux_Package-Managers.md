@@ -133,13 +133,14 @@ Security & Automation
 
 ```
 sudo apt install unattended-upgrades        # Install automatic security updates package
-sudo dpkg-reconfigure unattended-upgrades  # Configure and enable automatic security updates
+sudo dpkg-reconfigure unattended-upgrades   # Configure and enable automatic security updates
 ```
 Non-Interactive Installation (Automation)
 
 ```
-sudo apt install -y python3 bash           # Install packages without prompting for confirmation (-y)
+sudo apt install -y python3 bash                             # Install packages without prompting for confirmation (-y)
 DEBIAN_FRONTEND=noninteractive sudo apt install -y python3   # Fully non-interactive install for scripts and automation
+
 ```
 Installing Multiple Packages
 ```
@@ -182,8 +183,8 @@ Red Hat/Fedora: rpm
 Ubuntu/Debian Example:
 ```
 sudo dpkg -i package.deb   # Install a local .deb file
-sudo dpkg -r package        # Remove a package
-sudo dpkg -l                 # List installed packages
+sudo dpkg -r package       # Remove a package
+sudo dpkg -l               # List installed packages
 ```
 Note: If package.deb depends on other packages not installed, dpkg will fail.
 
