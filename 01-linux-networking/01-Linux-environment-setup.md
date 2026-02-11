@@ -90,7 +90,6 @@ docker run -dit \
   --env TZ=Asia/Kolkata \
   --env LANG=en_US.UTF-8 \
   ubuntu:latest /bin/bash
-
 ```
 Step 3: Access the Linux Container
 ```
@@ -155,7 +154,6 @@ Step 3: Verify WSL Version
 
 ```
 wsl -l -v
-
 ```
 Ensure Ubuntu is running on WSL2.
 
@@ -163,7 +161,6 @@ If not:
 
 ```
 wsl --set-version Ubuntu 2
-
 ```
 
 Step 4: Update Packages
@@ -180,7 +177,6 @@ wsl
 or just access Ubuntu which is now in your computer.
 
 On MacOs, open terminal and run;
-
 ```
 docker run -it ubuntu bash
 
