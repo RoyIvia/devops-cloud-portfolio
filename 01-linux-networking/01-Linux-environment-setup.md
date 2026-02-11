@@ -90,6 +90,7 @@ docker run -dit \
   --env TZ=Asia/Kolkata \
   --env LANG=en_US.UTF-8 \
   ubuntu:latest /bin/bash
+
 ```
 Step 3: Access the Linux Container
 ```
@@ -182,6 +183,7 @@ On MacOs, open terminal and run;
 
 ```
 docker run -it ubuntu bash
+
 ```
 
 ## Comparison of Linux Setup Methods;
