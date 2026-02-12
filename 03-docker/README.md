@@ -8,7 +8,5 @@ Containerization projects with Docker for reproducible environments.
 - Networking & volumes
 - Docker Best Practices
   
-
-
 ## Status
 🚧 In  progress
