@@ -36,7 +36,7 @@ DevOps solves these problems by introducing:
 - Continuous integration and continuous delivery (CI/CD)
 - Shared responsibility for reliability and performance
 - Monitoring and continuous feedback loops
-
+- 
 ---
 
 ## 3. Software Development Lifecycle (SDLC) and Roles in a Software Company
@@ -50,7 +50,7 @@ The SDLC defines the stages a software application goes through from concept to 
 4. **Testing** – Ensuring functionality, security, and performance.
 5. **Release/Deployment** – Moving code to production.
 6. **Operations/Monitoring** – Running the application and capturing feedback.
-
+7. 
 ---
 
 ### Key Roles in the Software Development Lifecycle
