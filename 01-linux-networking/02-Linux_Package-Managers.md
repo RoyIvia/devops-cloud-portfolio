@@ -218,6 +218,7 @@ sudo apt install nginx        # Installs nginx and any required dependencies
 sudo apt update               # Refresh the package list from repositories
 sudo apt upgrade -y           # Upgrade all installed packages safely
 sudo apt remove nginx         # Remove a package and optionally unused dependencies
+
 ```
 #Why High-Level is Better for DevOps:
 
@@ -238,6 +239,7 @@ Repository support	                       Local packages only	                  
 Ease of use	                               Risky	                                    Safe and automated
 Use in automation	                         Needs extra scripts	                      Ideal for scripting and CI/CD
 Upgrading software	                       Manual	                                    Handles updates and upgrades safely
+
 ```
 Best practice: Always use high-level package managers for automation and production systems.
 
