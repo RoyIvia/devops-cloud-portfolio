@@ -9,7 +9,7 @@ Package managers are a foundational component of Linux system administration and
 ## How Package Managers Work
 1. Repositories (Repos)
 
-Software is fetched from repositories, which are trusted online servers containing packaged software.
+- Software is fetched from repositories, which are trusted online servers containing packaged software.
 
 Example (Ubuntu):
 
@@ -19,19 +19,19 @@ archive.ubuntu.com
 
 When installing software, a package manager:
 
-Downloads the requested package
+- Downloads the requested package
 
-Automatically resolves and installs dependencies
+- Automatically resolves and installs dependencies
 
-Configures the software correctly
+- Configures the software correctly
 
 3. Updating Software
 
-A single command updates all installed packages to newer versions.
+- A single command updates all installed packages to newer versions.
 
 4. Removing Software
 
-Software is removed cleanly, including unused dependencies if requested.
+- Software is removed cleanly, including unused dependencies if requested.
 
 
 ## Popular Linux Package Managers
