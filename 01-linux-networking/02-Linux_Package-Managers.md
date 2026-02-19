@@ -34,7 +34,7 @@ A single command updates all installed packages to newer versions.
 Software is removed cleanly, including unused dependencies if requested.
 
 
-# Popular Linux Package Managers
+## Popular Linux Package Managers
 
 ```
 Distribution	                 Package Manager	             Example
@@ -59,7 +59,7 @@ Package removal
 
 Security updates
 
-# What Does APT Do?
+## What Does APT Do?
 
 (i) Package Installation
 
@@ -170,7 +170,7 @@ Debian/Ubuntu: dpkg
 
 Red Hat/Fedora: rpm
 
-#Key Features:
+## Key Features:
 
 - Installs .deb or .rpm files directly
 
@@ -188,7 +188,7 @@ sudo dpkg -l               # List installed packages
 ```
 Note: If package.deb depends on other packages not installed, dpkg will fail.
 
-#2.High-Level Package Managers
+## 2.High-Level Package Managers
 
 High-level package managers build on top of low-level tools and automatically handle dependencies, repositories, and updates.
 
@@ -202,7 +202,7 @@ Arch Linux: pacman
 
 OpenSUSE: zypper
 
-#Key Features:
+## Key Features:
 
 - Resolves dependencies automatically
 
@@ -220,7 +220,7 @@ sudo apt upgrade -y           # Upgrade all installed packages safely
 sudo apt remove nginx         # Remove a package and optionally unused dependencies
 
 ```
-#Why High-Level is Better for DevOps:
+## Why High-Level is Better for DevOps:
 
 - Automates package management in scripts and CI/CD pipelines
 
@@ -230,7 +230,7 @@ sudo apt remove nginx         # Remove a package and optionally unused dependenc
 
 - Enables reproducible server provisioning
 
-#Key Differences Between Low-Level and High-Level Package Managers
+## Key Differences Between Low-Level and High-Level Package Managers
 
 ```
 Feature	                                  Low-Level (dpkg, rpm)	                      High-Level (apt, dnf, pacman)
@@ -274,7 +274,7 @@ sudo apt-mark unhold python3
 ```
 - Used in production to maintain system stability.
 
-#ackage Verification & Security
+## Package Verification & Security
 
 APT ensures:
 
@@ -284,7 +284,7 @@ APT ensures:
 
 - Software is installed only from trusted sources
 
-#Why Package Managers Matter in DevOps
+## Why Package Managers Matter in DevOps
 
 Package managers enable:
 
