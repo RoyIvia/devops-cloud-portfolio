@@ -49,15 +49,15 @@ APT (Advanced Package Tool) is the default package manager for Debian-based Linu
 
 APT handles:
 
-Package installation
+- Package installation
 
-Dependency resolution
+- Dependency resolution
 
-Software upgrades
+- Software upgrades
 
-Package removal
+- Package removal
 
-Security updates
+- Security updates
 
 ## What Does APT Do?
 
