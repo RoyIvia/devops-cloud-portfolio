@@ -4,7 +4,7 @@ A robust understanding of the Linux filesystem is critical for any DevOps engine
 
 The Linux folder structure is hierarchical, starting from the root `/` directory, and organizes system files, application binaries, user data, and configuration files into standard locations. Mastery of this structure ensures clarity in system management, effective troubleshooting, and secure user administration.
 
-## 4.1 Core Navigation & File Commands
+## 4.1  Core Navigation & File Commands
 
 ### `ls` = List Directory Contents
 
@@ -76,7 +76,7 @@ cat filename.txt
 
 - Quick inspection of scripts
 
-## 4.2 File vs Directory
+## 4.2  File vs Directory
 
 ```
 | Type      | Purpose                                       |
@@ -100,7 +100,7 @@ Create a directory:
 mkdir folder
 ```
 
-## 4.3 Advanced ls Usage
+## 4.3  Advanced ls Usage
 
 ### ls -l = Long Listing Format
 
@@ -154,7 +154,7 @@ Flags:
 
 - Useful for tracking log updates and file changes
 
-## 4.4 Linux Folder Structure
+## 4.4  Linux Folder Structure
 
 Linux uses a single-rooted filesystem tree starting at /
 
@@ -172,7 +172,7 @@ Linux uses a single-rooted filesystem tree starting at /
 
 ```
 
-## 4.5 System Directories
+## 4.5  System Directories
 
 
 ### **Important System Directories**
