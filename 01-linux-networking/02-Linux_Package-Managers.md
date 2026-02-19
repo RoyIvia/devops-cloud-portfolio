@@ -1,4 +1,4 @@
-## Linux Package Managers
+# Linux Package Managers
 
 ## What is a Package Manager?
 
@@ -6,7 +6,7 @@ A package manager is a tool that automates the installation, updating, configura
 
 Package managers are a foundational component of Linux system administration and DevOps workflows.
 
-# How Package Managers Work
+## How Package Managers Work
 1. Repositories (Repos)
 
 Software is fetched from repositories, which are trusted online servers containing packaged software.
