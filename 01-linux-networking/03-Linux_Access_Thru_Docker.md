@@ -54,13 +54,13 @@ The status can either be,
 ```
 | Column           | Meaning                                       |
 | ---------------- | --------------------------------------------- |
-| **CONTAINER ID** | Unique identifier for the container           |
-| **IMAGE**        | The Docker image used to create the container |
-| **COMMAND**      | Command that runs when the container starts   |
-| **CREATED**      | When the container was created                |
-| **STATUS**       | Whether the container is running or stopped   |
-| **PORTS**        | Port mappings from host → container           |
-| **NAMES**        | Human-readable name assigned by Docker        |
+| CONTAINER ID     | Unique identifier for the container           |
+| IMAGE            | The Docker image used to create the container |
+| COMMAND          | Command that runs when the container starts   |
+| CREATED          | When the container was created                |
+| STATUS           | Whether the container is running or stopped   |
+| PORTS            | Port mappings from host → container           |
+| NAMES            | Human-readable name assigned by Docker        |
 
 ```
 ### Start a stopped environment:
