@@ -64,7 +64,7 @@ ln -s /path/to/original /path/to/link
 
 - Soft link = a pointer to a file path
 
-### cat – Display File Contents
+### `cat` – Display File Contents
 
 ```
 cat filename.txt
