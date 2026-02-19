@@ -6,11 +6,11 @@ The Linux folder structure is hierarchical, starting from the root `/` directory
 
 ## 4.1 Core Navigation & File Commands
 
-### `ls` – List Directory Contents
+### `ls` = List Directory Contents
 
 - Displays files and directories in the current location.
 
-### cd – Change Directory
+### `cd` = Change Directory
 
 - Moves between directories.
 
@@ -23,7 +23,7 @@ The Linux folder structure is hierarchical, starting from the root `/` directory
 | `cd -`  | Go to previous directory |
 
 ```
-### ln – Create Links
+### `ln` = Create Links
 
 - Creates hard or symbolic links.
 
@@ -102,7 +102,7 @@ mkdir folder
 
 ## 4.3 Advanced ls Usage
 
-### ls -l – Long Listing Format
+### ls -l = Long Listing Format
 
 ```
 ls -l
@@ -119,7 +119,7 @@ Shows:
 
 - Last modified date
 
-### ls -a – Show Hidden Files
+### ls -a = Show Hidden Files
 
 ```
 ls -a
@@ -129,13 +129,13 @@ Displays all files including hidden ones (starting with .), e.g.:
 .profile
 .git
 
-### ls -la – Long + Hidden Files
+### ls -la = Long + Hidden Files
 ```
 ls -la
 ```
 Combines long listing and hidden files — commonly used in Linux troubleshooting.
 
-### ls -ltr – Sort by Time (Oldest First)
+### ls -ltr = Sort by Time (Oldest First)
 
 ```
 ls -ltr
@@ -175,13 +175,6 @@ Linux uses a single-rooted filesystem tree starting at /
 ## 4.5 System Directories
 
 
-### **Symbolic Links (Less Significant)**
-| Directory | Description |
-|-----------|-------------|
-| `/sbin -> /usr/sbin` | System binaries for administrative commands (linked to `/usr/sbin`). |
-| `/bin -> /usr/bin` | Essential user binaries (linked to `/usr/bin`). |
-| `/lib -> /usr/lib` | Shared libraries and kernel modules (linked to `/usr/lib`). |
-
 ### **Important System Directories**
 | Directory | Description |
 |-----------|-------------|
@@ -189,6 +182,14 @@ Linux uses a single-rooted filesystem tree starting at /
 | `/usr` | Contains most user-installed applications and libraries. |
 | `/var` | Stores logs, caches, and temporary files that change frequently. |
 | `/etc` | Stores system configuration files. |
+
+### **Symbolic Links (Less Significant)**
+| Directory | Description |
+|-----------|-------------|
+| `/sbin -> /usr/sbin` | System binaries for administrative commands (linked to `/usr/sbin`). |
+| `/bin -> /usr/bin` | Essential user binaries (linked to `/usr/bin`). |
+| `/lib -> /usr/lib` | Shared libraries and kernel modules (linked to `/usr/lib`). |
+
 
 ### **User & Application-Specific Directories**
 | Directory | Description |
