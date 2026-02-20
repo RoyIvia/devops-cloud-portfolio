@@ -37,7 +37,7 @@ Linux stores user and authentication data in the following system files:
 
 ### useradd vs adduser
 
-* useradd *
+ useradd 
 
 - Low-level utility
 
@@ -68,7 +68,7 @@ You must manually set password:
 passwd roy
 
 ```
-* adduser (Debian-based systems) *
+adduser (Debian-based systems) 
 
 - Higher-level, interactive wrapper around useradd
 
