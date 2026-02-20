@@ -347,19 +347,19 @@ Instead of giving 10 developers access to a project directory individually, you:
 
 ### (i) Primary Group
 
-Assigned when a user is created
+- Assigned when a user is created
 
-Stored in /etc/passwd
+- Stored in /etc/passwd
 
-Used by default when creating files
+- Used by default when creating files
 
 ### (ii) Secondary (Supplementary) Groups
 
-Additional groups a user belongs to
+- Additional groups a user belongs to
 
-Stored in /etc/group
+- Stored in /etc/group
 
-Provide additional permissions
+- Provide additional permissions
 
 Create group:
 
