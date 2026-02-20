@@ -112,3 +112,361 @@ username : password_placeholder : UID : GID : comment : home_directory : shell
 ```
 - The x indicates that the actual encrypted password is stored in /etc/shadow.
 
+## 5.3 Managing Passwords
+
+Set or change password:
+
+```
+passwd username
+
+```
+Confirm encrypted password creation:
+
+```
+sudo cat /etc/shadow
+
+```
+Example:
+
+```
+roy:$6$asd9f8a7sd9f8a7sd9f8a7...:19400:0:99999:7:::
+
+```
+- The long string represents a hashed password, not plaintext.
+
+Can Passwords Be Decrypted?
+
+- No.
+
+Passwords in /etc/shadow are stored as one-way cryptographic hashes.
+
+- They cannot be decrypted.
+
+- They cannot be restored if lost.
+
+- If forgotten, they must be reset using passwd.
+
+This ensures system security.
+
+## 5.4 Using Vim to View System Files
+
+Vim (Vi Improved) is a powerful terminal-based text editor used to:
+
+- Edit configuration files
+
+- Modify system files
+
+- Write scripts
+
+- Administer servers
+
+It is commonly used in Linux environments without a graphical interface.
+
+### Installing Vim
+
+On Debian/Ubuntu:
+
+```
+apt update
+apt install vim
+
+```
+
+Opening a System File:
+
+```
+vim /etc/passwd
+
+```
+
+### Exiting Vim
+
+Press Esc first.
+
+Then:
+
+Quit (no changes):
+
+```
+:q
+
+```
+Force quit:
+
+```
+:q!
+
+```
+
+Save and quit:
+
+```
+:wq
+
+```
+
+Alternative:
+
+```
+ZZ
+```
+OR 
+
+```
+x
+```
+If stuck recording macro:
+Press:
+
+```
+q
+```
+## 5.5 Demonstrating Permission Enforcement
+
+Create a new user:
+
+```
+adduser testuser
+
+```
+Switch to user:
+
+```
+su - testuser
+
+```
+Attempt to delete a system directory:
+
+```
+rm -rf /root
+
+```
+You will receive:
+
+```
+Permission denied
+
+```
+This demonstrates:
+
+- Users do not have administrative rights by default
+
+- Access control is enforced
+
+- User management ensures accountability
+
+## 5.6 Switching and Logging Out
+
+Switch user:
+
+```
+su - username
+
+```
+Exit back:
+
+```
+exit
+
+```
+OR
+
+```
+logout
+
+```
+- Both commands terminate the current login session.
+
+## 5.7 Modifying Users
+
+Change username:
+
+```
+usermod -l newname oldname
+
+```
+Change home directory:
+
+```
+usermod -d /new/home -m username
+
+```
+Change default shell:
+
+```
+usermod -s /bin/zsh username
+
+```
+
+## 5.8 Deleting Users
+
+Delete user only:
+
+```
+userdel username
+
+```
+
+Delete user and home directory:
+
+```
+userdel -r username
+
+```
+
+## 5.9 Group Management
+
+A group in Linux is a collection of users that share common permissions. Instead of assigning permissions individually to every user, administrators assign permissions to a group, and then add users to that group.
+
+This simplifies access control and improves scalability in multi-user environments.
+
+### Why Groups Are Important
+
+Groups provide:
+
+- Centralized permission management
+
+- Role-based access control
+
+- Separation of duties
+
+- Improved accountability
+
+- Scalability in enterprise environments
+
+Example:
+Instead of giving 10 developers access to a project directory individually, you:
+
+- Create a group called developers
+
+- Assign permissions to the group
+
+- Add users to the group
+
+## Primary vs Secondary Groups
+
+### (i) Primary Group
+
+Assigned when a user is created
+
+Stored in /etc/passwd
+
+Used by default when creating files
+
+### (ii) Secondary (Supplementary) Groups
+
+Additional groups a user belongs to
+
+Stored in /etc/group
+
+Provide additional permissions
+
+Create group:
+
+```
+groupadd developers
+
+```
+
+Add user to group:
+
+```
+usermod -aG developers username
+
+```
+View group membership:
+
+```
+groups username
+
+```
+
+Change primary group:
+
+```
+usermod -g developers username
+
+```
+
+## 5.10 Sudo and Privilege Escalation
+
+Grant sudo access (Debian):
+
+```
+usermod -aG sudo username
+
+```
+
+RHEL:
+
+```
+usermod -aG wheel username
+
+```
+Edit sudoers safely:
+
+```
+visudo
+
+```
+Grant specific command access:
+
+```
+username ALL=(ALL) NOPASSWD: /path/to/command
+
+```
+
+## 5.11 Account Security and Lifecycle
+
+Lock account:
+
+```
+usermod -L username
+
+```
+
+Unlock account:
+
+```
+usermod -U username
+
+```
+Set expiration date:
+
+```
+chage -E YYYY-MM-DD username
+
+```
+
+View aging policy:
+
+```
+chage -l username
+
+```
+
+## 5.12 Why User Management Matters
+
+Effective user management ensures:
+
+- Controlled system access
+
+- Role-based privilege separation
+
+- Accountability of actions
+
+- Protection of critical system directories
+
+- Prevention of unauthorized modifications
+
+It is foundational to:
+
+- Production server management
+
+- Cloud infrastructure
+
+- Containerized environments
+
+- DevOps security practices
+
+Linux user management is a critical pillar of secure system administration.
