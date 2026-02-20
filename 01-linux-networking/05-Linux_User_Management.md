@@ -409,13 +409,93 @@ Edit sudoers safely:
 visudo
 
 ```
+
+## Granting Specific Command Access with sudo
+
+In production systems, you often do not want to give full administrative privileges to a user. Instead, you may want to allow them to run only specific commands.
+
+This is done by modifying the sudoers file.
+
+### Why Use visudo?
+
+Never edit /etc/sudoers directly using vim or nano.
+
+Instead, use:
+```
+visudo
+```
+### Why?
+
+- It performs syntax checking.
+
+- It prevents multiple simultaneous edits.
+
+- It protects the system from configuration errors that could break sudo access.
+
+- If you make a syntax mistake in /etc/sudoers, you could lock yourself out of administrative access.
+
+### Basic sudoers Rule Structure:
+
 Grant specific command access:
 
 ```
 username ALL=(ALL) NOPASSWD: /path/to/command
 
 ```
+Breakdown:
 
+```
+| Part               | Meaning                              |
+| ------------------ | ------------------------------------ |
+| `username`         | The user receiving privileges        |
+| `ALL`              | Hostname (applies to all hosts)      |
+| `(ALL)`            | The user they can run the command as |
+| `NOPASSWD:`        | No password required                 |
+| `/path/to/command` | Exact command allowed                |
+
+```
+Example 1 – Allow Restarting Nginx Only:
+
+```
+roy ALL=(ALL) /usr/bin/systemctl restart nginx
+```
+This allows user roy to run:
+
+```
+sudo systemctl restart nginx
+```
+But NOT:
+
+```
+sudo rm -rf /
+sudo apt install package
+```
+Only that specific command is permitted.
+
+## Granting Group-Based Command Access
+
+Instead of assigning permissions per user, you can assign them to a group:
+
+```
+%developers ALL=(ALL) /usr/bin/systemctl restart nginx
+```
+The % symbol indicates a group.
+
+All users in the developers group inherit that permission.
+
+### Security Best Practices
+
+- Avoid giving full ALL=(ALL) ALL access unless necessary.
+
+- Restrict commands to full absolute paths.
+
+- Avoid wildcards (*) in sensitive environments.
+
+- Use groups instead of individual user rules when possible.
+
+- Regularly audit the sudoers file.
+
+  
 ## 5.11 Account Security and Lifecycle
 
 Lock account:
