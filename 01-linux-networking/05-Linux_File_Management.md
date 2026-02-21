@@ -57,7 +57,7 @@ Examples:
 
 ```
 cd /home  
-cd ..          #move one level up
+cd ..          # move one level up
 cd ~
 cd /
 ```
