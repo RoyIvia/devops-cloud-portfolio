@@ -46,3 +46,18 @@ Print Working Directory
 ```
 pwd
 ```
+Shows your current location.
+
+Change Directory
+
+```
+cd /path/to/directory
+```
+Examples:
+
+```
+cd /home  
+cd ..          #move one level up
+cd ~
+cd /
+```
