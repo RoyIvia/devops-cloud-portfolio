@@ -18,7 +18,7 @@ Understanding Linux file management is essential for working in server environme
 
 - Control file visibility
 
-## 6.1 Understanding the Linux Filesystem
+## 5.1 Understanding the Linux Filesystem
 
 Linux follows a hierarchical directory structure starting at:
 ```
@@ -41,7 +41,7 @@ Important directories:
 ```
 Everything in Linux is treated as a file, including devices and processes.
 
-## 6.2 Navigating the Filesystem
+## 5.2 Navigating the Filesystem
 Print Working Directory:
 ```
 pwd
@@ -61,7 +61,7 @@ cd ..          # move one level up
 cd ~           # Go to home directory
 cd /           # Go to root directory
 ```
-## 6.3 Listing Files
+## 5.3 Listing Files
 
 Basic Listing:
 
@@ -87,7 +87,7 @@ ls -la
 ```
 - Hidden files begin with .
 
-## 6.4 Creating Files and Directories
+## 5.4 Creating Files and Directories
 
 Create Empty File:
 
@@ -105,7 +105,7 @@ Create nested directories:
 mkdir -p project/src/components
 ```
 
-## 6.5 Copying Files
+## 5.5 Copying Files
 
 Copy File:
 
@@ -120,7 +120,7 @@ cp -r folder backup_folder
 ```
 - -r = recursive
 
-## 6.6 Moving and Renaming Files
+## 5.6 Moving and Renaming Files
 
 Move File:
 
@@ -133,7 +133,7 @@ Rename File:
 mv oldname.txt newname.txt
 ```
 
-## 6.7 Deleting Files and Directories
+## 5.7 Deleting Files and Directories
 
 Remove File:
 
@@ -154,7 +154,7 @@ rm -rf folder
 ```
 - Extremely powerful as it can permanently delete system files.
 
-## 6.8 Viewing File Content
+## 5.8 Viewing File Content
 
 Display Entire File:
 
@@ -213,7 +213,7 @@ tail -f /var/log/syslog
 
 - Instead of just displaying the last few lines and exiting, the terminal stays open and continuously updates whenever new content is written to the file.
 
-## 6.9 Searching Within Files
+## 5.9 Searching Within Files
 
 Search Text:
 
@@ -275,7 +275,7 @@ It keeps going down the directory tree automatically.
 That is what recursive means.
 
 
-## 6.10 Searching for Files
+## 5.10 Searching for Files
 
 Find Command:
 
@@ -289,7 +289,7 @@ Find directories:
 find / -type d -name "project"
 ```
 
-## 6.11 File Information
+## 5.11 File Information
 
 Check File Type:
 
@@ -308,7 +308,7 @@ View Free Disk Space:
 df -h
 ```
 
-## 6.12 Links 
+## 5.12 Links 
 
 In Linux, a link is a way to reference a file from another location without duplicating the file’s data.
 
@@ -418,7 +418,7 @@ If two files have the same inode number → they are hard links.
 - Snapshot-style systems
 
 
-# 6.13 File Ownership 
+# 5.13 File Ownership 
 
 Every file has:
 
@@ -446,7 +446,7 @@ Change group:
 chgrp group file.txt
 ```
 
-## 6.14 Best Practices in Production
+## 5.14 Best Practices in Production
 
 - Always use absolute paths in scripts
 - Avoid rm -rf in production without verification
