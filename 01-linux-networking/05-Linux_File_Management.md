@@ -310,11 +310,34 @@ df -h
 
 ## 6.12 Links 
 
+In Linux, a link is a way to reference a file from another location without duplicating the file’s data.
+
+There are two types of links:
+
+- Hard Links
+
+- Soft Links (Symbolic Links)
+
+
 Hard Link:
 
 ```
 ln original.txt hardlink.txt
 ```
+A hard link is another name for the same file.
+
+It does NOT create a copy.
+It creates a second directory entry that points to the same inode (same data on disk).
+Now both files will appear separate, but they share the same underlying data.
+
+If you delete:
+```
+rm original.txt
+```
+hardlink.txt still contains the data because the data is not removed until all hard links are deleted.
+
+### Key Characteristics
+
 - Shares same inode
 - Cannot cross filesystems
 - Survives deletion of original
@@ -325,9 +348,75 @@ Soft (Symbolic) Link:
 ln -s original.txt symlink.txt
 ```
 
+A soft link is like a shortcut.
+
+It does NOT point to the inode. It points to the file path.
+
+You will see something like:
+```
+symlink.txt -> original.txt
+```
+If you delete:
+
+```
+rm original.txt
+```
+
+Then:
+
+```
+cat symlink.txt
+```
+
+You will get:
+
+```
+No such file or directory
+```
+
+Because the link only stored the path, not the data.
+
+### Key Characteristics
+
 - Points to path
 - Can cross filesystems
 - Breaks if original is deleted
+
+
+### What Is an Inode?
+
+An inode is a data structure that stores:
+
+- File permissions
+- Owner
+- Group
+- Size
+- Timestamps
+- Disk location
+
+When you create a hard link, both filenames share the same inode.
+
+Check inode numbers:
+
+```
+ls -li
+```
+If two files have the same inode number → they are hard links.
+
+### Real-World Use Cases
+
+### Soft Links
+
+- Creating shortcuts
+- Linking configuration files
+- Linking current version of an application
+
+### Hard Links
+
+- Backup systems
+- Efficient file storage
+- Snapshot-style systems
+
 
 # 6.13 File Ownership 
 
