@@ -19,7 +19,7 @@ This module demonstrates practical and administrative-level knowledge of:
 
 - Secure privilege escalation
 
-## 5.1 Core User Management Files
+## 6.1 Core User Management Files
 
 Linux stores user and authentication data in the following system files:
 
@@ -33,7 +33,7 @@ Linux stores user and authentication data in the following system files:
 
 ```
 
-## 5.2 Creating Users
+## 6.2 Creating Users
 
 ### useradd vs adduser
 
@@ -112,7 +112,7 @@ username : password_placeholder : UID : GID : comment : home_directory : shell
 ```
 - The x indicates that the actual encrypted password is stored in /etc/shadow.
 
-## 5.3 Managing Passwords
+## 6.3 Managing Passwords
 
 Set or change password:
 
@@ -148,7 +148,7 @@ Passwords in /etc/shadow are stored as one-way cryptographic hashes.
 
 This ensures system security.
 
-## 5.4 Using Vim to View System Files
+## 6.4 Using Vim to View System Files
 
 Vim (Vi Improved) is a powerful terminal-based text editor used to:
 
@@ -221,7 +221,7 @@ Press:
 ```
 q
 ```
-## 5.5 Demonstrating Permission Enforcement
+## 6.5 Demonstrating Permission Enforcement
 
 Create a new user:
 
@@ -255,7 +255,7 @@ This demonstrates:
 
 - User management ensures accountability
 
-## 5.6 Switching and Logging Out
+## 6.6 Switching and Logging Out
 
 Switch user:
 
@@ -277,7 +277,7 @@ logout
 ```
 - Both commands terminate the current login session.
 
-## 5.7 Modifying Users
+## 6.7 Modifying Users
 
 Change username:
 
@@ -298,7 +298,7 @@ usermod -s /bin/zsh username
 
 ```
 
-## 5.8 Deleting Users
+## 6.8 Deleting Users
 
 Delete user only:
 
@@ -314,7 +314,7 @@ userdel -r username
 
 ```
 
-## 5.9 Group Management
+## 6.9 Group Management
 
 A group in Linux is a collection of users that share common permissions. Instead of assigning permissions individually to every user, administrators assign permissions to a group, and then add users to that group.
 
@@ -388,7 +388,7 @@ usermod -g developers username
 
 ```
 
-## 5.10 Sudo and Privilege Escalation
+## 6.10 Sudo and Privilege Escalation
 
 Grant sudo access (Debian):
 
@@ -496,7 +496,7 @@ All users in the developers group inherit that permission.
 - Regularly audit the sudoers file.
 
   
-## 5.11 Account Security and Lifecycle
+## 6.11 Account Security and Lifecycle
 
 Lock account:
 
@@ -525,7 +525,7 @@ chage -l username
 
 ```
 
-## 5.12 Why User Management Matters
+## 6.12 Why User Management Matters
 
 Effective user management ensures:
 
