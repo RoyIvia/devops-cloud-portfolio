@@ -277,3 +277,15 @@ This displays what you wrote.
 
 - Ctrl + w + w – Switch between split screens
 
+
+Vim is critical because:
+
+- Most servers do not have graphical editors
+
+- SSH environments rely on terminal tools
+
+- System recovery environments only include vi
+
+- Configuration management requires fast editing
+
+
