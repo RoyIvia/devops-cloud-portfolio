@@ -175,112 +175,105 @@ cat example.txt
 This displays what you wrote.
 
 
-VI Editor Shortcuts
-Modes in VI Editor
+## VI Editor Shortcuts
 
-Normal Mode (default) – Used for navigation and command execution.
+### Basic Navigation
 
-Insert Mode – Used for text editing (press i to enter, Esc to exit).
+- h – Move left
 
-Command Mode – Used for saving, quitting, and searching (press : in Normal mode).
+- l – Move right
 
-Basic Navigation
+- j – Move down
 
-h – Move left
+- k – Move up
 
-l – Move right
+- 0 – Move to the beginning of the line
 
-j – Move down
+- ^ – Move to the first non-blank character of the line
 
-k – Move up
+- $ – Move to the end of the line
 
-0 – Move to the beginning of the line
+- w – Move to the next word
 
-^ – Move to the first non-blank character of the line
+- b – Move to the previous word
 
-$ – Move to the end of the line
+- gg – Move to the start of the file
 
-w – Move to the next word
+- G – Move to the end of the file
 
-b – Move to the previous word
+- :n – Move to line number n
 
-gg – Move to the start of the file
+### Insert Mode Shortcuts
 
-G – Move to the end of the file
+- i – Insert before cursor
 
-:n – Move to line number n
+- I – Insert at the beginning of the line
 
-Insert Mode Shortcuts
+- a – Append after cursor
 
-i – Insert before cursor
+- A – Append at the end of the line
 
-I – Insert at the beginning of the line
+- o – Open a new line below
 
-a – Append after cursor
+- O – Open a new line above
 
-A – Append at the end of the line
+- Esc – Exit insert mode
 
-o – Open a new line below
+### Editing Text
 
-O – Open a new line above
+- x – Delete a character
 
-Esc – Exit insert mode
+- X – Delete a character before cursor
 
-Editing Text
+- dw – Delete a word
 
-x – Delete a character
+- dd – Delete a line
 
-X – Delete a character before cursor
+- d$ – Delete from cursor to end of line
 
-dw – Delete a word
+- d0 – Delete from cursor to beginning of line
 
-dd – Delete a line
+- D – Delete from cursor to end of line
 
-d$ – Delete from cursor to end of line
+- u – Undo last action
 
-d0 – Delete from cursor to beginning of line
+- Ctrl + r – Redo an undone change
 
-D – Delete from cursor to end of line
+- yy – Copy (yank) a line
 
-u – Undo last action
+- yw – Copy (yank) a word
 
-Ctrl + r – Redo an undone change
+- p – Paste after the cursor
 
-yy – Copy (yank) a line
+- P – Paste before the cursor
 
-yw – Copy (yank) a word
+### Search and Replace
 
-p – Paste after the cursor
+- /pattern – Search forward for a pattern
 
-P – Paste before the cursor
+- ?pattern – Search backward for a pattern
 
-Search and Replace
+- n – Repeat last search forward
 
-/pattern – Search forward for a pattern
+- N – Repeat last search backward
 
-?pattern – Search backward for a pattern
+- :%s/old/new/g – Replace all occurrences of "old" with "new"
 
-n – Repeat last search forward
+- :s/old/new/g – Replace all occurrences in the current line
 
-N – Repeat last search backward
+### Working with Multiple Files
 
-:%s/old/new/g – Replace all occurrences of "old" with "new"
+- :e filename – Open a new file
 
-:s/old/new/g – Replace all occurrences in the current line
+- :w – Save file
 
-Working with Multiple Files
+- :wq – Save and exit
 
-:e filename – Open a new file
+- :q! – Quit without saving
 
-:w – Save file
+- :split filename – Split screen horizontally and open another file
 
-:wq – Save and exit
+- :vsplit filename – Split screen vertically
 
-:q! – Quit without saving
-
-:split filename – Split screen horizontally and open another file
-
-:vsplit filename – Split screen vertically
-
-Ctrl + w + w – Switch between split screens
+- Ctrl + w + w – Switch between split screens
 
