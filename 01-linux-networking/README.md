@@ -6,7 +6,7 @@ Linux is the operating system that underpins modern infrastructure, cloud platfo
 This section documents my structured and hands-on mastery of Linux fundamentals.
 The focus is not only on commands, but on understanding how Linux works internally and how it is used in DevOps and cloud operations.
 
----
+
 
 ## Linux in Real-World DevOps Environments
 In DevOps workflows, Linux is used to:
@@ -18,7 +18,7 @@ In DevOps workflows, Linux is used to:
 
 A DevOps engineer must understand Linux behavior to troubleshoot failures, optimize performance, and maintain system reliability.
 
----
+
 
 ## Linux Distributions & Ecosystem
 Linux is not a single operating system but a family of distributions built around the Linux kernel.
@@ -112,7 +112,6 @@ The kernel mediates all access between software and hardware.
 
 Understanding this architecture is critical when diagnosing system performance issues or application failures.
 
----
 
 ## Linux File System & Hierarchy
 Linux uses a single-rooted hierarchical file system.
@@ -129,7 +128,6 @@ Key directories and their roles:
 
 It's important to understand how services, users, and applications interact with these directories.
 
----
 
 ## Command-Line Navigation & File Operations
 
@@ -151,9 +149,8 @@ less     # Views file contents page by page; allows scrolling and searching
 ```
 ## Role of Linux in DevOps & Cloud Engineering
 
-Linux is the default operating system for modern DevOps and cloud-native environments. A DevOps engineer does not simply use Linux — they operate, automate, secure, and troubleshoot systems that are fundamentally Linux-based.
+Linux is the default operating system for modern DevOps and cloud-native environments. A DevOps engineer does not simply use Linux, they operate, automate, secure, and troubleshoot systems that are fundamentally Linux-based.
 
----
 
 ### Linux in Cloud Computing
 Most cloud infrastructure is built on Linux operating systems.
@@ -171,9 +168,6 @@ Understanding Linux enables effective interaction with cloud services such as:
 - SSH-based remote administration
 - Log inspection and system-level debugging
 
-Without Linux knowledge, cloud infrastructure becomes a “black box”.
-
----
 
 ### Linux as the Foundation of Containers
 Container technologies are built directly on Linux kernel features.
@@ -193,7 +187,6 @@ all rely on Linux internals. A strong Linux foundation is required to understand
 - Resource limits and performance issues
 - Container networking and storage
 
----
 
 ### Linux in CI/CD Pipelines
 Continuous Integration and Continuous Deployment systems run predominantly on Linux servers.
@@ -212,7 +205,6 @@ Linux command-line and shell proficiency is essential for:
 - Debugging failed builds
 - Optimizing build performance
 
----
 
 ### Linux for Automation & Scripting
 Automation is a core DevOps responsibility, and Linux is designed for automation.
@@ -230,7 +222,6 @@ These capabilities allow DevOps engineers to:
 
 Automation without Linux expertise is limited and fragile.
 
----
 
 ### Linux for Monitoring, Troubleshooting & Reliability
 Linux provides deep visibility into system behavior.
@@ -247,7 +238,6 @@ This is critical for:
 - Performance optimization
 - Ensuring system reliability and uptime
 
----
 ### Advantages of Linux Over other operang systems
 
 1. Cost-Effectiveness
