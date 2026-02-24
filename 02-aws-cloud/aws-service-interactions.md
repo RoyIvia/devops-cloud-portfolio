@@ -1,7 +1,5 @@
 # AWS Service Interactions 
 
-## Overview
-
 This section demonstrates practical ways to interact with **AWS services** using:
 
 1. AWS Management Console  
