@@ -24,6 +24,7 @@ A DevOps engineer must understand Linux behavior to troubleshoot failures, optim
 Linux is not a single operating system but a family of distributions built around the Linux kernel.
 
 Some popular Linux distributions include;
+
 ```
 
 Ubuntu – One of the most beginner-friendly distros, widely used for personal and server use. It has great community support.
