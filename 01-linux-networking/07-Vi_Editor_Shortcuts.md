@@ -162,6 +162,7 @@ Other Useful Save/Quit Options:
 | `:w filename` | Save as new file         |
 | `ZZ`          | Save and quit (shortcut) |
 | `:x`          | Save and quit (like :wq) |
+
 ```
 
 View File Content
