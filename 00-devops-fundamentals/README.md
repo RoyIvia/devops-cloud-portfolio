@@ -5,7 +5,6 @@ DevOps is a culture and set of practices that improves an organization’s abili
 
 This section documents the key foundational concepts of DevOps, including its purpose, the challenges it addresses, and how it integrates with modern software delivery practices.
 
----
 
 ## 1. What is DevOps?
 - DevOps is **more than tools; it is a cultural shift** focused on collaboration, shared responsibility, and continuous improvement.
