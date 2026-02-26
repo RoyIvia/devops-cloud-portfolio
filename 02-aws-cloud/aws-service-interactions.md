@@ -11,7 +11,7 @@ This section demonstrates practical ways to interact with **AWS services** using
 It shows how a DevOps engineer can manage cloud infrastructure efficiently and automate tasks.
 
 
-## 1️⃣ AWS Management Console
+## 1️. AWS Management Console
 
 The AWS Management Console is the **graphical user interface** for interacting with AWS services. While suitable for small tasks, it becomes **time-consuming for multiple resources** or automation.
 
@@ -34,7 +34,7 @@ The AWS Management Console is the **graphical user interface** for interacting w
 
 ---
 
-## 2️⃣ AWS CLI
+## 2️. AWS CLI
 
 AWS CLI allows **command-line interaction with AWS services**, enabling automation and repeatability.
 
@@ -97,7 +97,7 @@ Explanation :
 - Ideal for automation, CI/CD pipelines, and multi-cloud environments.
   
 
-## 3️⃣ CloudFormation
+## 3️. CloudFormation
 
 CloudFormation allows Infrastructure as Code (IaC) — declarative creation of AWS resources.
 
@@ -131,7 +131,7 @@ Explanation :
 - Supports multiple AWS resources in a single deployment.
 
 
-## 4️⃣ Shell Scripting for AWS
+## 4️. Shell Scripting for AWS
 
 Shell scripting can automate repetitive AWS tasks using AWS CLI commands.
 
