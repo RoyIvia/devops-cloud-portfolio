@@ -69,6 +69,7 @@ apt install vim
 Verify installation:
 ```
 vim --version
+
 ```
 
 ## Creating Files
@@ -77,18 +78,21 @@ vim --version
 
 ```
 touch myfile.txt
+
 ```
 
 Then open it:
 
 ```
 vim myfile.txt
+
 ```
 
 ### Method 2 – Create File Directly with Vim
 
 ```
 vim newfile.txt
+
 ```
 - If the file does not exist, Vim creates it upon saving.
 
@@ -109,6 +113,7 @@ Basic Workflow Example;
 Step 1 – Open File:
 ```
 vim example.txt
+
 ```
 
 Step 2 – Enter Insert Mode
