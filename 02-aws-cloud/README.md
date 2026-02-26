@@ -9,7 +9,6 @@ Hands-on AWS projects demonstrating core cloud services and architectures.
 - AWS Academy Cloud Architecting projects
 - EKS
   
-
 ## Status
 
 🚧 In progress
