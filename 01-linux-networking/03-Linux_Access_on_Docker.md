@@ -10,6 +10,7 @@ If you created an Ubuntu environment using:
 ```
 docker run -it --name myubuntu ubuntu bash
 ```
+
 -it → starts an interactive terminal
 
 --name myubuntu → gives your container a recognizable name
