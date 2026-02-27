@@ -134,6 +134,7 @@ Security & Automation
 ```
 sudo apt install unattended-upgrades        # Install automatic security updates package
 sudo dpkg-reconfigure unattended-upgrades   # Configure and enable automatic security updates
+
 ```
 Non-Interactive Installation (Automation)
 
@@ -145,6 +146,7 @@ DEBIAN_FRONTEND=noninteractive sudo apt install -y python3   # Fully non-interac
 Installing Multiple Packages
 ```
 sudo apt install -y python3 python3-pip bash git curl
+
 ```
 Commonly used in:
 
@@ -185,6 +187,7 @@ Ubuntu/Debian Example:
 sudo dpkg -i package.deb   # Install a local .deb file
 sudo dpkg -r package       # Remove a package
 sudo dpkg -l               # List installed packages
+
 ```
 Note: If package.deb depends on other packages not installed, dpkg will fail.
 
@@ -252,6 +255,7 @@ sudo dpkg -i somepackage.deb
 
 # Step 2: Fix missing dependencies automatically
 sudo apt install -f
+
 ```
 - dpkg installs the package
 
@@ -265,12 +269,14 @@ Install a specific version:
 
 ```
 sudo apt install python3=3.10.*
+
 ```
 Prevent package upgrades:
 
 ```
 sudo apt-mark hold python3
 sudo apt-mark unhold python3
+
 ```
 - Used in production to maintain system stability.
 
