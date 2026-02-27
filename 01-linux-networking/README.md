@@ -132,7 +132,7 @@ It's important to understand how services, users, and applications interact with
 
 ## Command-Line Navigation & File Operations
 
-I am comfortable navigating and manipulating the Linux file system using the CLI. These commands are used daily for inspecting directories, managing files, and interacting with system resources in cloud and DevOps environments.
+It's important to be comfortable navigating and manipulating the Linux file system using the CLI. These commands are used daily for inspecting directories, managing files, and interacting with system resources in cloud and DevOps environments.
 
 ### Commonly Used Commands and Their Functions
 
