@@ -3,7 +3,7 @@
 A Linux environment is foundational for DevOps, Cloud, and Backend Engineering.  
 This guide covers **multiple ways to run Linux on Windows and macOS**, with a strong recommendation for **Docker-based Linux containers** for long-term, cost-free, and reproducible environments.
 
----
+
 
 ## Available Methods to Run Linux
 
@@ -17,7 +17,7 @@ You can set up Linux using several approaches:
 
 Each method has trade-offs, which are compared later in this document.
 
----
+
 
 ## Recommended Approach: Linux Using Docker Containers
 
