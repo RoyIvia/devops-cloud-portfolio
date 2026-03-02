@@ -286,6 +286,8 @@ x → to enter
 r → to list
 
 w → to create/delete files
+
+
 Linux file permissions are essential for security and accountability. Understanding and managing permissions with chmod, chown, chgrp, umask, and special bits like SetUID, SetGID, and Sticky Bit ensures:
 
 - Only authorized users can modify files
