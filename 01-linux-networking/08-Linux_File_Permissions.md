@@ -70,7 +70,7 @@ ls -ltr
 
 ### Explanation of ls -ltr output:
 
-- → file type (d for directory, - for regular file)
+- - → file type (d for directory, - for regular file)
 
 rwxr--r-- → permissions for user, group, others
 
