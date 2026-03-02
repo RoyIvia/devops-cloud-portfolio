@@ -83,7 +83,7 @@ docker run -dit \
   --restart unless-stopped \
   --cpus="2" \
   --memory="4g" \
-  --mount type=bind,source=~/ubuntu-data,target=/data \
+  --mount type=bind,source=$HOME/ubuntu-data,target=/data \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -p 2222:22 \
   -p 8080:80 \
