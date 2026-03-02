@@ -265,7 +265,27 @@ Final Permissions:
 Files:       644  → rw-r--r--
 Directories: 755  → rwxr-xr-x
 ```
+## Folder Permissions Come First
 
+Important rule:
+
+Even if a file has full permissions, you cannot access it if the parent directory does not allow access.
+
+Example:
+
+If directory has:
+
+drwx------
+
+Other users cannot enter it, even if files inside are 777.
+
+Directory permissions must allow:
+
+x → to enter
+
+r → to list
+
+w → to create/delete files
 Linux file permissions are essential for security and accountability. Understanding and managing permissions with chmod, chown, chgrp, umask, and special bits like SetUID, SetGID, and Sticky Bit ensures:
 
 - Only authorized users can modify files
