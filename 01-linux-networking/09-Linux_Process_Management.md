@@ -145,9 +145,11 @@ Sending Signals to Processes:
 
 Example:
 
-`kill -3 1234`
+```bash
+kill -3 1234
+```
 
-Here, 1234 is the PID of the process you want to signal.
+- Here, 1234 is the PID of the process you want to signal.
 
 Commonly used to debug Java processes, because many JVMs will print thread dumps when they receive SIGQUIT.
 
