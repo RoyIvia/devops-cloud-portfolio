@@ -1,9 +1,6 @@
 # Linux System Monitoring
 
-## Introduction to System Monitoring
 Monitoring system resources is essential to ensure optimal performance, detect issues, and troubleshoot problems in Linux. Various tools allow us to monitor CPU, memory, disk usage, network activity, and running processes.
-
-## Index of Commands Covered
 
 ### CPU and Memory Monitoring
 - `top` – Real-time system monitoring
@@ -111,3 +108,41 @@ journalctl -f  # Systemd logs
 ```bash
 dmesg | tail
 ```
+
+The commands covered in this module (top, free, df, ss, iostat, journalctl, etc.) are primarily used for:
+
+- Quick troubleshooting
+
+- On-the-spot performance checks
+
+- Investigating resource spikes
+
+- Debugging production issues directly on a server
+
+These tools are essential for immediate, manual diagnostics when logged into a Linux machine.
+
+## Monitoring in Real DevOps Scenarios
+
+In modern DevOps and production environments, Linux servers are typically integrated with centralized monitoring systems rather than relying only on manual commands.
+
+Common industry-standard tools include:
+
+- Prometheus – Collects and stores time-series metrics from servers and applications.
+
+- Grafana – Visualizes metrics through dashboards and alerts.
+
+- Nagios – Infrastructure monitoring and alerting.
+
+- Zabbix – Enterprise-grade monitoring platform.
+
+## How It Works in Production
+
+Instead of manually running top:
+
+- Metrics are automatically collected
+
+- Dashboards display CPU, memory, disk, and network usage
+
+- Alerts are triggered when thresholds are exceeded
+
+- Teams receive notifications via Slack, email, or PagerDuty
