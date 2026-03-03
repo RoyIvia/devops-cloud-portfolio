@@ -30,11 +30,40 @@ A process is an instance of a running program. Linux provides multiple utilities
 ## Index of Commands Covered
 
 ### Viewing Processes
-- `ps aux` – View all running processes
-- `ps -u username` – View processes for a specific user
-- `ps -C processname` – Show a process by name
-- `pgrep processname` – Find a process by name and return its PID
-- `pidof processname` – Find the PID of a running program
+
+- `ps aux` – Display all running processes in BSD format (includes CPU and memory usage).
+
+- `ps -ef` – Display all running processes in full System V format (includes Parent Process ID – PPID).
+
+- `ps -u username` – Display processes owned by a specific user.
+
+- `ps -C processname` – Display processes by exact command name.
+
+- `pgrep processname` – Search for processes by name and return their PID(s).
+
+- `pidof processname` – Return the PID(s) of a running program by name.
+
+### Process Output & Counting
+
+- `ps aux | nl `– Number each line of the ps aux output.
+
+- `ps aux | wc -l` – Count the total number of processes listed.
+
+- `ps -ef | nl `– Number each line of the ps -ef output.
+  
+
+In Linux process management, both ps aux (BSD style - no dash) and ps -ef (System V style) are used to display running processes, but they differ in format and use case.
+
+- `ps aux` provides detailed information including CPU and memory usage (%CPU, %MEM, VSZ, RSS). It is primarily used for performance monitoring and troubleshooting system resource consumption.
+
+- `ps -ef` displays processes in full format and includes the Parent Process ID (PPID), making it useful for analyzing process hierarchies and debugging services.
+
+Key Differences:
+
+ps aux → Best for performance analysis (CPU & memory focus).
+
+ps -ef → Best for tracing parent-child relationships and service debugging.
+
 
 ### Managing Processes
 - `kill PID` – Terminate a process by PID
@@ -66,6 +95,7 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `systemctl enable service-name` – Enable a service at startup
 
 ## Viewing Process Details
+
 ### Using `ps`
 Show processes for a specific user:
 ```bash
@@ -81,6 +111,8 @@ Find a process by name and return its PID:
 ```bash
 pgrep processname
 ```
+`ps aux | grep processname` – Search the full list of running processes for a specific process name. This is useful for quickly finding whether a process is running and its associated PID(s).
+
 
 ### Using `pidof`
 Find the PID of a running program:
@@ -89,6 +121,7 @@ pidof processname
 ```
 
 ## Managing Processes
+
 ### Killing Processes
 To terminate a process by PID:
 ```bash
@@ -106,8 +139,24 @@ Kill all instances of a process:
 ```bash
 pkill -9 processname
 ```
+Sending Signals to Processes:
+
+`kill -3 PID `– Sends the SIGQUIT signal to a process. Unlike kill -9 (force kill), SIGQUIT tells the process to terminate and optionally produce a core dump for debugging purposes.
+
+Example:
+
+`kill -3 1234`
+
+Here, 1234 is the PID of the process you want to signal.
+
+Commonly used to debug Java processes, because many JVMs will print thread dumps when they receive SIGQUIT.
+
+Unlike kill -9, the process can still perform cleanup before exiting.
+
+Tip: Always prefer kill -15 (SIGTERM) or kill -3 for controlled termination before using kill -9 (SIGKILL) to avoid abrupt shutdowns.
 
 ### Stopping & Resuming Processes
+
 Stop a running process:
 ```bash
 kill -STOP PID
