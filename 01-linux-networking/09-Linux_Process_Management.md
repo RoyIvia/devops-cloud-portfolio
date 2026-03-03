@@ -149,10 +149,18 @@ bg %jobnumber  # Resume in background
 
 ## Monitoring System Processes
 ### Using `top`
-Interactive process viewer:
-- Press `k` and enter a PID to kill a process.
-- Press `r` to renice a process.
-- Press `q` to quit.
+Interactive process viewer
+Useful keys inside top:
+
+- k → Kill process
+
+- r → Renice process
+
+- P → Sort by CPU
+
+- M → Sort by memory
+
+- q → Quit
 
 ### Using `htop`
 A user-friendly alternative to `top`:
