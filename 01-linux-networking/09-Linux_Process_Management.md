@@ -141,7 +141,10 @@ pkill -9 processname
 ```
 Sending Signals to Processes:
 
-`kill -3 PID `– Sends the SIGQUIT signal to a process. Unlike kill -9 (force kill), SIGQUIT tells the process to terminate and optionally produce a core dump for debugging purposes.
+```bash
+kill -3 PID
+```
+Sends the SIGQUIT signal to a process. Unlike kill -9 (force kill), SIGQUIT tells the process to terminate and optionally produce a core dump for debugging purposes.
 
 Example:
 
@@ -169,6 +172,13 @@ kill -CONT PID
 ```
 
 ### Changing Process Priority
+
+Every Linux process has a priority that determines how the CPU schedules it relative to other processes. Higher-priority processes get more CPU time, while lower-priority processes may wait longer.
+
+Nice Value (nice): Ranges from -20 (highest priority) to 19 (lowest priority).
+
+Default is usually 0.
+
 View process priorities:
 ```bash
 top  # Look at the NI column
