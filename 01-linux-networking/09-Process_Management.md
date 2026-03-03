@@ -193,4 +193,20 @@ systemctl enable service-name
 ## Conclusion
 Process management is crucial for system performance and stability. By using tools like `ps`, `top`, `htop`, `kill`, and `nice`, you can efficiently control and monitor Linux processes.
 
+#NOTE :
 
+- Always try graceful termination first.
+
+- Use kill -9 only when necessary.
+
+- Learn to read top fluently.
+
+- Understand process states.
+
+- Treat services differently from temporary processes.
+
+- Use kill -3 before killing Java apps in production.
+
+- Use renice instead of killing when performance tuning.
+
+- Think before acting on production servers.
