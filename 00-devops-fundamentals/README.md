@@ -50,7 +50,7 @@ The SDLC defines the stages a software application goes through from concept to 
 4. **Testing** – Ensuring functionality, security, and performance.
 5. **Release/Deployment** – Moving code to production.
 6. **Operations/Monitoring** – Running the application and capturing feedback.
-7. 
+
 ---
 
 ### Key Roles in the Software Development Lifecycle
