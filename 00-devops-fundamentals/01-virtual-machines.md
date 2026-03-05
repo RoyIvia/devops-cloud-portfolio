@@ -44,6 +44,7 @@ Cloud providers like AWS, Azure, and GCP rely heavily on virtualization:
   - High availability
 
 **Example Scenario**:
+
 - A physical server has 64 CPU cores and 256 GB RAM.
 - Without virtualization, only one team uses the server; the rest of the resources remain idle.
 - With virtualization, 8 VMs can run, each with 8 CPUs and 32 GB RAM, allowing multiple teams or applications to share the same hardware efficiently.
@@ -51,6 +52,7 @@ Cloud providers like AWS, Azure, and GCP rely heavily on virtualization:
 ---
 
 ## Why Virtual Machines Matter for DevOps
+
 - **Development and Testing**: Each team can have its own VM environment identical to production.
 - **Isolation**: Bugs in one VM don’t affect others.
 - **Automation**: VMs can be created, destroyed, and scaled programmatically using infrastructure-as-code tools like Terraform.
@@ -59,6 +61,7 @@ Cloud providers like AWS, Azure, and GCP rely heavily on virtualization:
 ---
 
 ## Key Takeaways
+
 - VMs are the building blocks of modern IT infrastructure and cloud computing.
 - Hypervisors enable virtualization, allowing multiple independent VMs on a single physical server.
 - Cloud providers leverage virtualization to offer flexible, scalable, and cost-efficient services.
