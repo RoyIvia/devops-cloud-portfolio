@@ -3,8 +3,6 @@
 ## Overview
 DevOps is a culture and set of practices that improves an organization’s ability to deliver applications and services at high velocity. It bridges the gap between development and operations teams, enabling faster, more reliable, and scalable software delivery.
 
-This section documents the key foundational concepts of DevOps, including its purpose, the challenges it addresses, and how it integrates with modern software delivery practices.
-
 
 ## 1. What is DevOps?
 - DevOps is **more than tools; it is a cultural shift** focused on collaboration, shared responsibility, and continuous improvement.
@@ -18,6 +16,7 @@ This section documents the key foundational concepts of DevOps, including its pu
 ---
 
 ## 2. Why DevOps is Important
+
 Before DevOps:
 - Developers wrote code independently.
 - System administrators manually provisioned servers for testing and deployment.
@@ -31,6 +30,7 @@ Challenges:
 - Manual, error-prone processes
 
 DevOps solves these problems by introducing:
+
 - Automation of build, test, and deployment workflows
 - Continuous integration and continuous delivery (CI/CD)
 - Shared responsibility for reliability and performance
@@ -43,6 +43,7 @@ DevOps solves these problems by introducing:
 The SDLC defines the stages a software application goes through from concept to production. DevOps overlays the SDLC to improve **speed, quality, and reliability**. Understanding the SDLC also requires understanding **the roles involved** and how they collaborate.
 
 ### SDLC Stages Overview
+
 1. **Planning** – Understanding what the business needs.
 2. **Coding/Development** – Writing the software.
 3. **Build** – Compiling code and creating deployable artifacts.
