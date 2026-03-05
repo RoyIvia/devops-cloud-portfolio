@@ -1,6 +1,6 @@
 # DevOps & Cloud Engineering Portfolio
 
-Hi, I’m Roy Ivia 👋  
+Hi, I’m Roy Ivia.
 I’m building hands-on skills in DevOps and Cloud Engineering with a strong focus on AWS, automation, CI/CD, Kubernetes, and cloud-native infrastructure.
 
 This repository serves as my **central DevOps portfolio**, connecting all my projects, experiments, and production-style implementations.
