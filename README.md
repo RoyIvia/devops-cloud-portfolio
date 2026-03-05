@@ -8,6 +8,7 @@ This repository serves as my **central DevOps portfolio**, connecting all my pro
 ---
 
 ## What I’m Working Towards
+
 - AWS DevOps Engineer (Professional-level skills)
 - Production-grade cloud infrastructure
 - Automated CI/CD pipelines
@@ -17,6 +18,7 @@ This repository serves as my **central DevOps portfolio**, connecting all my pro
 ---
 
 ## Core Skills
+
 - AWS (EC2, VPC, IAM, S3, RDS, EKS)
 - Linux & Networking (foundational)
 - Docker & Kubernetes
@@ -41,6 +43,7 @@ Planned sections include:
 ---
 
 ## Learning Approach
+
 - Build → Break → Fix → Document
 - Real-world architectures
 - Clear documentation over complexity
@@ -48,11 +51,13 @@ Planned sections include:
 ---
 
 ## Blog & Professional Profiles
+
 - Medium: [https://medium.com/@royiviah](https://medium.com/@royiviah)  
 - LinkedIn: [https://www.linkedin.com/in/roy-ivia/](https://www.linkedin.com/in/roy-ivia/)
 
 ---
 
 ## Status
+
 🚧 Portfolio setup in progress
 
