@@ -24,10 +24,9 @@ Linux exposes process information through /proc.
 
 # Process Management in Linux
 
-## Introduction to Process Management
 A process is an instance of a running program. Linux provides multiple utilities to monitor, manage, and control processes effectively. Each process has a unique **Process ID (PID)** and belongs to a parent process.
 
-## Index of Commands Covered
+## Index of Commands 
 
 ### Viewing Processes
 
@@ -72,7 +71,7 @@ ps -ef → Best for tracing parent-child relationships and service debugging.
 - `pkill -9 processname` – Kill all instances of a process
 - `kill -STOP PID` – Stop a running process
 - `kill -CONT PID` – Resume a stopped process
-- `renice -n 10 -p PID` – Lower priority of a process
+- `renice -n 10 -p PID` – Lower priority of a process; ranges from -20 (highest priority) to 19 (lowest priority)
 - `renice -n -5 -p PID` – Increase priority of a process (requires root)
 
 ### Background & Foreground Processes
