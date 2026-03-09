@@ -1,7 +1,5 @@
 # Amazon Linux for Cloud & DevOps Engineers
 
-## Overview
-
 Amazon Linux is a Linux distribution developed and maintained by AWS, optimized for running workloads on the AWS cloud. It is widely used in EC2 environments and integrates closely with AWS services such as Systems Manager, IAM roles, CloudWatch, and ECS.
 
 For DevOps engineers, Amazon Linux is important because it provides an operating system that is tightly integrated with AWS infrastructure, security, and automation tools. Understanding how to work with Amazon Linux is essential when deploying and managing cloud-native applications on AWS.
