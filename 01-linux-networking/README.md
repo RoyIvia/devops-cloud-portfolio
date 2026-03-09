@@ -1,6 +1,5 @@
 # Linux Fundamentals
 
-## Overview
 Linux is the operating system that underpins modern infrastructure, cloud platforms, and DevOps tooling. From cloud virtual machines to containers, CI/CD runners, and orchestration platforms, Linux is the default execution environment.
 
 This section documents my structured and hands-on mastery of Linux fundamentals.
@@ -260,7 +259,6 @@ This is critical for:
 
   
 ### Why Linux Knowledge Is Non-Negotiable for DevOps Engineers
-Linux is not just a tool in DevOps — it is the execution environment.
 
 Strong Linux skills enable a DevOps engineer to:
 - Understand how applications actually run
