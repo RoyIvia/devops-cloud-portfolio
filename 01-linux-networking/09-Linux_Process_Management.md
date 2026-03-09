@@ -241,6 +241,8 @@ renice -n -5 -p PID
 
 ## Daemon Processes
 Daemon processes run in the background without user intervention.
+
+
 List all system daemons:
 ```bash
 systemctl list-units --type=service
