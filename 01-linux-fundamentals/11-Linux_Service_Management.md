@@ -8,8 +8,6 @@ Modern Linux distributions primarily use **systemd** as the init and service man
 
 ---
 
-## What Is a Service?
-
 A **service** is a background process managed by the operating system. Services typically run continuously and start automatically when the system boots.
 
 Examples of common Linux services:
@@ -21,8 +19,6 @@ Examples of common Linux services:
 - `mysql` / `mariadb` – database server  
 
 ---
-
-## What Is systemd?
 
 `systemd` is the default **init system and service manager** used by most modern Linux distributions.
 
