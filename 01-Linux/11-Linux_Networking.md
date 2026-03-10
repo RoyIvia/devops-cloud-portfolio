@@ -1,4 +1,4 @@
-# 11 - Linux Networking
+# Linux Networking
 
 
 Networking is a core skill for DevOps engineers. Modern infrastructure relies heavily on network communication between servers, containers, services, and cloud environments.
