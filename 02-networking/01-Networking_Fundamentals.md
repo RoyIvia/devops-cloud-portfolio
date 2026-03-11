@@ -355,60 +355,168 @@ Two categories exist:
 - logical topology
 
 ---
-
 # Physical Topology
+
+Physical topology describes the **actual layout of devices and cables** in a network.
+
+It shows how nodes, switches, and routers are physically connected.
+
+Common physical network topologies include:
+
+- Bus
+- Star
+- Mesh (Full and Partial)
+- Hybrid
+
+---
 
 ## Bus Topology
 
-All devices connect to a single backbone cable.
+In a **Bus topology**, all devices connect to a single central cable called the backbone.
 
-If the backbone cable fails, the entire network fails.
+```
+Computer A ────┐
+               │
+Computer B ────┼──────── Backbone Cable ───────
+               │
+Computer C ────┘
+```
+
+### Characteristics
+
+- simple design
+- inexpensive
+- easy to install
+
+### Disadvantages
+
+- if the backbone cable fails, the entire network fails
+- difficult to troubleshoot
+- limited scalability
+
+Bus topology was common in early Ethernet networks but is rarely used today.
 
 ---
 
 ## Star Topology
 
-All devices connect to a central switch.
+In a **Star topology**, all devices connect to a central device such as a switch or hub.
 
-This is the most common topology in modern Ethernet networks.
+```
+        Computer A
+            │
+            │
+Computer B ── Switch ── Computer C
+            │
+            │
+        Computer D
+```
+
+### Characteristics
+
+- most common modern LAN topology
+- easy to manage and troubleshoot
+- easy to add or remove devices
+
+### Disadvantages
+
+- failure of the central switch disconnects all nodes
+
+Modern Ethernet networks typically use star topology with switches.
 
 ---
 
 ## Mesh Topology
 
-Devices connect with multiple redundant paths.
+In a **Mesh topology**, devices connect to multiple other devices to provide redundancy and fault tolerance.
 
-### Full Mesh
+### Full Mesh Topology
 
 Every device connects directly to every other device.
 
-### Partial Mesh
+```
+      Computer A
+       /   |   \
+      /    |    \
+Computer B─┼────Computer C
+      \    |    /
+       \   |   /
+      Computer D
+```
 
-Only critical devices have redundant connections.
+### Characteristics
+
+- very reliable
+- no single point of failure
+- multiple paths for data
+
+### Disadvantages
+
+- expensive
+- complex to maintain
+- large number of connections required
+
+Full mesh networks are common in **core internet infrastructure** and **data center backbones**.
+
+---
+
+### Partial Mesh Topology
+
+In **Partial Mesh**, only critical devices have redundant connections.
+
+```
+        Router A
+        /     \
+       /       \
+  Router B     Router C
+       \         /
+        \       /
+        Router D
+```
+
+### Characteristics
+
+- balance between redundancy and cost
+- commonly used in enterprise networks
 
 ---
 
 ## Hybrid Topology
 
-A hybrid topology combines multiple topology types.
+A **Hybrid topology** combines multiple topology types.
 
-Example:
+Example: Star + Mesh
 
 ```
-Star + Mesh
+             Core Router
+           /      |      \
+        Switch   Switch   Switch
+         /  \      |      /  \
+       PC   PC    PC    PC   PC
 ```
 
-Most enterprise networks use hybrid designs.
+Most real-world enterprise and cloud networks use hybrid topology.
 
 ---
 
 # Logical Topology
 
-Logical topology describes how data flows through a network regardless of the physical layout.
+Logical topology describes **how data flows through a network**, regardless of the physical connections.
 
 Cloud networking relies heavily on logical network design.
 
----
+For example, in AWS:
+
+```
+VPC
+ ├── Public Subnet
+ │    └── Web Server
+ │
+ └── Private Subnet
+      └── Database
+```
+
+Even though infrastructure may run on many physical machines, networking is logically controlled through software.
 
 # Virtual Private Cloud (VPC)
 
