@@ -1,4 +1,3 @@
----
 
 # Internet Protocol (IP)
 
@@ -19,7 +18,7 @@ IP itself does **not guarantee delivery** of packets. It simply determines how p
 
 Because of this, IP is commonly paired with **Transmission Control Protocol (TCP)** as part of the **TCP/IP protocol suite**, which forms the foundation of internet communication.
 
----
+
 
 # IP Addresses
 
