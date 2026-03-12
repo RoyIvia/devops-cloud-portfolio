@@ -1,4 +1,3 @@
----
 
 # Networking Protocols
 
@@ -16,7 +15,7 @@ Without protocols, devices on a network would not understand how to interpret th
 
 Protocols operate at different **layers of the OSI model**, depending on their role in communication.
 
----
+
 
 # Protocols and the OSI Model
 
