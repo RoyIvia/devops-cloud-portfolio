@@ -1,6 +1,5 @@
 # Virtual Machines (VMs)
 
-## Overview
 A **Virtual Machine (VM)** is a logically isolated environment that acts like a separate computer running on top of a physical server. Each VM has its own **CPU, memory, storage, and network interface**, allowing multiple VMs to run independently on the same physical hardware.
 
 VMs provide:
