@@ -322,8 +322,6 @@ All at the same time, using different ports.
 
 ---
 
----
-
 # Checking Your IP Address on Different Operating Systems
 
 When troubleshooting networking issues, engineers often need to quickly determine the **IP address assigned to a device**.
