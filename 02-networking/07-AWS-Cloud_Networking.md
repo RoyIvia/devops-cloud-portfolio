@@ -405,6 +405,364 @@ Security groups and network ACLs protect each layer.
 
 ---
 
+---
+
+# Advanced AWS VPC Networking Concepts
+
+This section expands on core Amazon VPC networking principles and covers important concepts required for designing, securing, and troubleshooting production cloud networks.
+
+These topics build on the foundational VPC components and are commonly encountered by DevOps engineers working with AWS infrastructure.
+
+---
+
+# Route Table Behavior
+
+A **route table** determines how traffic flows within a VPC.
+
+Each route contains two components:
+
+- **Destination** – the IP range that traffic is destined for
+- **Target** – the resource that handles that traffic
+
+Example route table:
+
+| Destination | Target |
+|---|---|
+| 10.0.0.0/16 | local |
+| 0.0.0.0/0 | Internet Gateway |
+
+Important behavior:
+
+- Every **subnet must be associated with a route table**
+- A **subnet can only have one route table**
+- A **route table can serve multiple subnets**
+- The **local route** enables communication between resources inside the VPC
+
+Example flow:
+
+```
+EC2 Instance
+    │
+Subnet
+    │
+Route Table
+    │
+Target (IGW / NAT / Endpoint)
+```
+
+Misconfigured route tables are one of the most common causes of networking failures in AWS.
+
+---
+
+# Public Subnet vs Public Instance
+
+A frequent misunderstanding in AWS networking is the difference between a **public subnet** and a **public instance**.
+
+### Public Subnet
+
+A subnet becomes public when its route table contains a route to an **Internet Gateway (IGW)**.
+
+Example route:
+
+```
+Destination: 0.0.0.0/0
+Target: Internet Gateway
+```
+
+### Public Instance
+
+For an instance to be reachable from the internet it must also have:
+
+- a **public IPv4 address or Elastic IP**
+- **security group rules allowing inbound traffic**
+
+Important distinction:
+
+```
+Public Subnet ≠ Public Instance
+```
+
+Instances inside a public subnet can still remain private if they do not have public IP addresses.
+
+---
+
+# NAT Gateway Traffic Flow
+
+A **NAT Gateway** allows instances in private subnets to access the internet while preventing inbound internet connections.
+
+Architecture example:
+
+```
+Internet
+   │
+Internet Gateway
+   │
+Public Subnet
+   │
+NAT Gateway
+   │
+Private Subnet
+   │
+Application Servers
+```
+
+Traffic flow:
+
+1. Private instance sends outbound traffic
+2. Route table directs traffic to NAT Gateway
+3. NAT Gateway translates private IP to public IP
+4. Response traffic returns through NAT Gateway
+
+Important details:
+
+- NAT Gateway must be placed in a **public subnet**
+- NAT Gateway requires an **Elastic IP**
+- Private instances **do not need public IP addresses**
+
+---
+
+# Security Groups vs Network ACLs
+
+Both Security Groups and Network ACLs provide network security but operate differently.
+
+| Feature | Security Groups | Network ACLs |
+|---|---|---|
+| Scope | Instance level | Subnet level |
+| Stateful | Yes | No |
+| Allow rules | Yes | Yes |
+| Deny rules | No | Yes |
+| Rule order | Not evaluated in order | Evaluated by rule number |
+| Return traffic | Automatically allowed | Must be explicitly allowed |
+
+### Security Groups
+
+- applied to EC2 instances
+- stateful firewall
+- commonly used for application-level security
+
+### Network ACLs
+
+- applied to subnets
+- stateless firewall
+- useful for broader network-level policies
+
+---
+
+# VPC Endpoints
+
+A **VPC endpoint** enables private connectivity between your VPC and AWS services without using the public internet.
+
+Examples of services commonly accessed through endpoints:
+
+- Amazon S3
+- DynamoDB
+- Systems Manager
+- Secrets Manager
+
+Benefits:
+
+- improved security
+- reduced internet exposure
+- lower latency
+- reduced NAT Gateway costs
+
+Example architecture:
+
+```
+EC2 Instance
+    │
+VPC Endpoint
+    │
+Amazon S3
+```
+
+Traffic remains entirely inside the AWS network.
+
+---
+
+# Multi-Availability Zone Design
+
+High availability in AWS is achieved by distributing infrastructure across **multiple Availability Zones (AZs)**.
+
+Key rules:
+
+- A **subnet exists in only one AZ**
+- Production architectures should use **multiple subnets across different AZs**
+- Load balancers distribute traffic between AZs
+
+Example architecture:
+
+```
+AWS Region
+   │
+   ├── AZ1
+   │     ├── Public Subnet
+   │     └── Private Subnet
+   │
+   └── AZ2
+         ├── Public Subnet
+         └── Private Subnet
+```
+
+This prevents a single Availability Zone failure from affecting the entire application.
+
+---
+
+# CIDR Planning and Overlapping Networks
+
+Proper **CIDR planning** is essential when designing VPCs.
+
+Best practices:
+
+- Avoid overlapping CIDR ranges between VPCs
+- Avoid conflicts with on-premises networks
+- Plan CIDR blocks for future growth
+- Allocate space for additional subnets
+
+Overlapping CIDR ranges can prevent:
+
+- VPC peering
+- VPN connectivity
+- AWS Direct Connect
+
+Poor IP planning is one of the most common architectural mistakes in cloud networking.
+
+---
+
+# Default VPC vs Custom VPC
+
+AWS automatically creates a **default VPC** in every region.
+
+### Default VPC
+
+Characteristics:
+
+- preconfigured public subnets
+- internet gateway attached
+- suitable for testing or learning
+
+### Custom VPC
+
+Used for production environments.
+
+Advantages:
+
+- complete control over subnet architecture
+- improved security
+- flexible network design
+- scalable infrastructure
+
+Most real-world deployments use **custom VPCs**.
+
+---
+
+# Elastic IP Addresses
+
+An **Elastic IP (EIP)** is a static public IPv4 address allocated by AWS.
+
+Characteristics:
+
+- remains constant even if instances restart
+- can be reassigned to different resources
+- commonly used with NAT Gateways
+
+Elastic IPs are useful when services require **stable public IP addresses**.
+
+---
+
+# DNS in Amazon VPC
+
+AWS provides built-in DNS services inside every VPC.
+
+Instances can resolve:
+
+- internal hostnames
+- AWS service endpoints
+- external domain names
+
+The default VPC DNS resolver is typically located at:
+
+```
+VPC base address + 2
+```
+
+Example:
+
+```
+10.0.0.2
+```
+
+DNS resolution can be enabled or disabled at the VPC level.
+
+---
+
+# Load Balancers in VPC Architecture
+
+Load balancers distribute incoming traffic across multiple compute resources.
+
+Typical deployment architecture:
+
+```
+Internet
+   │
+Application Load Balancer
+   │
+Private Subnets
+   │
+Application Servers
+```
+
+Benefits:
+
+- high availability
+- automatic scaling
+- traffic distribution
+- health checks for backend services
+
+---
+
+# VPC Peering
+
+**VPC Peering** allows two VPCs to communicate privately.
+
+Important characteristics:
+
+- traffic remains within the AWS network
+- VPCs must not have overlapping CIDR ranges
+- communication uses private IP addresses
+
+Example:
+
+```
+VPC A  ───── VPC Peering ───── VPC B
+```
+
+This is often used for:
+
+- microservice architectures
+- shared services networks
+- multi-account architectures
+
+---
+
+# Common AWS Networking Troubleshooting Flow
+
+When diagnosing networking issues, engineers typically verify:
+
+1. VPC configuration
+2. Subnet route table association
+3. Internet Gateway or NAT Gateway configuration
+4. Security Group rules
+5. Network ACL rules
+6. Public or private IP configuration
+7. DNS resolution
+8. Application port availability
+
+Systematic troubleshooting helps quickly isolate networking failures.
+
+---
+
+
 # AWS Services That Use Amazon VPC
 
 Many AWS services integrate with VPC networking.
@@ -422,6 +780,7 @@ Examples include:
 Because VPC is a foundational service, understanding it is essential to designing and operating AWS infrastructure.
 
 ---
+
 
 # Why VPC Networking Matters for DevOps
 
