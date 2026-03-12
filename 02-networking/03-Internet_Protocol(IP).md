@@ -322,6 +322,200 @@ All at the same time, using different ports.
 
 ---
 
+---
+
+# Checking Your IP Address on Different Operating Systems
+
+When troubleshooting networking issues, engineers often need to quickly determine the **IP address assigned to a device**.
+
+Knowing how to check your IP address across different operating systems is an essential skill for debugging connectivity problems.
+
+There are two types of IP addresses you may check:
+
+- **Private IP Address** – used inside a local network
+- **Public IP Address** – used to communicate over the internet
+
+---
+
+# Checking IP Address on macOS
+
+On macOS, IP addresses can be checked using the **Terminal**.
+
+## Method 1 – Using `ifconfig`
+
+Run the following command:
+
+```
+ifconfig
+```
+
+Look for the active interface such as `en0` (Wi-Fi) or `en1` (Ethernet).
+
+Example output:
+
+```
+en0: flags=8863<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST>
+    inet 192.168.100.24 netmask 0xffffff00 broadcast 192.168.100.255
+```
+
+The value next to **inet** is your **private IPv4 address**.
+
+Example:
+
+```
+192.168.100.24
+```
+
+---
+
+## Method 2 – Faster Command
+
+To display only the IP address:
+
+```
+ipconfig getifaddr en0
+```
+
+Example output:
+
+```
+192.168.100.24
+```
+
+---
+
+## Check Public IP on macOS
+
+To see your internet-facing IP address:
+
+```
+curl ifconfig.me
+```
+
+Example output:
+
+```
+54.203.112.45
+```
+
+---
+
+# Checking IP Address on Linux
+
+Linux systems provide several commands to check IP addresses.
+
+## Method 1 – Using `ip` (Recommended)
+
+```
+ip addr
+```
+
+Example output:
+
+```
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP>
+    inet 192.168.1.25/24
+```
+
+The value shown is the system's private IP address.
+
+---
+
+## Method 2 – Using `hostname`
+
+```
+hostname -I
+```
+
+Example output:
+
+```
+192.168.1.25
+```
+
+---
+
+## Method 3 – Using `ifconfig` (Older systems)
+
+```
+ifconfig
+```
+
+This command works similarly to macOS and shows network interfaces and their assigned IP addresses.
+
+---
+
+## Check Public IP on Linux
+
+```
+curl ifconfig.me
+```
+
+---
+
+# Checking IP Address on Windows
+
+On Windows systems, the IP address can be checked using **Command Prompt** or **PowerShell**.
+
+## Method 1 – Using `ipconfig`
+
+Open **Command Prompt** and run:
+
+```
+ipconfig
+```
+
+Example output:
+
+```
+Ethernet adapter Ethernet:
+
+   IPv4 Address. . . . . . . . . . . : 192.168.1.50
+```
+
+This value represents the device’s private IP address.
+
+---
+
+## Method 2 – Using PowerShell
+
+```
+Get-NetIPAddress
+```
+
+This command displays detailed network configuration including IPv4 and IPv6 addresses.
+
+---
+
+## Check Public IP on Windows
+
+```
+curl ifconfig.me
+```
+
+or visit:
+
+```
+https://ifconfig.me
+```
+
+---
+
+# Why DevOps Engineers Check IP Addresses
+
+Checking IP addresses is a common step when troubleshooting network connectivity issues.
+
+Examples include:
+
+- verifying server connectivity
+- diagnosing DNS or routing problems
+- confirming correct subnet configuration
+- checking whether an instance received the correct IP address
+- troubleshooting communication between services
+
+IP inspection is often the **first step when diagnosing network issues** in cloud infrastructure, containerized applications, and distributed systems.
+
+
 # Troubleshooting Layer 3 Issues
 
 Layer 3 problems often involve:
