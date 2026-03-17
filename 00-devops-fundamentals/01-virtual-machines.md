@@ -8,7 +8,6 @@ VMs provide:
 - **Flexibility**: Teams or organizations can deploy their applications without requiring dedicated hardware.
 - **Scalability**: VMs can be created, resized, or destroyed quickly based on demand.
 
----
 
 ## How Virtual Machines Work
 Virtualization is enabled by a **Hypervisor**, which is software that creates and manages VMs on a physical server (also called **bare-metal**).
