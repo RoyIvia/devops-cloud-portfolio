@@ -139,7 +139,6 @@ AWS Region
 
 Each VPC functions as an independent network.
 
----
 
 # IP Addressing in Amazon VPC
 
@@ -161,7 +160,6 @@ to
 /28  (16 addresses)
 ```
 
----
 
 # Private IP Address Ranges (RFC 1918)
 
