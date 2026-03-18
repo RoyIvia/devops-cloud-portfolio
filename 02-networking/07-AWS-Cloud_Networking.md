@@ -433,7 +433,7 @@ Target (IGW / NAT / Endpoint)
 
 Misconfigured route tables are one of the most common causes of networking failures in AWS.
 
----
+
 
 # Public Subnet vs Public Instance
 
