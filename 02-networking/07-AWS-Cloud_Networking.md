@@ -71,7 +71,6 @@ A VPC allows you to define your own:
 
 In essence, a VPC functions like a **virtual data center inside AWS**.
 
----
 
 # Why Use Amazon VPC
 
