@@ -106,7 +106,6 @@ You can create multiple VPCs for:
 - staging
 - production
 
----
 
 # Key Features of Amazon VPC
 
