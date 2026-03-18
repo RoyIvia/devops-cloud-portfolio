@@ -197,7 +197,6 @@ Reserved addresses:
 
 These addresses cannot be assigned to instances.
 
----
 
 # Core Amazon VPC Components
 
@@ -214,7 +213,6 @@ Key components include:
 - Network ACLs
 - VPC endpoints
 
----
 
 # Subnets
 
@@ -240,7 +238,6 @@ Example resources:
 - bastion hosts
 - public web servers
 
----
 
 ### Private Subnet
 
@@ -254,7 +251,6 @@ Resources inside are typically internal services such as:
 
 Private subnets can still reach the internet using a **NAT gateway**.
 
----
 
 # Route Tables
 
