@@ -173,7 +173,6 @@ AWS recommends using private IPv4 address ranges defined in **RFC 1918**.
 
 Using private ranges prevents conflicts with publicly routable internet addresses.
 
----
 
 # Reserved IP Addresses in AWS Subnets
 
@@ -270,7 +269,6 @@ Example:
 
 Route tables are associated with subnets to control how their traffic is routed.
 
----
 
 # Internet Gateway
 
@@ -296,7 +294,6 @@ Target: Internet Gateway
 
 Instances must also have a **public IP address** or **Elastic IP** to communicate with the internet.
 
----
 
 # NAT Gateway
 
@@ -326,7 +323,6 @@ Application Servers
 
 This allows private instances to download updates or access external APIs without being publicly reachable.
 
----
 
 # Security Groups
 
@@ -346,7 +342,6 @@ Example rule:
 
 If an outbound request is allowed, the response traffic is automatically allowed back.
 
----
 
 # Network ACLs
 
@@ -367,7 +362,6 @@ Example rule:
 
 Because they are stateless, return traffic must also be explicitly allowed.
 
----
 
 # Example Amazon VPC Architecture
 
@@ -393,9 +387,7 @@ RDS Database
 
 Security groups and network ACLs protect each layer.
 
----
 
----
 
 # Advanced AWS VPC Networking Concepts
 
@@ -403,7 +395,6 @@ This section expands on core Amazon VPC networking principles and covers importa
 
 These topics build on the foundational VPC components and are commonly encountered by DevOps engineers working with AWS infrastructure.
 
----
 
 # Route Table Behavior
 
