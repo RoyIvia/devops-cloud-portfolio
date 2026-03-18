@@ -49,7 +49,6 @@ Subnet
 EC2 Instances
 ```
 
----
 
 # What is Amazon VPC
 
