@@ -10,6 +10,7 @@ VMs provide:
 
 
 ## How Virtual Machines Work
+
 Virtualization is enabled by a **Hypervisor**, which is software that creates and manages VMs on a physical server (also called **bare-metal**).
 
 ### Types of Hypervisors
