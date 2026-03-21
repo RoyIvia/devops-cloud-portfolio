@@ -29,7 +29,7 @@ The hypervisor manages:
 - Network connectivity
 - Isolation between VMs
 
----
+
 
 ## VMs in the Cloud
 Cloud providers like AWS, Azure, and GCP rely heavily on virtualization:
