@@ -185,10 +185,15 @@ shell-scripting/
     ├── array-processing.sh
     └── cli-tool.sh
 ```
+### Validation:
+```
+dash script.sh
+```
 
 ## Engineering Standards:
 - All scripts in portable-scripts/ are POSIX-compliant
 - Scripts are tested using dash
 - Bash is used only when necessary
 - Scripts prioritize readability, reliability, and production safety
+
 
