@@ -183,6 +183,9 @@ shell-scripting/
     └── cli-tool.sh
 ```
 ### Validation:
+
+- Testing whether your script is truly POSIX-compliant.
+
 ```
 dash script.sh
 ```
