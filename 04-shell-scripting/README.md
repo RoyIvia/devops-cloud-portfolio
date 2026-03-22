@@ -165,7 +165,7 @@ function test() {
 ```
 These are not portable because:
 
-[[ ]] is bash-only
+`[[ ]] `is bash-only
 Arrays are not supported in POSIX
 Brace expansion is bash-only
 function keyword is bash-specific
