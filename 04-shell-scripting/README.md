@@ -70,7 +70,7 @@ when bash-specific features are required:
 
 ```
 
-Conditionals:
+#### Conditionals:
 
 ```
 if [ "$a" = "$b" ]; then
@@ -78,7 +78,7 @@ if [ "$a" = "$b" ]; then
 fi
 ```
 
-Loops:
+### Loops:
 
 ```
 for item in one two three
@@ -98,7 +98,7 @@ done
 
 ```
 
-Functions:
+### Functions:
 
 ```
 greet() {
@@ -107,19 +107,19 @@ greet() {
 
 ```
 
-Arithmetic:
+### Arithmetic:
 
 ```
 count=$((count + 1))
 ```
 
-Command Substitution:
+### Command Substitution:
 
 ```
 current_date=$(date)
 ```
 
-File Checks:
+#### File Checks:
 
 ```
 if [ -f "file.txt" ]; then
@@ -127,7 +127,7 @@ if [ -f "file.txt" ]; then
 fi
 ```
 
-Output
+#### Output
 
 Prefer:
 
@@ -141,7 +141,7 @@ Over:
 echo "Hello\n"
 ```
 
-Debugging and Safety;
+#### Debugging and Safety;
 
 ```
 set -e → Exit on error
@@ -149,7 +149,7 @@ set -x → Debug output
 
 ```
 
-Common Pitfalls:
+### Common Pitfalls:
 
 ```
 #!/bin/sh
@@ -172,4 +172,23 @@ function keyword is bash-specific
 
 Such scripts may work locally but fail in production environments.
 
+### Project Structure:
+
+```
+shell-scripting/
+├── README.md
+├── portable-scripts/
+│   ├── deploy.sh
+│   ├── backup.sh
+│   └── health-check.sh
+└── advanced-bash/
+    ├── array-processing.sh
+    └── cli-tool.sh
+```
+
+## Engineering Standards:
+- All scripts in portable-scripts/ are POSIX-compliant
+- Scripts are tested using dash
+- Bash is used only when necessary
+- Scripts prioritize readability, reliability, and production safety
 
