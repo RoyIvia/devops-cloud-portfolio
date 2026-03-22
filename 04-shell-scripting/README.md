@@ -191,6 +191,14 @@ dash script.sh
 ```
 It rejects anything non-standard and breaks if there is.
 
+This ensures:
+
+- the script does NOT depend on bash
+- the script works in minimal environments
+- the script is safe for:
+ 1. Docker containers
+ 2. CI/CD pipelines
+ 3. Production servers
 ## Engineering Standards:
 - All scripts in portable-scripts/ are POSIX-compliant
 - Scripts are tested using dash
