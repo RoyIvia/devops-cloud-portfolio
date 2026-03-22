@@ -1,7 +1,5 @@
 # Shell Scripting
 
-## Overview
-
 Shell scripting is a fundamental DevOps skill used to automate system tasks, deployments, monitoring, and infrastructure operations. This section focuses on building production-ready scripts with an emphasis on portability, reliability, and correctness.
 
 In real-world environments such as CI/CD pipelines, Docker containers, and cloud systems, scripts are often executed using minimal shells like `sh` (commonly `dash`), not `bash`. For this reason, writing POSIX-compliant scripts is essential to ensure consistency across different systems.
@@ -60,7 +58,118 @@ To avoid failures, scripts should follow POSIX standards so they are:
 
 ### Script Header
 
-Use this for portable scripts:
+ for portable scripts:
 
 ```sh
 #!/bin/sh
+```
+when bash-specific features are required:
+
+```
+#!/bin/bash
+
+```
+
+Conditionals:
+
+```
+if [ "$a" = "$b" ]; then
+  echo "Equal"
+fi
+```
+
+Loops:
+
+```
+for item in one two three
+do
+  echo "$item"
+done
+```
+
+Portable alternative:
+```
+i=1
+while [ "$i" -le 3 ]
+do
+  echo "$i"
+  i=$((i + 1))
+done
+
+```
+
+Functions:
+
+```
+greet() {
+  echo "Hello"
+}
+
+```
+
+Arithmetic:
+
+```
+count=$((count + 1))
+```
+
+Command Substitution:
+
+```
+current_date=$(date)
+```
+
+File Checks:
+
+```
+if [ -f "file.txt" ]; then
+  echo "File exists"
+fi
+```
+
+Output
+
+Prefer:
+
+```
+printf "Hello\n"
+```
+
+Over:
+
+```
+echo "Hello\n"
+```
+
+Debugging and Safety;
+
+```
+set -e → Exit on error
+set -x → Debug output
+
+```
+
+Common Pitfalls:
+
+```
+#!/bin/sh
+[[ condition ]]
+arr=(1 2 3)
+for i in {1..5}
+do
+  echo "$i"
+done
+function test() {
+  echo "test"
+}
+```
+These are not portable because:
+
+[[ ]] is bash-only
+Arrays are not supported in POSIX
+Brace expansion is bash-only
+function keyword is bash-specific
+
+Such scripts may work locally but fail in production environments.
+
+
