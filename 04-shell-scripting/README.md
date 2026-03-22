@@ -188,7 +188,9 @@ shell-scripting/
 
 ```
 dash script.sh
+
 ```
+It rejects anything non-standard and breaks if there is.
 
 ## Engineering Standards:
 - All scripts in portable-scripts/ are POSIX-compliant
