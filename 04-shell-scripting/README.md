@@ -199,6 +199,15 @@ This ensures:
  1. Docker containers
  2. CI/CD pipelines
  3. Production servers
+
+## KornShell (ksh)
+
+KornShell (ksh) is a Unix shell developed as an improvement over the original Bourne shell (sh). It provides more advanced scripting features such as functions and enhanced arithmetic support, while remaining largely compatible with POSIX standards.
+
+ksh was widely used in enterprise Unix systems such as AIX and Solaris, and is still found in many legacy environments. Compared to bash, it offers fewer modern features but maintains better portability and closer adherence to standard shell behavior.
+
+While new scripts are typically written using POSIX sh or bash, understanding ksh is important when working with older systems and existing production scripts.
+
 ## Engineering Standards:
 - All scripts in portable-scripts/ are POSIX-compliant
 - Scripts are tested using dash
