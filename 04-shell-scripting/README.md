@@ -19,7 +19,7 @@ POSIX (Portable Operating System Interface) defines a set of standards for Unix-
 
 ### KornShell (ksh)
 
-`KornShell` (ksh) is a Unix shell developed as an improvement over the original Bourne shell (sh). It provides more advanced scripting features such as functions and enhanced arithmetic support, while remaining largely compatible with POSIX standards.
+`ksh` is a Unix shell developed as an improvement over the original Bourne shell (sh). It provides more advanced scripting features such as functions and enhanced arithmetic support, while remaining largely compatible with POSIX standards.
 
 `ksh` was widely used in enterprise Unix systems such as AIX and Solaris, and is still found in many legacy environments. Compared to bash, it offers fewer modern features but maintains better portability and closer adherence to standard shell behaviour.
 
