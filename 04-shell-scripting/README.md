@@ -4,7 +4,7 @@ Shell scripting is a fundamental DevOps skill used to automate system tasks, dep
 
 In real-world environments such as CI/CD pipelines, Docker containers, and cloud systems, scripts are often executed using minimal shells like `sh` (commonly `dash`), not `bash`. For this reason, writing POSIX-compliant scripts is essential to ensure consistency across different systems.
 
-POSIX (Portable Operating System Interface) defines a set of standards for Unix-like operating systems to ensure consistency and portability across environments. In the context of shell scripting, POSIX compliance means writing scripts that can run reliably on any system that implements the standard.
+`POSIX` (Portable Operating System Interface) defines a set of standards for Unix-like operating systems to ensure consistency and portability across environments. In the context of shell scripting, POSIX compliance means writing scripts that can run reliably on any system that implements the standard.
 
 ## Shell Types
 
