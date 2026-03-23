@@ -3,7 +3,6 @@
 
 This section covers the fundamental workflow of creating, editing, and executing shell scripts in a Unix/Linux environment. It includes working with `vim`, understanding the shebang, running scripts, handling permission errors, and basic scripting practices.
 
----
 
 ## Creating a Script File
 A script file can be created using:
@@ -18,7 +17,6 @@ Alternatively, you can create and open the file directly using:
 vim script.sh
 ```
 
----
 
 ## Editing the Script (Using Vim)
 Open the script:
@@ -33,7 +31,6 @@ Enter insert mode by pressing:
 i
 ```
 
----
 
 ## Shebang (Specifying the Shell)
 At the top of the script, define the shell using a shebang:
@@ -44,7 +41,6 @@ At the top of the script, define the shell using a shebang:
 
 The shebang tells the system which interpreter to use when executing the script. This ensures consistent behavior across environments.
 
----
 
 ## Writing a Simple Script
 Example:
@@ -54,8 +50,6 @@ Example:
 
 echo "My name is Royston"
 ```
-
----
 
 ## Saving and Exiting Vim
 
@@ -71,7 +65,6 @@ Exit without saving:
 :q!
 ```
 
----
 
 ## Viewing the Script
 To display the contents of the script:
@@ -80,7 +73,6 @@ To display the contents of the script:
 cat script.sh
 ```
 
----
 
 ## Running the Script
 
@@ -95,8 +87,6 @@ Running directly:
 ```sh
 ./script.sh
 ```
-
----
 
 ## Permission Denied Error
 When running:
@@ -113,7 +103,6 @@ Permission denied
 
 This happens because the script does not have execute permissions.
 
----
 
 ## File Permissions
 Grant execute permission using:
@@ -128,7 +117,6 @@ Then run:
 ./script.sh
 ```
 
----
 
 ## Understanding File Permissions
 Linux files have permissions that control:
@@ -139,7 +127,6 @@ Linux files have permissions that control:
 
 For a script to run, it must have execute (`x`) permission.
 
----
 
 ## Comments in Shell Scripts
 Comments are used to explain code and are ignored during execution.
@@ -151,12 +138,5 @@ echo "Hello"
 
 Anything starting with `#` is treated as a comment, except the shebang (`#!`), which has a special meaning.
 
----
 
-## Summary
-- Scripts are created using `touch` or directly with `vim`
-- The shebang defines which shell executes the script
-- `vim` is used to write and edit scripts
-- Scripts can be executed using `sh` or directly with `./`
-- Execute permissions are required to run scripts
-- Comments help document scripts without affecting execution
+
