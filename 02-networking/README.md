@@ -1,4 +1,4 @@
-# 🌐 Networking Fundamentals for DevOps & Cloud Engineering
+# Networking Fundamentals for DevOps & Cloud Engineering
 
 This section documents my foundational understanding of networking concepts required to design, deploy, and troubleshoot modern distributed systems.
 
@@ -12,7 +12,7 @@ Networking is a core competency in DevOps. Misconfigured networking is one of th
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 By completing this section, I can:
 
@@ -25,7 +25,7 @@ By completing this section, I can:
 
 ---
 
-## 🧱 Core Concepts
+##  Core Concepts
 
 ### 1. OSI Model (System-Level Understanding)
 
