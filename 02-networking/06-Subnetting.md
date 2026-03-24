@@ -34,7 +34,7 @@ Instead of one large network, the network is divided into multiple smaller segme
 
 
 
-# Why Organizations Use Subnets
+## Why Organizations Use Subnets
 
 Organizations implement subnetting for several reasons:
 
@@ -114,7 +114,7 @@ Subnet A              Subnet B
 Network traffic is reduced and systems operate more efficiently.
 
 
-# How Subnetting Works
+## How Subnetting Works
 
 IPv4 addresses contain **32 bits**.
 
@@ -135,7 +135,7 @@ The number of bits assigned to the network portion determines:
 Increasing the network portion increases the number of subnets but reduces available host addresses.
 
 
-# IP Address Classes
+#3 IP Address Classes
 
 Historically, IPv4 addresses were divided into classes.
 
@@ -162,7 +162,7 @@ Class D is used for **multicast communication**, and Class E is reserved for exp
 Modern networks now rely primarily on **CIDR notation** rather than strict class-based addressing.
 
 
-# Components of a Subnet
+## Components of a Subnet
 
 Every subnet includes several important elements.
 
@@ -226,7 +226,7 @@ Example:
 When a packet is sent to this address, all devices on the network receive it.
 
 
-# Subnet Masks
+## Subnet Masks
 
 A **subnet mask** is a 32-bit number used to divide an IP address into:
 
@@ -253,7 +253,7 @@ Binary representation:
 This indicates the first **24 bits** represent the network.
 
 
-# Common Subnet Masks
+### Common Subnet Masks
 
 | Subnet Mask | CIDR | Hosts per Network |
 |-------------|------|------------------|
@@ -273,7 +273,7 @@ Two addresses are reserved:
 - broadcast address
 
 
-# Why Subnet Masks Are Important
+## Why Subnet Masks Are Important
 
 Subnet masks help determine:
 
@@ -284,7 +284,7 @@ Subnet masks help determine:
 Devices on the **same subnet communicate directly**, while devices on different networks communicate through a **router**.
 
 
-# Subnetting in Cloud Environments
+## Subnetting in Cloud Environments
 
 Subnetting is heavily used in **cloud networking**.
 
@@ -308,7 +308,7 @@ Benefits in cloud infrastructure include:
 - scalable infrastructure design
 
 
-# Why Subnetting Matters for DevOps
+## Why Subnetting Matters for DevOps
 
 Subnetting is essential for designing **secure and scalable infrastructure**.
 
