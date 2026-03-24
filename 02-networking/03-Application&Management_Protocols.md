@@ -11,7 +11,6 @@ At a high level, these protocols can be grouped into three categories:
 
 Most application protocols operate at the **Application Layer (Layer 7)** of the OSI model, while some support protocols operate at lower layers depending on their function.
 
----
 
 # Application Protocols
 
@@ -38,7 +37,6 @@ These protocols allow users and systems to perform tasks such as:
 - remotely accessing servers
 - resolving domain names
 
----
 
 # HTTP
 
@@ -68,7 +66,6 @@ Default port:
 
 HTTP itself is **not encrypted**, which means data is sent in plain text unless additional security is applied.
 
----
 
 # HTTPS
 
@@ -99,7 +96,6 @@ HTTPS protects data in transit using three core security properties:
 
 Without HTTPS, attackers may intercept or tamper with data being transmitted between a user and a website.
 
----
 
 # SSL and TLS
 
@@ -118,7 +114,6 @@ TLS is widely used for:
 
 Many security standards require modern TLS versions, especially **TLS 1.2 or higher**.
 
----
 
 # TLS Handshake
 
@@ -142,7 +137,6 @@ Secure Session Established
 
 TLS handshakes are foundational to how **HTTPS works**.
 
----
 
 # AWS Certificate Manager (ACM)
 
@@ -161,7 +155,6 @@ ACM is commonly used with services such as:
 
 This is important in DevOps because secure certificate management is a core part of production infrastructure.
 
----
 
 # SMTP
 
@@ -182,7 +175,6 @@ Default ports commonly include:
 
 SMTP is used for **sending mail**, not retrieving it.
 
----
 
 # POP and IMAP
 
@@ -206,7 +198,6 @@ Use case:
 
 Both operate at the **Application Layer (Layer 7)**.
 
----
 
 # RDP
 
@@ -226,7 +217,6 @@ RDP is commonly used for:
 
 Because RDP provides graphical desktop access, it should be secured carefully and never exposed broadly to the internet.
 
----
 
 # SSH
 
@@ -249,7 +239,6 @@ SSH is essential in DevOps for managing cloud servers, troubleshooting systems, 
 
 Although traditionally associated with Linux and Unix, SSH is also supported on modern Windows systems through **OpenSSH**.
 
----
 
 # RDP vs SSH
 
@@ -265,7 +254,6 @@ In cloud environments:
 - Windows servers are often accessed with **RDP**
 - Linux servers are often accessed with **SSH**
 
----
 
 # FTP
 
@@ -290,7 +278,6 @@ In modern production systems, engineers often prefer more secure alternatives su
 - SCP
 - HTTPS-based file transfer
 
----
 
 # DNS
 
@@ -318,7 +305,6 @@ DNS is critical for:
 - service discovery
 - cloud application routing
 
----
 
 # ICMP
 
@@ -336,7 +322,6 @@ A common example is the **ping** utility, which sends an ICMP request and waits 
 
 If a host or route is unreachable, ICMP may return an error message.
 
----
 
 # DHCP
 
@@ -358,7 +343,6 @@ Typical use case:
 
 In practical networking terms, DHCP is often treated as an application/service protocol, even though it supports lower-level network configuration.
 
----
 
 # Management and Support Protocols
 
@@ -373,7 +357,6 @@ Examples include:
 
 These protocols are essential for day-to-day operations in cloud and enterprise environments.
 
----
 
 # Ports and Application Protocols
 
@@ -394,13 +377,11 @@ A computer can communicate with many services at once because each service uses 
 
 Unused ports are usually **closed for security reasons** because open ports can become attack paths.
 
----
 
 # Common Network Utilities
 
 When working with networks, engineers use diagnostic tools to check connectivity, performance, and service availability.
 
----
 
 ## ping
 
@@ -414,7 +395,6 @@ ping amazon.com
 
 It helps determine whether a remote device is reachable.
 
----
 
 ## nslookup
 
@@ -432,7 +412,6 @@ It helps verify:
 - associated IP addresses
 - whether a DNS server is responding correctly
 
----
 
 ## traceroute
 
@@ -452,7 +431,6 @@ It helps identify:
 
 Each intermediate router is called a **hop**.
 
----
 
 ## telnet
 
@@ -466,7 +444,6 @@ telnet example.com 80
 
 Although Telnet itself is insecure for remote access, it is still useful as a troubleshooting tool for testing port-level responses.
 
----
 
 ## hping3
 
@@ -480,7 +457,6 @@ It can be used to test ports and examine TCP flags such as SYN and ACK.
 
 This makes it useful for advanced troubleshooting and network diagnostics.
 
----
 
 ## mtr
 
@@ -494,7 +470,6 @@ It helps engineers track:
 
 This is extremely useful when diagnosing intermittent connectivity issues.
 
----
 
 # Real-World Troubleshooting Examples
 
@@ -519,7 +494,6 @@ Verify that **port 21** is open and allowed through:
 
 If the server is reachable but port 21 is blocked, FTP will still fail.
 
----
 
 ## Automatic IP Assignment
 
@@ -531,7 +505,6 @@ The correct answer is:
 
 - **DHCP (Dynamic Host Configuration Protocol)**
 
----
 
 # Why These Protocols Matter for DevOps
 
@@ -555,7 +528,6 @@ Understanding these protocols allows engineers to:
 - manage infrastructure reliably
 - support distributed applications in the cloud
 
----
 
 # Summary
 
