@@ -260,8 +260,6 @@ Enable a service at startup:
 systemctl enable service-name
 ```
 
-## Conclusion
-Process management is crucial for system performance and stability. By using tools like `ps`, `top`, `htop`, `kill`, and `nice`, you can efficiently control and monitor Linux processes.
 
 ## NOTE :
 
