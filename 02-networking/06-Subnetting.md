@@ -81,7 +81,7 @@ Instead, networks can be sized according to actual needs.
 Subnetting allows organizations to manage networks across **multiple locations and geographic regions**, which is especially important in **cloud environments such as AWS**.
 
 
-# Example of Subnet Benefits
+## Example of Subnet Benefits
 
 Consider a network where multiple employees share a printer.
 
@@ -226,7 +226,7 @@ Example:
 When a packet is sent to this address, all devices on the network receive it.
 
 
-## Subnet Masks
+# Subnet Masks
 
 A **subnet mask** is a 32-bit number used to divide an IP address into:
 
