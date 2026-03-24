@@ -18,7 +18,6 @@ Example:
 
 The `/24` indicates that the first **24 bits** of the IP address represent the **network portion**, while the remaining bits represent the **host portion**.
 
----
 
 # Why CIDR Exists
 
@@ -36,7 +35,6 @@ CIDR was introduced to solve these problems by:
 
 CIDR allows networks to be split into **smaller networks (subnetting)** or combined into **larger networks (supernetting)**.
 
----
 
 # CIDR Notation Format
 
@@ -65,7 +63,6 @@ Network bits = 24
 Host bits = 8
 ```
 
----
 
 # CIDR Binary Example
 
@@ -90,7 +87,6 @@ This means:
 - first **24 bits are fixed**
 - last **8 bits are flexible**
 
----
 
 # Calculating Number of IP Addresses
 
@@ -130,8 +126,6 @@ Usable addresses:
 254 hosts
 ```
 
----
-
 # Common CIDR Prefix Examples
 
 | CIDR | Subnet Mask | Total Addresses | Usable Hosts |
@@ -148,7 +142,6 @@ Usable addresses:
 
 These smaller CIDR blocks are often used for point-to-point connections or very small networks.
 
----
 
 # CIDR Range Example
 
@@ -172,8 +165,6 @@ Total:
 ```
 256 addresses
 ```
-
----
 
 # Subnetting with CIDR
 
@@ -200,8 +191,6 @@ Each subnet contains:
 128 addresses
 ```
 
----
-
 # Supernetting with CIDR
 
 CIDR can also combine multiple networks into a **larger network block**.
@@ -223,7 +212,6 @@ This technique is called **route aggregation** or **supernetting**.
 
 It helps reduce the size of internet routing tables.
 
----
 
 # CIDR in Cloud Networking
 
@@ -265,7 +253,6 @@ CIDR blocks help cloud engineers control:
 - security policies
 - infrastructure scaling
 
----
 
 # Why CIDR Matters for DevOps Engineers
 
@@ -287,18 +274,5 @@ Understanding CIDR allows engineers to:
 - efficiently allocate network space
 - debug connectivity issues between services
 
----
-
-# Summary
-
-CIDR notation improves IP address allocation and replaces class-based addressing.
-
-Key concepts include:
-
-- CIDR uses prefix notation (`/24`, `/16`, etc.)
-- IPv4 addresses contain **32 bits**
-- CIDR defines how many bits represent the network
-- remaining bits represent host addresses
-- CIDR allows both **subnetting** and **supernetting**
 
 CIDR is a core concept in modern networking and is heavily used in cloud platforms and distributed infrastructure.
