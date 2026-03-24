@@ -2,15 +2,13 @@
 
 This section documents my foundational understanding of networking concepts required to design, deploy, and troubleshoot modern distributed systems.
 
-Rather than treating networking as theory, this module focuses on how networking directly impacts:
+This module focuses on how networking directly impacts:
 - Cloud infrastructure (AWS VPC design)
 - Containerised workloads (Docker & Kubernetes networking)
 - System reliability and debugging
 - Security boundaries and access control
 
 Networking is a core competency in DevOps. Misconfigured networking is one of the most common causes of system failure in production environments.
-
----
 
 ## Learning Objectives
 
@@ -22,8 +20,6 @@ By completing this section, I can:
 - Debug connectivity issues using Linux networking tools
 - Understand and design cloud networking architectures (VPCs, subnets, routing)
 - Apply security controls using firewalls (Security Groups, NACLs)
-
----
 
 ##  Core Concepts
 
@@ -184,6 +180,7 @@ traceroute <host>
 ```
 
 **Debugging Approach:**
+
 1. Check DNS resolution
 2. Verify network connectivity (ping)
 3. Confirm port availability
