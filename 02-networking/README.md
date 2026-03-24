@@ -10,8 +10,6 @@ This module focuses on how networking directly impacts:
 
 Networking is a core competency in DevOps. Misconfigured networking is one of the most common causes of system failure in production environments.
 
-## Learning Objectives
-
 By completing this section, I can:
 
 - Explain how data moves across systems using the OSI and TCP/IP models
