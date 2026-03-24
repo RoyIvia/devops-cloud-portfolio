@@ -33,7 +33,6 @@ An IP address serves two primary functions:
 
 IP addresses operate at **Layer 3 (Network Layer)** of the OSI model.
 
----
 
 # Dynamic vs Static IP Addresses
 
@@ -51,7 +50,6 @@ Dynamic addressing is useful for devices such as:
 
 These devices frequently join and leave networks.
 
----
 
 ## Static IP Address
 
@@ -64,7 +62,6 @@ Static addresses are commonly used for devices that must always be reachable at 
 - printers
 - databases
 
----
 
 # Public vs Private IP Addresses
 
@@ -88,7 +85,6 @@ Public IPs are typically assigned to:
 - cloud servers
 - internet-facing applications
 
----
 
 ## Private IP Address
 
@@ -109,7 +105,6 @@ Private IP addresses are commonly used for:
 - corporate networks
 - cloud VPC infrastructure
 
----
 
 # IP Addresses in AWS (Example: EC2)
 
@@ -137,7 +132,6 @@ Private IPs handle internal communication within the VPC, while public IPs enabl
 
 AWS also provides **Elastic IP addresses (EIP)**, which are static public IP addresses that remain associated with an instance even after restarts.
 
----
 
 # Special Purpose IP Addresses
 
@@ -155,7 +149,6 @@ Example:
 
 It is the address of the network router.
 
----
 
 ### Broadcast Address
 
@@ -169,7 +162,6 @@ Example:
 
 When a packet is sent to a broadcast address, every device on that network receives it.
 
----
 
 # IPv4 Address Structure
 
@@ -191,7 +183,6 @@ Each octet can range from **0 to 255**.
 
 This format is called a **dotted decimal notation**.
 
----
 
 # Network Portion vs Host Portion
 
@@ -215,7 +206,6 @@ The **network portion** identifies the network, while the **host portion** ident
 
 Subnetting determines how these portions are divided.
 
----
 
 # IPv6 Addressing
 
@@ -238,7 +228,6 @@ Advantages of IPv6 include:
 
 IPv4 supports approximately **4.3 billion addresses**, while IPv6 supports approximately **340 undecillion addresses**.
 
----
 
 # Binary Representation of IP Addresses
 
@@ -273,8 +262,6 @@ Total bits:
 32 bits
 ```
 
----
-
 # Port Numbers
 
 A **port number** identifies a specific application or service running on a device.
@@ -297,7 +284,6 @@ Where:
 - 192.168.1.10 = device
 - 80 = web server
 
----
 
 # Common Port Numbers
 
@@ -320,7 +306,6 @@ For example, a computer may:
 
 All at the same time, using different ports.
 
----
 
 # Checking Your IP Address on Different Operating Systems
 
@@ -333,7 +318,6 @@ There are two types of IP addresses you may check:
 - **Private IP Address** – used inside a local network
 - **Public IP Address** – used to communicate over the internet
 
----
 
 # Checking IP Address on macOS
 
@@ -364,7 +348,6 @@ Example:
 192.168.100.24
 ```
 
----
 
 ## Method 2 – Faster Command
 
@@ -380,7 +363,6 @@ Example output:
 192.168.100.24
 ```
 
----
 
 ## Check Public IP on macOS
 
@@ -396,7 +378,6 @@ Example output:
 54.203.112.45
 ```
 
----
 
 # Checking IP Address on Linux
 
@@ -417,7 +398,6 @@ Example output:
 
 The value shown is the system's private IP address.
 
----
 
 ## Method 2 – Using `hostname`
 
@@ -431,7 +411,6 @@ Example output:
 192.168.1.25
 ```
 
----
 
 ## Method 3 – Using `ifconfig` (Older systems)
 
@@ -441,7 +420,6 @@ ifconfig
 
 This command works similarly to macOS and shows network interfaces and their assigned IP addresses.
 
----
 
 ## Check Public IP on Linux
 
@@ -449,7 +427,6 @@ This command works similarly to macOS and shows network interfaces and their ass
 curl ifconfig.me
 ```
 
----
 
 # Checking IP Address on Windows
 
@@ -473,7 +450,6 @@ Ethernet adapter Ethernet:
 
 This value represents the device’s private IP address.
 
----
 
 ## Method 2 – Using PowerShell
 
@@ -483,7 +459,6 @@ Get-NetIPAddress
 
 This command displays detailed network configuration including IPv4 and IPv6 addresses.
 
----
 
 ## Check Public IP on Windows
 
@@ -497,7 +472,6 @@ or visit:
 https://ifconfig.me
 ```
 
----
 
 # Why DevOps Engineers Check IP Addresses
 
@@ -533,7 +507,6 @@ Tests connectivity between devices.
 ping 8.8.8.8
 ```
 
----
 
 ### Traceroute
 
@@ -547,7 +520,6 @@ Each device in the path is called a **hop**.
 
 Traceroute helps identify where packet loss or delays occur.
 
----
 
 # Why IP Addressing Matters for DevOps
 
