@@ -41,8 +41,6 @@ When debugging a failure (e.g., service not reachable), I use the OSI model to i
 - Port blocked → Transport layer  
 - Routing issue → Network layer  
 
----
-
 ### 2. IP Addressing & Network Design
 
 - IPv4 and IPv6 addressing
@@ -60,7 +58,6 @@ When debugging a failure (e.g., service not reachable), I use the OSI model to i
 **Engineering Insight:**  
 Proper IP planning prevents overlapping networks and ensures scalability in cloud environments.
 
----
 
 ### 3. Subnetting & Network Segmentation
 
@@ -76,7 +73,6 @@ Segmentation improves:
 - Fault isolation
 - Traffic control
 
----
 
 ### 4. TCP vs UDP (Protocol Trade-offs)
 
@@ -91,7 +87,6 @@ Protocol choice depends on system requirements:
 - Use TCP when correctness matters
 - Use UDP when latency matters
 
----
 
 ### 5. DNS (Service Discovery)
 
@@ -106,7 +101,6 @@ DNS translates human-readable domains into IP addresses.
 **Engineering Insight:**  
 DNS failures often appear as application failures. Always verify resolution before debugging deeper layers.
 
----
 
 ### 6. Ports & Service Communication
 
@@ -123,7 +117,6 @@ If a service is unreachable:
 - Check port binding
 - Confirm firewall rules
 
----
 
 ### 7. Cloud Networking (AWS Focus)
 
@@ -138,7 +131,6 @@ Core components of a production-grade VPC:
 **Engineering Insight:**  
 A secure architecture always places critical resources (databases, internal APIs) in private subnets.
 
----
 
 ### 8. Network Security
 
@@ -155,7 +147,6 @@ A secure architecture always places critical resources (databases, internal APIs
 **Engineering Insight:**  
 Security groups handle most use cases. NACLs are used for stricter, network-wide policies.
 
----
 
 ## Practical Commands & Debugging
 
@@ -187,7 +178,6 @@ traceroute <host>
 4. Inspect firewall rules
 5. Validate routing
 
----
 
 ## Practical Application (DevOps Context)
 
@@ -199,7 +189,6 @@ This knowledge directly applies to:
 - Designing secure cloud architectures
 - Observability systems (metrics/logs/traces transport)
 
----
 
 ## Common Failure Scenarios
 
