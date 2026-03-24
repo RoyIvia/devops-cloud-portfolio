@@ -32,7 +32,6 @@ Different protocols function at different layers of the OSI model.
 
 Each layer relies on protocols to perform specific networking tasks.
 
----
 
 # Types of Network Protocols
 
@@ -41,7 +40,6 @@ Network protocols generally fall into two categories:
 1. **Connection-Oriented Protocols**
 2. **Connectionless Protocols**
 
----
 
 # Connection-Oriented Protocols
 
@@ -63,7 +61,6 @@ A **phone call** is an example of connection-oriented communication.
 
 If the connection is lost, communication stops.
 
----
 
 # Connectionless Protocols
 
@@ -89,7 +86,6 @@ Once the package leaves your hands:
 
 The sender does not maintain a constant connection with the receiver.
 
----
 
 # Internet Protocol (IP)
 
@@ -107,7 +103,6 @@ IP itself does **not guarantee delivery**. It simply handles addressing and rout
 
 This is why other protocols such as TCP are needed.
 
----
 
 # TCP/IP Protocol Suite
 
@@ -133,7 +128,6 @@ TCP handles:
 
 The goal of TCP/IP was to support **interconnection of multiple networks**, which eventually formed the modern internet.
 
----
 
 # Transmission Control Protocol (TCP)
 
@@ -150,7 +144,6 @@ Because of these features, TCP has **higher overhead** and is slower than UDP.
 
 However, it guarantees that data arrives correctly.
 
----
 
 # TCP Three-Way Handshake
 
@@ -177,7 +170,6 @@ Host A                     Host B
 
 After this handshake, data transmission begins.
 
----
 
 # TCP Connection Termination
 
@@ -195,7 +187,6 @@ FIN → FIN/ACK → ACK
 
 There are also **RST (Reset) flags** used when a connection closes abruptly due to an error.
 
----
 
 # Where TCP is Used
 
@@ -215,7 +206,6 @@ Common examples include:
 
 These systems require **accurate and complete data delivery**, which TCP provides.
 
----
 
 # User Datagram Protocol (UDP)
 
@@ -229,7 +219,6 @@ UDP does not guarantee:
 
 Because UDP avoids the overhead of connection establishment, it is **much faster than TCP**.
 
----
 
 # UDP Communication Flow
 
@@ -243,7 +232,6 @@ There is **no handshake** and no confirmation that the data was received.
 
 UDP prioritizes **speed over reliability**.
 
----
 
 # Where UDP is Used
 
@@ -263,7 +251,6 @@ For example, when streaming a movie, losing a few packets is acceptable. The vid
 
 This is why UDP is preferred for media streaming.
 
----
 
 # TCP vs UDP Comparison
 
@@ -276,7 +263,6 @@ This is why UDP is preferred for media streaming.
 | Overhead | Higher | Lower |
 | Use Case | File transfers, websites, databases | Streaming, gaming, DNS |
 
----
 
 # Why Protocol Knowledge Matters for DevOps
 
@@ -299,7 +285,6 @@ For example:
 
 Understanding protocols allows engineers to **trace network problems at the packet level**.
 
----
 
 # Summary
 
