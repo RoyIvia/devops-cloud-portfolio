@@ -32,7 +32,7 @@ After Subnetting
 
 Instead of one large network, the network is divided into multiple smaller segments.
 
----
+
 
 # Why Organizations Use Subnets
 
@@ -44,13 +44,11 @@ Subnetting limits broadcast traffic to smaller groups of devices.
 
 Smaller networks mean fewer devices receiving unnecessary traffic.
 
----
 
 ### Increase Network Performance
 
 By dividing large networks into smaller subnets, data travels through **more efficient paths**, improving overall network speed.
 
----
 
 ### Improve Security
 
@@ -70,7 +68,6 @@ Database Subnet
 
 This segmentation prevents unauthorized access between systems.
 
----
 
 ### Improve IP Address Efficiency
 
@@ -78,13 +75,11 @@ Subnetting prevents organizations from allocating unnecessarily large address ra
 
 Instead, networks can be sized according to actual needs.
 
----
 
 ### Support Large Distributed Networks
 
 Subnetting allows organizations to manage networks across **multiple locations and geographic regions**, which is especially important in **cloud environments such as AWS**.
 
----
 
 # Example of Subnet Benefits
 
@@ -118,7 +113,6 @@ Subnet A              Subnet B
 
 Network traffic is reduced and systems operate more efficiently.
 
----
 
 # How Subnetting Works
 
@@ -140,7 +134,6 @@ The number of bits assigned to the network portion determines:
 
 Increasing the network portion increases the number of subnets but reduces available host addresses.
 
----
 
 # IP Address Classes
 
@@ -168,7 +161,6 @@ Class D is used for **multicast communication**, and Class E is reserved for exp
 
 Modern networks now rely primarily on **CIDR notation** rather than strict class-based addressing.
 
----
 
 # Components of a Subnet
 
@@ -186,7 +178,6 @@ Example:
 
 This identifies the subnet.
 
----
 
 ### Subnet Mask
 
@@ -208,7 +199,6 @@ Subnet Mask  11111111.11111111.11111111.00000000
 
 The mask identifies which bits represent the network.
 
----
 
 ### Host Range
 
@@ -222,7 +212,6 @@ Usable Host Range: 192.168.1.1 – 192.168.1.254
 Broadcast Address: 192.168.1.255
 ```
 
----
 
 ### Broadcast Address
 
@@ -236,7 +225,6 @@ Example:
 
 When a packet is sent to this address, all devices on the network receive it.
 
----
 
 # Subnet Masks
 
@@ -264,7 +252,6 @@ Binary representation:
 
 This indicates the first **24 bits** represent the network.
 
----
 
 # Common Subnet Masks
 
@@ -285,7 +272,6 @@ Two addresses are reserved:
 - network address
 - broadcast address
 
----
 
 # Why Subnet Masks Are Important
 
@@ -297,7 +283,6 @@ Subnet masks help determine:
 
 Devices on the **same subnet communicate directly**, while devices on different networks communicate through a **router**.
 
----
 
 # Subnetting in Cloud Environments
 
@@ -322,7 +307,6 @@ Benefits in cloud infrastructure include:
 - controlled traffic routing
 - scalable infrastructure design
 
----
 
 # Why Subnetting Matters for DevOps
 
