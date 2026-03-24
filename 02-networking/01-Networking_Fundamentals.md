@@ -6,7 +6,6 @@ Understanding networking fundamentals allows engineers to design scalable system
 
 This document introduces the core networking concepts including network components, communication models, the OSI model, transmission media, network topology, and how these concepts translate into modern cloud infrastructure.
 
----
 
 # What is a Computer Network
 
@@ -26,7 +25,6 @@ Networks allow systems to exchange information such as files, API requests, data
 
 Without networking, distributed computing and the internet would not exist.
 
----
 
 # Nodes and Hosts
 
@@ -45,7 +43,6 @@ Examples include:
 
 Any device participating in network communication is considered a node.
 
----
 
 ## Host
 
@@ -60,7 +57,6 @@ Examples include:
 
 In cloud environments, hosts are commonly virtual machines or containers running inside cloud infrastructure.
 
----
 
 # Basic Network Communication
 
@@ -76,7 +72,6 @@ Each component forwards data toward its destination.
 
 Switches manage communication within local networks, while routers connect different networks together.
 
----
 
 # Network Interface Card (NIC)
 
@@ -97,7 +92,6 @@ NICs may exist as:
 - virtual network interfaces in virtual machines
 - virtual interfaces in containers
 
----
 
 # MAC Address
 
@@ -118,7 +112,6 @@ Characteristics:
 
 Switches rely on MAC addresses to determine where to forward frames within a LAN.
 
----
 
 # The OSI Model
 
@@ -138,7 +131,6 @@ It divides communication into **seven layers**, each responsible for a specific 
 
 Each layer interacts with the layer above and below it.
 
----
 
 # OSI Layers Explained
 
@@ -159,7 +151,6 @@ Protocols include:
 - FTP
 - SMTP
 
----
 
 ## Layer 6 – Presentation Layer
 
@@ -173,7 +164,6 @@ Functions include:
 
 For example, encrypted HTTPS communication occurs here.
 
----
 
 ## Layer 5 – Session Layer
 
@@ -185,7 +175,6 @@ Responsibilities include:
 - session management
 - session termination
 
----
 
 ## Layer 4 – Transport Layer
 
@@ -203,7 +192,6 @@ Responsibilities include:
 - flow control
 - error handling
 
----
 
 ## Layer 3 – Network Layer
 
@@ -219,7 +207,6 @@ Protocols include:
 - IPv6
 - ICMP
 
----
 
 ## Layer 2 – Data Link Layer
 
@@ -233,7 +220,6 @@ Responsibilities include:
 
 Switches operate primarily at this layer.
 
----
 
 ## Layer 1 – Physical Layer
 
@@ -246,7 +232,6 @@ Examples include:
 - network cables
 - wireless signals
 
----
 
 # Data Encapsulation
 
@@ -266,7 +251,6 @@ Bits (Physical Layer)
 
 The receiving system processes these layers in reverse order.
 
----
 
 # Network Transmission Media
 
@@ -286,7 +270,6 @@ Characteristics:
 - flexible
 - widely used in LAN environments
 
----
 
 ## Coaxial Cable
 
@@ -297,7 +280,6 @@ Historically used in:
 - cable television networks
 - early Ethernet systems
 
----
 
 ## Fiber Optic Cable
 
@@ -311,7 +293,6 @@ Advantages include:
 
 Fiber optic networks form the backbone of internet infrastructure and cloud data centers.
 
----
 
 # Types of Computer Networks
 
@@ -331,7 +312,6 @@ Characteristics:
 - low latency
 - locally managed
 
----
 
 ## Wide Area Network (WAN)
 
@@ -343,7 +323,6 @@ Examples include:
 - global enterprise networks
 - cloud provider infrastructure
 
----
 
 # Network Topology
 
@@ -354,7 +333,6 @@ Two categories exist:
 - physical topology
 - logical topology
 
----
 # Physical Topology
 
 Physical topology describes the **actual layout of devices and cables** in a network.
@@ -368,7 +346,6 @@ Common physical network topologies include:
 - Mesh (Full and Partial)
 - Hybrid
 
----
 
 ## Bus Topology
 
@@ -396,7 +373,6 @@ Computer C ────┘
 
 Bus topology was common in early Ethernet networks but is rarely used today.
 
----
 
 ## Star Topology
 
@@ -424,7 +400,6 @@ Computer B ── Switch ── Computer C
 
 Modern Ethernet networks typically use star topology with switches.
 
----
 
 ## Mesh Topology
 
@@ -458,7 +433,6 @@ Computer B─┼────Computer C
 
 Full mesh networks are common in **core internet infrastructure** and **data center backbones**.
 
----
 
 ### Partial Mesh Topology
 
@@ -479,7 +453,6 @@ In **Partial Mesh**, only critical devices have redundant connections.
 - balance between redundancy and cost
 - commonly used in enterprise networks
 
----
 
 ## Hybrid Topology
 
@@ -497,7 +470,6 @@ Example: Star + Mesh
 
 Most real-world enterprise and cloud networks use hybrid topology.
 
----
 
 # Logical Topology
 
@@ -542,7 +514,6 @@ A VPC allows organizations to define:
 - internet connectivity
 - security policies
 
----
 
 # Traditional Networking vs Cloud Networking
 
@@ -555,7 +526,6 @@ A VPC allows organizations to define:
 
 Cloud platforms abstract physical networking infrastructure while maintaining the same networking principles.
 
----
 
 # Network Management Models
 
@@ -578,7 +548,6 @@ Examples include:
 
 Most modern systems use the client-server architecture.
 
----
 
 ## Peer-to-Peer Model
 
@@ -592,7 +561,6 @@ Examples include:
 
 Peer-to-peer networks distribute workloads across multiple nodes.
 
----
 
 # Why Networking Matters for DevOps
 
