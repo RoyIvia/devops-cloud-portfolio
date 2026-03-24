@@ -176,7 +176,6 @@ traceroute <host>
 4. Inspect firewall rules
 5. Validate routing
 
-
 ## Practical Application (DevOps Context)
 
 This knowledge directly applies to:
@@ -186,7 +185,6 @@ This knowledge directly applies to:
 - Debugging failed deployments
 - Designing secure cloud architectures
 - Observability systems (metrics/logs/traces transport)
-
 
 ## Common Failure Scenarios
 
