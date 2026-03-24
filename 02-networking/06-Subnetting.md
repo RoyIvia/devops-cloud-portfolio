@@ -179,7 +179,7 @@ Example:
 This identifies the subnet.
 
 
-### Subnet Mask
+# Subnet Mask
 
 A **subnet mask** separates the network portion of the IP address from the host portion.
 
