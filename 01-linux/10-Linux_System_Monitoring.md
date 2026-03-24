@@ -29,6 +29,7 @@ Monitoring system resources is essential to ensure optimal performance, detect i
 - `journalctl -f` – Live system logs for systemd-based distros
 - `dmesg | tail` – View kernel logs
 
+
 ## CPU and Memory Monitoring
 ### Using `top`
 To view real-time CPU and memory usage:
