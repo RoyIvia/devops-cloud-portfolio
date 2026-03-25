@@ -11,8 +11,6 @@ date | echo "Today"
 ```bash
 Today
 ```
-
-### Explanation
 At first glance, it may seem like this command should combine the output of `date` with the string `"Today"`. However, this is not the case.
 
 - The pipe (`|`) sends the output of `date` to the next command
@@ -20,8 +18,6 @@ At first glance, it may seem like this command should combine the output of `dat
 - Instead, `echo` only prints the argument provided (`"Today"`)
 
 As a result, the output from `date` is ignored.
-
----
 
 ### Key Insight
 Not all commands accept input from stdin.
@@ -39,7 +35,6 @@ Commands that ignore stdin:
 
 Understanding this distinction is critical when chaining commands in Bash.
 
----
 
 ### Correct Approach: Command Substitution
 
@@ -53,8 +48,6 @@ echo "Today: $(date)"
 ```bash
 Today: Wed Mar 25 12:34:56 EAT 2026
 ```
-
----
 
 ### Takeaway
 - Pipes (`|`) pass output between commands
