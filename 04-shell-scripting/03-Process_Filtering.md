@@ -1,3 +1,74 @@
+## Process Filtering and Command Chaining in Bash
+
+When working with Linux systems, it is common to inspect running processes and filter relevant information. One of the most widely used tools for this is `grep`, often combined with `ps` to search for specific processes.
+
+### Understanding `grep` with Process Listing
+
+The `ps -ef` command lists all running processes on a system. By piping (`|`) its output into `grep`, we can filter processes based on a search term.
+
+### Example
+
+```bash
+ps -ef | grep "amazon"
+```
+
+This command:
+- Lists all processes
+- Filters only those containing the string `"amazon"`
+
+### Case Sensitivity in `grep`
+
+By default, `grep` is case sensitive.
+
+```bash
+ps -ef | grep -i "amazon"
+```
+
+With the `-i` flag, `grep` performs a case-insensitive search.
+
+This will match:
+- amazon
+- Amazon
+- AMAZON
+- AmaZon
+
+### Common Issue: `grep` Matching Itself
+
+The following command:
+
+```bash
+ps -ef | grep amazon
+```
+
+will also include the `grep` process itself in the output, for example:
+
+```bash
+root     1234  ... grep amazon
+```
+
+This happens because the search term `"amazon"` appears in the `grep` command itself.
+
+
+### Solutions
+
+#### Option 1: Exclude `grep`
+```bash
+ps -ef | grep -i "amazon" | grep -v grep
+```
+
+This removes lines containing `"grep"` from the output.
+
+
+#### Option 2: Use `pgrep` (Preferred)
+```bash
+pgrep -af amazon
+```
+
+`pgrep` is specifically designed for process searching:
+- Avoids matching itself
+- Provides cleaner and more reliable output
+- Better suited for scripting and production use
+  
 ## Understanding Pipes vs Command Substitution in Bash
 
 While working with shell commands, I explored how pipes (`|`) behave when chaining commands together, and an important distinction emerged.
