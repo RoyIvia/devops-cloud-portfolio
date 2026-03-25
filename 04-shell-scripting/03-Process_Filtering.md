@@ -122,9 +122,100 @@ echo "Today: $(date)"
 Today: Wed Mar 25 12:34:56 EAT 2026
 ```
 
-### Takeaway
-- Pipes (`|`) pass output between commands
-- Not all commands consume piped input
-- Command substitution (`$(...)`) is the correct method for embedding command output within strings
+## Text Processing with `awk`
 
-This distinction is essential for writing reliable shell scripts and avoiding subtle bugs in command chaining.
+`awk` is a powerful command-line tool used for processing and analyzing structured text data. It is commonly used in Linux environments to extract, transform, and report data from command outputs and files.
+
+
+### How `awk` Works
+
+`awk` processes input line by line and splits each line into fields.
+
+By default:
+- Each line is treated as a record
+- Fields are separated by whitespace (spaces or tabs)
+
+Each field is assigned a variable:
+- `$1` → first field
+- `$2` → second field
+- `$3` → third field
+- `$0` → entire line
+
+
+### Basic Syntax
+
+```bash
+awk '{print $N}' <input>
+```
+
+Where:
+- `$N` represents the field number
+
+### Example: Extracting Process IDs
+
+```bash
+ps -ef | grep "amazon" | awk '{print $2}'
+```
+
+This command:
+- Lists all running processes
+- Filters processes containing `"amazon"`
+- Uses `awk` to extract the second column
+
+In `ps -ef` output:
+- `$1` → User
+- `$2` → PID (Process ID)
+- `$3` → Parent PID
+- `$8+` → Command
+
+Output:
+```bash
+1234
+5678
+```
+
+This is useful for:
+- process monitoring
+- automation scripts
+- system diagnostics
+
+### Custom Field Separators
+
+`awk` allows defining a custom delimiter using the `-F` option.
+
+#### Example: Parsing `/etc/passwd`
+```bash
+awk -F":" '{print $1}' /etc/passwd
+```
+
+This extracts usernames because:
+- `/etc/passwd` uses `:` as a separator
+
+### Filtering with Conditions
+
+`awk` can filter data based on conditions.
+
+```bash
+awk '$3 > 1000 {print $1}' /etc/passwd
+```
+
+This prints users with UID greater than 1000.
+
+
+### Combining `awk` with Pipelines
+
+`awk` is often used with other commands:
+
+```bash
+ps -ef | grep -i amazon | grep -v grep | awk '{print $2}'
+```
+
+This pipeline:
+- filters processes
+- removes unwanted matches
+- extracts PIDs for further use
+
+In DevOps workflows, `awk` is especially useful for:
+- parsing logs
+- extracting specific fields from command output
+- transforming data for automation scripts
