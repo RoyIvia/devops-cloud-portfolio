@@ -125,9 +125,6 @@ set -x
 #### Note:
 - `-u` (optional but recommended) → treats unset variables as errors
 
-
-### Practical Impact
-
 Using these options ensures:
 - Immediate failure on errors
 - No hidden failures in pipelines
