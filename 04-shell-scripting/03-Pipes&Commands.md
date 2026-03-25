@@ -13,6 +13,8 @@ Today
 ```
 At first glance, it may seem like this command should combine the output of `date` with the string `"Today"`. However, this is not the case.
 
+## date is a system default command, it sends its output to stdin but pipe (|)  does not receive output from stdin thus only the echo command gives an output.
+
 - The pipe (`|`) sends the output of `date` to the next command
 - `echo` does not read input from standard input (stdin)
 - Instead, `echo` only prints the argument provided (`"Today"`)
