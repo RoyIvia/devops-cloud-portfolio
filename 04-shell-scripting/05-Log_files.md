@@ -172,14 +172,4 @@ This allows:
 - Inspecting remote logs using `curl`
 - Downloading large log files for offline analysis using `wget`
 
-
-## Key Takeaways
-
-- `find` is used to locate files based on conditions such as name, size, and time
-- `sudo` is often required to access system-level logs
-- `curl` is used for fetching data and is ideal for piping into other tools
-- `wget` is used for downloading files to disk
-- `grep` is used to filter relevant information from logs
-- Combining these tools enables efficient log analysis and debugging in real-world systems
-
 Understanding how to locate, retrieve, and analyze logs is essential for diagnosing issues and maintaining reliable systems.
