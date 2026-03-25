@@ -14,6 +14,8 @@
 #Set in debug mode
 set -x
 
+set -e
+
 echo "Print the disk space"
 
 df -h
