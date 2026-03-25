@@ -16,6 +16,8 @@ set -x
 
 set -e
 
+set -o pipefail
+
 echo "Print the disk space"
 
 df -h
