@@ -9,7 +9,6 @@ This section covers:
 - loops (`for`, `while`, `until`, `select`)
 - control keywords (`break`, `continue`)
 
----
 
 ## Conditional Statements
 
@@ -38,7 +37,6 @@ fi
 | `-eq` | equal (numbers) |
 | `-ne` | not equal |
 
----
 
 ### `case` Statement
 
@@ -61,7 +59,6 @@ case "$1" in
 esac
 ```
 
----
 
 ## Loops
 
@@ -88,7 +85,6 @@ done
 - looping through services
 - batch operations
 
----
 
 ### 2. `while` Loop
 
@@ -108,7 +104,6 @@ done
 - reading files line by line
 - monitoring loops
 
----
 
 ### 3. `until` Loop
 
@@ -127,7 +122,6 @@ done
 - retry logic
 - waiting for services to become available
 
----
 
 ### 4. `select` Loop
 
@@ -144,7 +138,6 @@ done
 - CLI menus
 - interactive scripts
 
----
 
 ## Loop Control
 
@@ -160,8 +153,6 @@ for i in {1..10}; do
 done
 ```
 
----
-
 ### `continue`
 Skips the current iteration.
 
@@ -174,7 +165,6 @@ for i in {1..5}; do
 done
 ```
 
----
 
 ## Practical DevOps Examples
 
@@ -190,8 +180,6 @@ for service in nginx docker ssh; do
 done
 ```
 
----
-
 ### Example: Monitor until service is up
 
 ```bash
@@ -203,7 +191,6 @@ done
 echo "Service is up"
 ```
 
----
 
 ### Example: Read file line by line
 
@@ -213,7 +200,6 @@ while read line; do
 done < logfile.log
 ```
 
----
 
 ## Key Takeaways
 
