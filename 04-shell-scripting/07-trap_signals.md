@@ -10,7 +10,6 @@ This is critical for:
 - releasing resources
 - ensuring scripts fail safely and predictably
 
----
 
 ## What is `trap`?
 
@@ -22,7 +21,6 @@ The `trap` command defines actions to be executed when the shell receives specif
 trap '<command>' <signal>
 ```
 
----
 
 ## Common Signals
 
@@ -34,7 +32,6 @@ trap '<command>' <signal>
 | `SIGHUP` | Terminal closed |
 | `SIGKILL` | Forced termination (cannot be trapped) |
 
----
 
 ## Example: Handle Ctrl+C (`SIGINT`)
 
@@ -52,7 +49,6 @@ done
 - Instead of abruptly stopping
 - The script prints a message and exits cleanly
 
----
 
 ## Example: Cleanup on Exit
 
@@ -71,7 +67,6 @@ sleep 5
 - Regardless of how the script exits (success or failure)
 - The temporary file is deleted
 
----
 
 ## Why `trap EXIT` is Important
 
@@ -83,7 +78,6 @@ Without `trap`:
 With `trap EXIT`:
 - cleanup is guaranteed
 
----
 
 ## Example: Managing Background Processes
 
@@ -104,7 +98,6 @@ wait
 - Starts a background process
 - Ensures it is terminated when the script exits
 
----
 
 ## Multiple Signals
 
@@ -114,7 +107,6 @@ You can handle multiple signals in one `trap`:
 trap 'echo "Exiting..."; cleanup' SIGINT SIGTERM EXIT
 ```
 
----
 
 ## Removing a Trap
 
@@ -124,7 +116,6 @@ To reset a trap:
 trap - SIGINT
 ```
 
----
 
 ## Practical DevOps Use Cases
 
@@ -134,7 +125,6 @@ trap - SIGINT
 - Handling script interruptions gracefully
 - Preventing resource leaks in long-running scripts
 
----
 
 ## Important Limitations
 
@@ -143,7 +133,6 @@ trap - SIGINT
 - Traps do not replace proper error handling (`set -euo pipefail`)
 - Poorly written traps can hide real failures if not used carefully
 
----
 
 ## Best Practices
 
@@ -152,8 +141,6 @@ trap - SIGINT
 ```bash
 trap 'cleanup_function' EXIT
 ```
-
----
 
 ### 2. Use functions for clarity
 
@@ -166,15 +153,11 @@ cleanup() {
 trap cleanup EXIT
 ```
 
----
-
 ### 3. Combine with strict mode
 
 ```bash
 set -euo pipefail
 ```
-
----
 
 ### 4. Be explicit about what you clean
 
@@ -182,7 +165,6 @@ Avoid:
 - deleting unintended files
 - killing the wrong processes
 
----
 
 ## Example: Safer Script Pattern
 
@@ -209,7 +191,6 @@ This ensures:
 - guaranteed cleanup
 - safer script behavior
 
----
 
 ## Key Takeaways
 
