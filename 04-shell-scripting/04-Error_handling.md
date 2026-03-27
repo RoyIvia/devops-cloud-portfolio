@@ -47,7 +47,6 @@ Wed Mar 25 13:00:00 EAT 2026
 
 For that reason, it should be used carefully in production scripts, especially when logs are stored or shared.
 
-
 ## `set -e` — Exit on Error
 
 ```bash
