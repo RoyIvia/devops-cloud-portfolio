@@ -30,9 +30,7 @@ The AWS Management Console is the **graphical user interface** for interacting w
   3. Select region and other settings.  
   4. Click Create.
 
-💡 **Limitation:** Manual process; not scalable for multiple instances or accounts.
-
----
+**Limitation:** Manual process; not scalable for multiple instances or accounts.
 
 ## 2️. AWS CLI
 
@@ -174,7 +172,7 @@ Explanation:
 - Useful for DevOps pipelines or repeated deployments.
 
 
-## 5️⃣ Python Automation with Boto3
+## 5. Python Automation with Boto3
 
 Python with Boto3 enables programmatic AWS interactions, suitable for advanced automation.
 
@@ -217,10 +215,5 @@ Explanation:
 
 - Useful for scripting deployments, CI/CD pipelines, and multi-service operations.
 
-# Summary
-
-This portfolio section demonstrates multiple ways to interact with AWS services:
-
-Real-world relevance:
 
 These interaction methods are used in production for provisioning infrastructure, managing environments and automating cloud operations across teams and accounts.
