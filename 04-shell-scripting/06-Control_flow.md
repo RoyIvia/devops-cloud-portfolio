@@ -1,14 +1,6 @@
 ## Control Flow in Bash: Loops and Conditional Statements
 
-### Overview
-
 Control flow structures in Bash allow scripts to make decisions, repeat actions, and respond dynamically to system state. These constructs are essential for automation, especially in DevOps workflows where scripts must handle varying inputs, system conditions, and failures.
-
-This section covers:
-- conditional statements (`if`, `case`)
-- loops (`for`, `while`, `until`, `select`)
-- control keywords (`break`, `continue`)
-
 
 ## Conditional Statements
 
