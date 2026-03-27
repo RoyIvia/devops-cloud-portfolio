@@ -1,6 +1,5 @@
 # Script Environment Setup and Execution
 
-
 This section covers the fundamental workflow of creating, editing, and executing shell scripts in a Unix/Linux environment. It includes working with `vim`, understanding the shebang, running scripts, handling permission errors, and basic scripting practices.
 
 
@@ -16,7 +15,6 @@ Alternatively, you can create and open the file directly using:
 ```sh
 vim script.sh
 ```
-
 
 ## Editing the Script (Using Vim)
 Open the script:
