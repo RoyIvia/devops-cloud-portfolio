@@ -1,7 +1,5 @@
 ## Signal Handling and Cleanup in Bash using `trap`
 
-### Overview
-
 In Bash scripting, processes can be interrupted or terminated by signals such as user actions (e.g., pressing `Ctrl+C`) or system events. The `trap` command allows a script to intercept these signals and execute custom logic before exiting.
 
 This is critical for:
