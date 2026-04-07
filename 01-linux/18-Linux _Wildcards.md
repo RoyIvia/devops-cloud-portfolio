@@ -2,7 +2,7 @@
 
  Wildcards allow you to match files using patterns, which is essential for DevOps, scripting, and automation.
  
-## Common Wildcards
+### Common Wildcards
 
 - `*`      - Matches zero or more characters
 - `?`      - Matches exactly one character
