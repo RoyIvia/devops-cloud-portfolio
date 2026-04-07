@@ -2,13 +2,13 @@
 
  Wildcards allow you to match files using patterns, which is essential for DevOps, scripting, and automation.
  
-Common Wildcards:
+## Common Wildcards
 
-`*`      - Matches zero or more characters
-`?`      - Matches exactly one character
-`[abc]`  → Matches any one character in the set
-`[a-z]`  → Matches a character in the range
-`[^abc]` → Matches any character not in the set
+- `*`      - Matches zero or more characters
+- `?`      - Matches exactly one character
+- `[abc]`  - Matches any one character in the set
+- `[a-z]`  - Matches a character in the range
+- `[^abc]` - Matches any character not in the set
 
 Setup Testing Environment:
 
