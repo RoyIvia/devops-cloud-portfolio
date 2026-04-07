@@ -37,31 +37,31 @@ touch file1.txt file2.txt fileA.txt test.log data.csv script.sh gamer ghost grap
 
 ## Real DevOps Use Cases:
 
-`rm *.log`         # Delete all .log files
-`mv *.sh scripts/` # Move all shell scripts
-`cp g???? backup/` # Backup files starting with g
-`ls g[^a-m]???`    # List files not matching a range
+- `rm *.log`         # Delete all .log files
+- `mv *.sh scripts/` # Move all shell scripts
+- `cp g???? backup/` # Backup files starting with g
+- `ls g[^a-m]???`    # List files not matching a range
 
 ## Hidden File Caveats:
 
-`ls *`       # Non-hidden files
-`ls .*`     # Hidden files
-`ls .* *`   # Both hidden and normal files
+- `ls *`       # Non-hidden files
+- `ls .*`     # Hidden files
+- `ls .* *`   # Both hidden and normal files
 
 ## Testing Patterns:
-`ls *.txt`        # Lists all files ending with .txt
-`ls g???? `       # Lists files starting with 'g' and exactly 5 characters
-`ls mk*`         # Lists files starting with 'mk'
-`ls g[a-n]???`   # Lists 5-letter files starting with 'g', 2nd letter a–n
-`ls g[^a-m]???`   # Lists 5-letter files starting with 'g', 2nd letter NOT a–m
+- `ls *.txt`        # Lists all files ending with .txt
+- `ls g???? `       # Lists files starting with 'g' and exactly 5 characters
+- `ls mk*`         # Lists files starting with 'mk'
+- `ls g[a-n]???`   # Lists 5-letter files starting with 'g', 2nd letter a–n
+- `ls g[^a-m]???`   # Lists 5-letter files starting with 'g', 2nd letter NOT a–m
 
 ## Summary & Best Practices:
 
-`*` → zero or more characters
-`?` → exactly one character
-`[abc]` → match a set
-`[^abc]`→ exclude a set
-Use `-a `to include hidden files
-Always test with `ls` before using `rm` or `mv`
+- `*` → zero or more characters
+- `?` → exactly one character
+- `[abc]` → match a set
+- `[^abc]`→ exclude a set
+- Use `-a `to include hidden files
+- Always test with `ls` before using `rm` or `mv`
 
 Mastery of wildcards is essential for scripting, log management, CI/CD pipelines, and automation in DevOps.
