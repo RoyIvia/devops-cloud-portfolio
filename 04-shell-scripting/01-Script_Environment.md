@@ -3,7 +3,7 @@
 This section covers the fundamental workflow of creating, editing, and executing shell scripts in a Unix/Linux environment. It includes working with `vim`, understanding the shebang, running scripts, handling permission errors, and basic scripting practices.
 
 
-## Creating a Script File
+### Creating a Script File
 A script file can be created using:
 
 ```sh
@@ -16,7 +16,7 @@ Alternatively, you can create and open the file directly using:
 vim script.sh
 ```
 
-## Editing the Script (Using Vim)
+### Editing the Script (Using Vim)
 Open the script:
 
 ```sh
@@ -30,7 +30,7 @@ i
 ```
 
 
-## Shebang (Specifying the Shell)
+### Shebang (Specifying the Shell)
 At the top of the script, define the shell using a shebang:
 
 ```sh
@@ -40,7 +40,7 @@ At the top of the script, define the shell using a shebang:
 The shebang tells the system which interpreter to use when executing the script. This ensures consistent behavior across environments.
 
 
-## Writing a Simple Script
+### Writing a Simple Script
 Example:
 
 ```sh
@@ -49,7 +49,7 @@ Example:
 echo "My name is Royston"
 ```
 
-## Saving and Exiting Vim
+### Saving and Exiting Vim
 
 Save and exit:
 
@@ -64,7 +64,7 @@ Exit without saving:
 ```
 
 
-## Viewing the Script
+### Viewing the Script
 To display the contents of the script:
 
 ```sh
@@ -72,7 +72,7 @@ cat script.sh
 ```
 
 
-## Running the Script
+### Running the Script
 
 Using `sh`:
 
@@ -86,7 +86,7 @@ Running directly:
 ./script.sh
 ```
 
-## Permission Denied Error
+### Permission Denied Error
 When running:
 
 ```sh
@@ -102,7 +102,7 @@ Permission denied
 This happens because the script does not have execute permissions.
 
 
-## File Permissions
+### File Permissions
 Grant execute permission using:
 
 ```sh
@@ -116,7 +116,7 @@ Then run:
 ```
 
 
-## Understanding File Permissions
+### Understanding File Permissions
 Linux files have permissions that control:
 
 - Read (`r`)
@@ -126,7 +126,7 @@ Linux files have permissions that control:
 For a script to run, it must have execute (`x`) permission.
 
 
-## Comments in Shell Scripts
+### Comments in Shell Scripts
 Comments are used to explain code and are ignored during execution.
 
 ```sh
