@@ -218,8 +218,6 @@ Add user to group:
 addgroup username group
 ```
 
----
-
 # Service Management
 
 Alpine uses **OpenRC** instead of systemd.
@@ -242,7 +240,6 @@ Check service status:
 rc-service nginx status
 ```
 
----
 
 # Networking Commands
 
