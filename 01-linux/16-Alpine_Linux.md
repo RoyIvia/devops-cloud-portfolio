@@ -6,6 +6,7 @@ For DevOps engineers, Alpine Linux is important because it is commonly used as t
 
 This section documents how to access Alpine Linux, essential commands, package management, and key differences compared to other Linux distributions such as Ubuntu and Amazon Linux.
 
+
 # What Makes Alpine Linux Unique
 
 Alpine differs from many traditional Linux distributions in several ways.
@@ -54,7 +55,6 @@ Verify the operating system:
 cat /etc/os-release
 ```
 
----
 
 ## Running Alpine in a Virtual Machine
 
@@ -69,7 +69,6 @@ Steps:
 
 However, Alpine is most commonly used in **container environments rather than full servers**.
 
----
 
 # Basic System Information Commands
 
