@@ -6,7 +6,6 @@ For DevOps engineers, Alpine Linux is important because it is commonly used as t
 
 This section documents how to access Alpine Linux, essential commands, package management, and key differences compared to other Linux distributions such as Ubuntu and Amazon Linux.
 
----
 
 # What Makes Alpine Linux Unique
 
@@ -31,7 +30,6 @@ Typical image sizes:
 
 Because of this small size, Alpine is heavily used in container environments.
 
----
 
 # Accessing Alpine Linux
 
