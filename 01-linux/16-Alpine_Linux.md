@@ -6,12 +6,11 @@ For DevOps engineers, Alpine Linux is important because it is commonly used as t
 
 This section documents how to access Alpine Linux, essential commands, package management, and key differences compared to other Linux distributions such as Ubuntu and Amazon Linux.
 
-
 # What Makes Alpine Linux Unique
 
 Alpine differs from many traditional Linux distributions in several ways.
 
-Key characteristics:
+## Key characteristics:
 
 * Very small base system
 * Security-focused design
@@ -98,7 +97,6 @@ Hostname information:
 hostname
 ```
 
----
 
 # Package Management with APK
 
