@@ -192,8 +192,6 @@ Remove files:
 rm file
 ```
 
----
-
 # User Management
 
 Check current user:
