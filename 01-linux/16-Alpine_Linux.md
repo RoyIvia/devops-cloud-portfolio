@@ -154,8 +154,6 @@ Then run:
 bash
 ```
 
----
-
 # File System and Navigation
 
 List files:
