@@ -315,7 +315,6 @@ Follow logs in real time:
 tail -f /var/log/messages
 ```
 
----
 
 # Alpine Linux in Dockerfiles
 
@@ -337,7 +336,6 @@ CMD ["python3", "app.py"]
 
 Using Alpine significantly reduces container image size.
 
----
 
 # Security Benefits
 
@@ -350,7 +348,6 @@ Alpine improves container security through:
 
 These features make Alpine attractive for production container workloads.
 
----
 
 # Differences from Ubuntu
 
@@ -363,7 +360,6 @@ These features make Alpine attractive for production container workloads.
 | Default shell   | bash    | sh          |
 | Typical use     | servers | containers  |
 
----
 
 # Differences from Amazon Linux
 
@@ -375,7 +371,7 @@ These features make Alpine attractive for production container workloads.
 | Primary use     | cloud servers | containers  |
 | Image size      | ~60 MB        | ~5 MB       |
 
----
+
 
 # When to Use Alpine Linux
 
