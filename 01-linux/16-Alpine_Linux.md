@@ -7,7 +7,7 @@ For DevOps engineers, Alpine Linux is important because it is commonly used as t
 This section documents how to access Alpine Linux, essential commands, package management, and key differences compared to other Linux distributions such as Ubuntu and Amazon Linux.
 
 
-# What Makes Alpine Linux Unique
+## What Makes Alpine Linux Unique
 
 Alpine differs from many traditional Linux distributions in several ways.
 
@@ -31,9 +31,9 @@ Typical image sizes:
 Because of this small size, Alpine is heavily used in container environments.
 
 
-# Accessing Alpine Linux
+## Accessing Alpine Linux
 
-## Running Alpine in Docker (Recommended)
+### Running Alpine in Docker (Recommended)
 
 Pull the official Alpine image:
 
@@ -56,7 +56,7 @@ cat /etc/os-release
 ```
 
 
-## Running Alpine in a Virtual Machine
+### Running Alpine in a Virtual Machine
 
 Alpine can also run as a full operating system.
 
@@ -70,7 +70,7 @@ Steps:
 However, Alpine is most commonly used in **container environments rather than full servers**.
 
 
-# Basic System Information Commands
+## Basic System Information Commands
 
 Check OS version:
 
@@ -97,7 +97,7 @@ hostname
 ```
 
 
-# Package Management with APK
+## Package Management with APK
 
 Alpine uses the **APK package manager**.
 
@@ -138,7 +138,7 @@ apk info
 ```
 
 
-# Installing Bash (Optional)
+## Installing Bash (Optional)
 
 Alpine uses `sh` by default.
 
@@ -154,7 +154,7 @@ Then run:
 bash
 ```
 
-# File System and Navigation
+## File System and Navigation
 
 List files:
 
@@ -192,7 +192,7 @@ Remove files:
 rm file
 ```
 
-# User Management
+## User Management
 
 Check current user:
 
@@ -218,7 +218,7 @@ Add user to group:
 addgroup username group
 ```
 
-# Service Management
+## Service Management
 
 Alpine uses **OpenRC** instead of systemd.
 
@@ -241,7 +241,7 @@ rc-service nginx status
 ```
 
 
-# Networking Commands
+## Networking Commands
 
 Check IP address:
 
@@ -268,7 +268,7 @@ ss -tulnp
 ```
 
 
-# Process Management
+## Process Management
 
 View processes:
 
@@ -295,7 +295,7 @@ kill -9 PID
 ```
 
 
-# Logs and Debugging
+## Logs and Debugging
 
 System logs are stored in:
 
@@ -316,7 +316,7 @@ tail -f /var/log/messages
 ```
 
 
-# Alpine Linux in Dockerfiles
+## Alpine Linux in Dockerfiles
 
 Alpine is frequently used as a base image.
 
@@ -337,7 +337,7 @@ CMD ["python3", "app.py"]
 Using Alpine significantly reduces container image size.
 
 
-# Security Benefits
+## Security Benefits
 
 Alpine improves container security through:
 
@@ -349,7 +349,7 @@ Alpine improves container security through:
 These features make Alpine attractive for production container workloads.
 
 
-# Differences from Ubuntu
+## Differences from Ubuntu
 
 | Feature         | Ubuntu  | Alpine      |
 | --------------- | ------- | ----------- |
@@ -361,7 +361,7 @@ These features make Alpine attractive for production container workloads.
 | Typical use     | servers | containers  |
 
 
-# Differences from Amazon Linux
+## Differences from Amazon Linux
 
 | Feature         | Amazon Linux  | Alpine      |
 | --------------- | ------------- | ----------- |
@@ -373,7 +373,7 @@ These features make Alpine attractive for production container workloads.
 
 
 
-# When to Use Alpine Linux
+## When to Use Alpine Linux
 
 Use Alpine when:
 
@@ -390,7 +390,7 @@ Avoid Alpine when:
 * running traditional enterprise workloads
 
 
-# Comparison with Related Distributions
+## Comparison with Related Distributions
 
 | Distribution      | Typical Use                            |
 | ----------------- | -------------------------------------- |
@@ -401,7 +401,7 @@ Avoid Alpine when:
 | Rocky / AlmaLinux | RHEL-compatible enterprise Linux       |
 
 
-# Key Takeaways for DevOps Engineers
+## Key Takeaways for DevOps Engineers
 
 Alpine Linux is one of the most important distributions for container-based workflows. Understanding Alpine is essential when working with Docker, Kubernetes, and modern cloud-native architectures.
 
