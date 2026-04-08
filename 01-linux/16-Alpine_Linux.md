@@ -389,7 +389,6 @@ Avoid Alpine when:
 * complex dependencies are needed
 * running traditional enterprise workloads
 
----
 
 # Comparison with Related Distributions
 
@@ -401,7 +400,6 @@ Avoid Alpine when:
 | Debian            | stable server environments             |
 | Rocky / AlmaLinux | RHEL-compatible enterprise Linux       |
 
----
 
 # Key Takeaways for DevOps Engineers
 
