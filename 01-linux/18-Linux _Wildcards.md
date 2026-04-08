@@ -49,6 +49,7 @@ touch file1.txt file2.txt fileA.txt test.log data.csv script.sh gamer ghost grap
 - `ls .* *`   # Both hidden and normal files
 
 ### Testing Patterns:
+
 - `ls *.txt`        # Lists all files ending with .txt
 - `ls g???? `       # Lists files starting with 'g' and exactly 5 characters
 - `ls mk*`         # Lists files starting with 'mk'
