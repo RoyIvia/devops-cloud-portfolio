@@ -267,7 +267,6 @@ Check open ports:
 ss -tulnp
 ```
 
----
 
 # Process Management
 
@@ -295,7 +294,6 @@ Force kill process:
 kill -9 PID
 ```
 
----
 
 # Logs and Debugging
 
