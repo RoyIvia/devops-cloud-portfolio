@@ -137,7 +137,6 @@ List installed packages:
 apk info
 ```
 
----
 
 # Installing Bash (Optional)
 
