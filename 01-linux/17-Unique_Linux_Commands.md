@@ -4,8 +4,6 @@ Beyond the standard Linux utilities, there are a number of powerful modern comma
 
 This section highlights a collection of unique and highly practical Linux utilities that make working in the terminal faster and more efficient.
 
----
-
 # ncdu – Disk Usage Analyzer
 
 `ncdu` (NCurses Disk Usage) is an interactive disk usage analyzer used to quickly identify directories consuming the most storage.
@@ -38,8 +36,6 @@ Common use cases:
 * identifying large log directories
 * investigating container storage usage
 
----
-
 # tldr – Simplified Command Help
 
 `tldr` provides simplified and practical examples for command-line tools, acting as a modern alternative to `man` pages.
@@ -67,8 +63,6 @@ tar -cvf archive.tar file1 file2
 
 Useful for quickly remembering command syntax.
 
----
-
 # rg – Ripgrep (Fast Text Search)
 
 `ripgrep` (`rg`) is an extremely fast text search tool that recursively searches directories using regex patterns.
@@ -92,8 +86,6 @@ Example use cases:
 * searching logs
 * scanning codebases
 * finding configuration entries
-
----
 
 # fzf – Fuzzy Finder
 
@@ -119,8 +111,6 @@ cat ~/.bash_history | fzf
 
 Useful for quickly locating files or commands in large environments.
 
----
-
 # bat – Improved `cat`
 
 `bat` is a modern replacement for the `cat` command.
@@ -145,7 +135,6 @@ bat file.txt
 
 Ideal for reading configuration files and scripts.
 
----
 
 # ranger – Terminal File Manager
 
@@ -171,7 +160,6 @@ Features:
 
 Useful for working entirely inside the terminal.
 
----
 
 # lazygit – Terminal Git Interface
 
@@ -197,8 +185,6 @@ Capabilities include:
 * committing files
 * resolving merge conflicts
 * viewing commit history
-
----
 
 # lazydocker – Docker Management Interface
 
@@ -227,7 +213,6 @@ Features:
 
 Useful for developers and DevOps engineers managing container environments.
 
----
 
 # glances – System Monitoring Tool
 
@@ -255,7 +240,6 @@ glances
 
 It is often considered an enhanced alternative to `top` or `htop`.
 
----
 
 # cmatrix – Terminal Animation
 
