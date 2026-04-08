@@ -11,7 +11,7 @@ This section documents how to access Alpine Linux, essential commands, package m
 
 Alpine differs from many traditional Linux distributions in several ways.
 
-## Key characteristics:
+### Key characteristics:
 
 * Very small base system
 * Security-focused design
