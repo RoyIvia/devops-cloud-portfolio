@@ -31,7 +31,7 @@ Typical image sizes:
 Because of this small size, Alpine is heavily used in container environments.
 
 
-## Accessing Alpine Linux
+### Accessing Alpine Linux
 
 ### Running Alpine in Docker (Recommended)
 
