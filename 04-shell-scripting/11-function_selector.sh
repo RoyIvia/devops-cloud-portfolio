@@ -1,0 +1,33 @@
+#!/bin/bash
+
+######################################
+# Author : Roy Ivia
+# 
+# Description :
+# This script demonstrates the use of
+# functions in Bash and dynamic function
+# calling based on user input.
+# The user is prompted to choose a number
+# between 1 and 3, and the corresponding
+# function is executed.
+######################################
+
+# Functions (must be defined before use)
+func1() {
+echo " This message is from function 1"
+}
+func2() {
+echo " This message is from function 2"
+}
+func3() {
+echo " This message is from function 3"
+}
+
+# Beginning of the main script
+
+# prompt the user to get their choice
+echo "Enter a number from 1 to 3"
+read n
+
+# Call the chosen function
+func$n
