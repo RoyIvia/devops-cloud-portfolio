@@ -157,7 +157,6 @@ This script performs the following:
     192.168.1.3 GET 404
     192.168.1.1 GET 200
 
----
 
 ### Output
     ---- Error Count ----
@@ -174,7 +173,6 @@ This script performs the following:
     192.168.xxx.xxx GET 404
     192.168.xxx.xxx GET 200
 
----
 
 ## Key Takeaways
 
@@ -182,7 +180,6 @@ This script performs the following:
 - awk is used for analyzing structured data  
 - Combining tools enables powerful data processing pipelines  
 
----
 
 ## DevOps Relevance
 
@@ -199,11 +196,3 @@ Using sed and awk allows engineers to:
 - Automate repetitive tasks  
 - Process logs without heavy tooling  
 
----
-
-## Next Steps
-
-- Integrate sed and awk into shell scripts  
-- Apply them to Docker container logs  
-- Use them in CI/CD pipelines  
-- Extend this project into a real-time log monitoring tool  
