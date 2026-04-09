@@ -42,7 +42,6 @@ sed is a command-line utility used to perform text transformations on an input s
 
 ## awk – Text Processing Language
 
-### Description
 awk is a powerful tool for processing and analyzing structured text data. It works line by line and splits each line into fields.
 
 
@@ -116,7 +115,6 @@ awk is a powerful tool for processing and analyzing structured text data. It wor
 ### File
 log_analyzer.sh
 
----
 
 ### Description
 This script performs the following:
@@ -125,7 +123,6 @@ This script performs the following:
 - Extracts unique IP addresses  
 - Masks IP addresses for privacy  
 
----
 
 ### Script
     #!/bin/bash
