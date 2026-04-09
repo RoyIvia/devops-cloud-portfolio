@@ -1,33 +1,19 @@
 # Linux Text Processing: sed and awk
 
-This project introduces two essential Linux text-processing tools: sed and awk. These tools are widely used in DevOps, cloud engineering, and system administration for processing logs, modifying configuration files, and automating data workflows.
+This section introduces two essential Linux text-processing tools: sed and awk. These tools are widely used in DevOps, cloud engineering, and system administration for processing logs, modifying configuration files, and automating data workflows.
 
 - sed (Stream Editor) is used for modifying text  
 - awk is used for analyzing and extracting structured data  
-
----
-
-## Objectives
-By completing this module, you will:
-
-- Understand how to manipulate text streams using sed  
-- Process structured data using awk  
-- Apply both tools in real-world DevOps scenarios  
-- Build scripts that automate log analysis and transformation  
-
----
 
 ## sed – Stream Editor
 
 ### Description
 sed is a command-line utility used to perform text transformations on an input stream (a file or piped input).
 
----
 
 ### Syntax
     sed 's/pattern/replacement/' file
 
----
 
 ### Common Operations
 
@@ -46,8 +32,6 @@ sed is a command-line utility used to perform text transformations on an input s
 #### Print specific lines
     sed -n '1,5p' file.txt
 
----
-
 ### Use Cases
 
 - Updating configuration files  
@@ -55,19 +39,16 @@ sed is a command-line utility used to perform text transformations on an input s
 - Automating text transformations in scripts  
 - Replacing environment variables in CI/CD pipelines  
 
----
 
 ## awk – Text Processing Language
 
 ### Description
 awk is a powerful tool for processing and analyzing structured text data. It works line by line and splits each line into fields.
 
----
 
 ### Syntax
     awk '{print $1}' file.txt
 
----
 
 ### Key Concepts
 
@@ -77,7 +58,6 @@ awk is a powerful tool for processing and analyzing structured text data. It wor
 | $2     | Second column |
 | $0     | Entire line |
 
----
 
 ### Common Operations
 
@@ -96,7 +76,6 @@ awk is a powerful tool for processing and analyzing structured text data. It wor
 #### Sum a column
     awk '{sum += $2} END {print sum}' file.txt
 
----
 
 ### Use Cases
 
@@ -106,7 +85,6 @@ awk is a powerful tool for processing and analyzing structured text data. It wor
 - Processing CSV and tabular data  
 - Building reporting scripts  
 
----
 
 ## sed vs awk
 
@@ -116,7 +94,6 @@ awk is a powerful tool for processing and analyzing structured text data. It wor
 | Strength | Find and replace     | Column-based processing |
 | Use Case | Editing files        | Data extraction         |
 
----
 
 ## Example: Log Processing
 
@@ -125,17 +102,14 @@ awk is a powerful tool for processing and analyzing structured text data. It wor
     192.168.1.2 POST 500
     192.168.1.3 GET 404
 
----
 
 ### Count failed requests (status >= 400)
     awk '$3 >= 400 {count++} END {print count}' logfile.log
 
----
 
 ### Replace error codes
     sed 's/500/ERROR/g' logfile.log
 
----
 
 ## Mini Project: Log Analyzer
 
