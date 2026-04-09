@@ -138,19 +138,16 @@ This script performs the following:
     echo "---- Masked Logs ----"
     sed -E 's/^([0-9]+\.[0-9]+)\.[0-9]+\.[0-9]+/\1.xxx.xxx/' $LOGFILE
 
----
 
 ### Execution
     chmod +x log_analyzer.sh
     ./log_analyzer.sh
 
----
 
 ## Example Pipeline
 
     cat logfile.log | grep "GET" | awk '{print $1}' | sort | uniq
 
----
 
 ## Sample Input and Output
 
