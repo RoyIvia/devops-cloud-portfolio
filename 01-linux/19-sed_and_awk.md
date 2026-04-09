@@ -173,7 +173,6 @@ This script performs the following:
     192.168.xxx.xxx GET 404
     192.168.xxx.xxx GET 200
 
-
 ## Key Takeaways
 
 - sed is used for editing and transforming text  
