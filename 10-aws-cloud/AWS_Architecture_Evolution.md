@@ -16,7 +16,7 @@ This project documents the evolution of a basic single-instance deployment into 
 
 A single EC2 instance hosts both the application and database.
 
-### Architecture 
+### Architecture: 
 
 ```mermaid
 graph TD
