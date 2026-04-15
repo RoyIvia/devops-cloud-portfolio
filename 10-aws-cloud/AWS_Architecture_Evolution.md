@@ -11,19 +11,19 @@ This project documents the evolution of a basic single-instance deployment into 
 * Achieve high availability and fault tolerance
 * Introduce safe deployment strategies
 
-### Stage 0: Single EC2 Instance
+## Stage 0: Single EC2 Instance
 
 
 A single EC2 instance hosts both the application and database.
 
-#### Architecture
+### Architecture
 
 ```mermaid
 graph TD
     U[User] --> EC2[EC2 Instance]
 ```
 
-### Limitations
+#### Limitations
 
 * Single point of failure
 * No scalability
