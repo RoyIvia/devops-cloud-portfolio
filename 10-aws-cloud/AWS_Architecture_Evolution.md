@@ -13,16 +13,15 @@ This project documents the evolution of a basic single-instance deployment into 
 
 ## Stage 0: Single EC2 Instance
 
+
+A single EC2 instance hosts both the application and database.
+
 ### Architecture
 
 ```mermaid
 graph TD
     U[User] --> EC2[EC2 Instance]
 ```
-
-### Description
-
-A single EC2 instance hosts both the application and database.
 
 ### Limitations
 
@@ -31,9 +30,10 @@ A single EC2 instance hosts both the application and database.
 * Downtime during updates
 * Limited performance under load
 
----
 
 ## Stage 1: Introduce Load Balancer
+
+A load balancer is introduced to route traffic and perform health checks. This abstracts the compute layer from direct user access.
 
 ### Architecture
 
@@ -43,16 +43,12 @@ graph TD
     LB --> EC2[EC2 Instance]
 ```
 
-### Description
-
-A load balancer is introduced to route traffic and perform health checks. This abstracts the compute layer from direct user access.
 
 ### Benefits
 
 * Improved reliability through health checks
 * Foundation for horizontal scaling
 
----
 
 ## Stage 2: Multiple EC2 Instances (Manual Scaling)
 
