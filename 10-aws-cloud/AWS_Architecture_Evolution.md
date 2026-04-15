@@ -3,8 +3,6 @@
 
 This project documents the evolution of a basic single-instance deployment into a scalable, highly available, and production-ready architecture on AWS. It reflects industry best practices for system design, reliability, and cost optimization.
 
----
-
 ## Objectives
 
 * Demonstrate infrastructure evolution in real-world systems
@@ -12,8 +10,6 @@ This project documents the evolution of a basic single-instance deployment into 
 * Implement stateless architecture
 * Achieve high availability and fault tolerance
 * Introduce safe deployment strategies
-
----
 
 ## Stage 0: Single EC2 Instance
 
