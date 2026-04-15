@@ -3,7 +3,7 @@
 
 This project documents the evolution of a basic single-instance deployment into a scalable, highly available, and production-ready architecture on AWS. It reflects industry best practices for system design, reliability, and cost optimization.
 
-## Objectives
+## Objectives :
 
 * Demonstrate infrastructure evolution in real-world systems
 * Apply scaling strategies (vertical and horizontal)
@@ -16,7 +16,7 @@ This project documents the evolution of a basic single-instance deployment into 
 
 A single EC2 instance hosts both the application and database.
 
-### Architecture:
+### Architecture :
 
 ```mermaid
 graph TD
