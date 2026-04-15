@@ -16,7 +16,7 @@ This project documents the evolution of a basic single-instance deployment into 
 
 A single EC2 instance hosts both the application and database.
 
-### Architecture
+### Architecture:
 
 ```mermaid
 graph TD
@@ -31,11 +31,11 @@ graph TD
 * Limited performance under load
 
 
-### Stage 1: Introduce Load Balancer
+## Stage 1: Introduce Load Balancer
 
 A load balancer is introduced to route traffic and perform health checks. This abstracts the compute layer from direct user access.
 
-### Architecture
+### Architecture:
 
 ```mermaid
 graph TD
@@ -44,7 +44,7 @@ graph TD
 ```
 
 
-### Benefits
+#### Benefits
 
 * Improved reliability through health checks
 * Foundation for horizontal scaling
