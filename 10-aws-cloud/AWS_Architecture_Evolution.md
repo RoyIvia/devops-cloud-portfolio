@@ -11,7 +11,7 @@ This project documents the evolution of a basic single-instance deployment into 
 * Achieve high availability and fault tolerance
 * Introduce safe deployment strategies
 
-## Stage 0: Single EC2 Instance
+### Stage 0: Single EC2 Instance
 
 
 A single EC2 instance hosts both the application and database.
@@ -31,7 +31,7 @@ graph TD
 * Limited performance under load
 
 
-## Stage 1: Introduce Load Balancer
+### Stage 1: Introduce Load Balancer
 
 A load balancer is introduced to route traffic and perform health checks. This abstracts the compute layer from direct user access.
 
