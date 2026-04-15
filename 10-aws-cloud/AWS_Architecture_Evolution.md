@@ -78,7 +78,9 @@ graph TD
 
 ## Stage 3: Auto Scaling Group
 
-### Architecture
+An Auto Scaling Group (ASG) manages instance lifecycle based on defined capacity parameters.
+
+### Architecture:
 
 ```mermaid
 graph TD
@@ -89,20 +91,13 @@ graph TD
     ASG --> EC23[EC2]
 ```
 
-### Description
-
-An Auto Scaling Group (ASG) manages instance lifecycle based on defined capacity parameters.
-
 ### Benefits
 
 * Automatic provisioning and termination of instances
 * Improved resilience
 
----
 
 ## Stage 4: Scaling Policies
-
-### Description
 
 Scaling policies define how the system responds to demand.
 
@@ -116,11 +111,8 @@ Scaling policies define how the system responds to demand.
 * Dynamic resource allocation
 * Cost optimization
 
----
 
 ## Stage 5: Launch Templates
-
-### Description
 
 Launch templates define standardized configurations for instances, including:
 
@@ -134,11 +126,12 @@ Launch templates define standardized configurations for instances, including:
 * Consistency across instances
 * Faster and reliable scaling operations
 
----
 
 ## Stage 6: Stateless Architecture
 
-### Architecture
+Application state is externalized to managed services such as databases, object storage, and caching layers.
+
+### Architecture:
 
 ```mermaid
 graph TD
@@ -160,9 +153,6 @@ graph TD
     EC23 --> Cache
 ```
 
-### Description
-
-Application state is externalized to managed services such as databases, object storage, and caching layers.
 
 ### Benefits
 
@@ -170,9 +160,10 @@ Application state is externalized to managed services such as databases, object 
 * Enables true horizontal scaling
 * Improves reliability and data durability
 
----
 
 ## Stage 7: Multi-AZ Deployment
+
+Instances are distributed across multiple Availability Zones.
 
 ### Architecture
 
@@ -192,20 +183,14 @@ graph TD
     LB --> EC22
 ```
 
-### Description
-
-Instances are distributed across multiple Availability Zones.
 
 ### Benefits
 
 * High availability
 * Fault isolation
 
----
 
 ## Stage 8: Rolling Deployments
-
-### Description
 
 Rolling deployments update instances incrementally to avoid downtime.
 
@@ -222,8 +207,6 @@ Rolling deployments update instances incrementally to avoid downtime.
 * Continuous availability
 * Reduced deployment risk
 
----
-
 ## Stage 9: Production Enhancements
 
 ### Components
@@ -239,7 +222,6 @@ Rolling deployments update instances incrementally to avoid downtime.
 * Faster incident response
 * Automated deployments
 
----
 
 ## Final Architecture
 
@@ -264,7 +246,6 @@ graph TD
     EC23 --> Cache
 ```
 
----
 
 ## Cost and Value Evolution
 
@@ -275,7 +256,6 @@ graph TD
 | Auto Scaling      | Optimized | Efficient scaling                |
 | Full Architecture | Higher    | High availability and resilience |
 
----
 
 ## Key Principles
 
@@ -285,20 +265,6 @@ graph TD
 * Monitor system performance continuously
 * Optimize for both cost and reliability
 
----
-
-## Repository Structure
-
-```
-/project
- ├── README.md
- ├── architecture/
- ├── infrastructure/
- ├── application/
- └── deployment/
-```
-
----
 
 ## Conclusion
 
