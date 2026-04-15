@@ -52,7 +52,10 @@ graph TD
 
 ## Stage 2: Multiple EC2 Instances (Manual Scaling)
 
-### Architecture
+Additional instances are manually provisioned to distribute traffic.
+
+
+### Architecture:
 
 ```mermaid
 graph TD
@@ -61,9 +64,6 @@ graph TD
     LB --> EC22[EC2 Instance 2]
 ```
 
-### Description
-
-Additional instances are manually provisioned to distribute traffic.
 
 ### Benefits
 
@@ -75,7 +75,6 @@ Additional instances are manually provisioned to distribute traffic.
 * Manual scaling
 * Risk of configuration inconsistencies
 
----
 
 ## Stage 3: Auto Scaling Group
 
