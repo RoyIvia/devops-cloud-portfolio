@@ -286,7 +286,7 @@ Requirements include:
 * Write-heavy paths for payment processing
 * Strict reliability and consistency requirements
 
-### Architecture Mapping
+### Architecture Mapping:
 
 ```mermaid
 graph TD
