@@ -12,7 +12,7 @@ The design follows a cloud-native progression:
 
 The final system reflects a production-aligned architecture pattern used in modern cloud environments.
 
----
+
 
 ## Final Architecture
 
@@ -20,7 +20,7 @@ The final system reflects a production-aligned architecture pattern used in mode
 User → ALB → Target Group → EC2 Instances (AMI-based) → Node.js (PM2-managed)
 ```
 
----
+
 
 ## 1. Compute Layer (EC2 Configuration)
 
@@ -44,7 +44,7 @@ Inbound Rules:
 
 The instance served as the foundational environment for application deployment and system configuration.
 
----
+
 
 ## 2. System Initialization
 
