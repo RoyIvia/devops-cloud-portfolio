@@ -215,6 +215,7 @@ pm2 list
 ```bash
 pm2 save
 pm2 startup
+#Execute the command returned by PM2 to enable systemd integration
 ```
 
 PM2 transitions the application from a manually executed script into a managed service.
