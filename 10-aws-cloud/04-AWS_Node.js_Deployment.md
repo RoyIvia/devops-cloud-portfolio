@@ -321,6 +321,8 @@ A fully scalable AWS deployment architecture featuring:
 - Auto Scaling Group for elasticity
 - Secure backend isolation from public access
 - Fully reproducible deployment pipeline
+- Compute layer is decoupled from traffic layer using ALB
+- Horizontal scaling is achieved without application changes
 
 
 ## Key Engineering Concepts
