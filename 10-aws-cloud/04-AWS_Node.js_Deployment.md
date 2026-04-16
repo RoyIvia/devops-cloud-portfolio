@@ -17,7 +17,6 @@ The design follows a cloud-native progression:
 
 The final system reflects a production-aligned architecture pattern used in modern cloud environments.
 
----
 
 ## System Architecture
 
@@ -36,7 +35,7 @@ graph TD
     E3 --> F
 ```
 
----
+
 
 ## 1. Compute Layer (EC2 Configuration)
 
@@ -58,7 +57,7 @@ Inbound Rules:
 - Custom TCP (3000) → Temporary (development validation only)
 ```
 
----
+
 
 ## 2. EC2 Access (SSH Connection Workflow)
 
@@ -72,7 +71,7 @@ chmod 400 myServer1_Key.pem
 
 This ensures the private key is not publicly readable, which is required by SSH.
 
----
+
 
 ### Step 2: Connect to EC2 instance
 
@@ -88,7 +87,7 @@ ssh -i myServer1_Key.pem ubuntu@<EC2_PUBLIC_IP>
 
 Successful execution grants secure terminal access to the EC2 environment.
 
----
+
 
 ## 3. System Initialization
 
@@ -117,7 +116,7 @@ npm -v
 
 At this stage, the EC2 instance is fully prepared to host and execute a Node.js application.
 
----
+
 
 ## 4. Application Layer (Node.js Service)
 
@@ -162,7 +161,7 @@ Press ESC and input the following to save the code and exit vim editor
 :wq!
 ```
 
----
+
 
 ## 5. Runtime Execution Model
 
@@ -179,7 +178,7 @@ node app.js
 
 This establishes the need for a process manager.
 
----
+
 
 ## 6. Process Management Layer (PM2)
 
@@ -218,7 +217,7 @@ pm2 startup
 
 PM2 transitions the application from a manually executed script into a managed service.
 
----
+
 
 ## 7. Application Validation
 
@@ -238,7 +237,7 @@ Process verification:
 sudo ss -tulnp | grep 3000
 ```
 
----
+
 
 ## 8. Security Posture Hardening
 
@@ -260,7 +259,7 @@ This enforces a layered security model:
 - Private Layer → EC2 instances
 - Compute Layer → Isolated backend execution
 
----
+
 
 ## 9. Immutable Infrastructure (AMI Strategy)
 
@@ -281,7 +280,7 @@ EC2 → Instance → Actions → Image and templates → Create Image
 - Eliminates manual setup
 - Enables rapid provisioning of identical servers
 
----
+
 
 ## 10. Scaling Layer (Auto Scaling Group + ALB)
 
@@ -309,7 +308,7 @@ Health Check Path: /
 - ASG ensures availability and scaling
 - Instances automatically join based on health status
 
----
+
 
 ## 11. Final Architecture
 
@@ -317,7 +316,7 @@ Health Check Path: /
 User → ALB → Target Group → Auto Scaling Group → EC2 Instances (AMI-based) → Node.js (PM2-managed)
 ```
 
----
+
 
 ## 12. Key Engineering Concepts
 
@@ -332,7 +331,7 @@ User → ALB → Target Group → Auto Scaling Group → EC2 Instances (AMI-base
 - Network security using AWS Security Groups
 - Infrastructure reproducibility principles
 
----
+
 
 ## 13. Final Outcome
 
