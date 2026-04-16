@@ -1,5 +1,11 @@
 # AWS Node.js Deployment Pipeline & Custom AMI Creation
 
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
+![EC2](https://img.shields.io/badge/EC2-Compute-blue?logo=amazon-aws)
+![Node.js](https://img.shields.io/badge/Node.js-Runtime-green?logo=node.js)
+![PM2](https://img.shields.io/badge/PM2-Process%20Manager-black)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu%2024.04-red?logo=ubuntu)
+![Architecture](https://img.shields.io/badge/Architecture-Scalable%20System-purple)
 
 This project implements an end-to-end deployment pipeline for a Node.js application on AWS, evolving a single EC2 instance into a reusable, scalable, load-balanced architecture.
 
