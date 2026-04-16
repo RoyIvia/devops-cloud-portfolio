@@ -309,17 +309,19 @@ Health Check Path: /
 - ASG ensures availability and scaling
 - Instances automatically join based on health status
 
+##  Final Outcome
+
+A fully scalable AWS deployment architecture featuring:
+
+- Immutable infrastructure using AMI
+- Managed Node.js runtime using PM2
+- Load-balanced application layer via ALB
+- Auto Scaling Group for elasticity
+- Secure backend isolation from public access
+- Fully reproducible deployment pipeline
 
 
-## 11. Final Architecture
-
-```text
-User → ALB → Target Group → Auto Scaling Group → EC2 Instances (AMI-based) → Node.js (PM2-managed)
-```
-
-
-
-## 12. Key Engineering Concepts
+## Key Engineering Concepts
 
 - EC2 provisioning and lifecycle management
 - Secure SSH-based remote access
@@ -334,13 +336,3 @@ User → ALB → Target Group → Auto Scaling Group → EC2 Instances (AMI-base
 
 
 
-## 13. Final Outcome
-
-A fully scalable AWS deployment architecture featuring:
-
-- Immutable infrastructure using AMI
-- Managed Node.js runtime using PM2
-- Load-balanced application layer via ALB
-- Auto Scaling Group for elasticity
-- Secure backend isolation from public access
-- Fully reproducible deployment pipeline
