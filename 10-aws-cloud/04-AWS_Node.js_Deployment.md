@@ -1,4 +1,4 @@
-# AWS Node.js Deployment Pipeline (EC2 → AMI → PM2 → ALB)
+# AWS Node.js Deployment Pipeline & Custom AMI Creation
 
 ## System Overview
 
