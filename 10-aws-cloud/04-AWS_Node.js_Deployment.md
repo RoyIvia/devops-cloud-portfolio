@@ -59,7 +59,7 @@ Inbound Rules:
 
 
 
-## 2. EC2 Access (SSH Connection Workflow)
+### 2. EC2 Access (SSH Connection Workflow)
 
 Before any configuration can begin, secure access to the EC2 instance is established using SSH key-based authentication.
 
