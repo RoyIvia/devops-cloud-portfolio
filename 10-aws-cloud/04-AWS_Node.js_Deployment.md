@@ -18,7 +18,7 @@ The design follows a cloud-native progression:
 The final system reflects a production-aligned architecture pattern used in modern cloud environments.
 
 
-## System Architecture
+### System Architecture
 
 ```mermaid
 graph TD
@@ -37,7 +37,7 @@ graph TD
 
 
 
-## 1. Compute Layer (EC2 Configuration)
+### 1. Compute Layer (EC2 Configuration)
 
 A baseline EC2 instance was provisioned using:
 
