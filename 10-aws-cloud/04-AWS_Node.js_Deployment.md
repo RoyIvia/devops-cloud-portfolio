@@ -13,10 +13,21 @@ The final system reflects a production-aligned architecture pattern used in mode
 
 ---
 
-## Final Architecture
+## System Architecture
 
-```text
-User → ALB → Target Group → Auto Scaling Group → EC2 Instances (AMI-based) → Node.js (PM2-managed)
+```mermaid
+graph TD
+    A[User Request] --> B[Application Load Balancer - ALB]
+    B --> C[Target Group]
+    C --> D[Auto Scaling Group]
+
+    D --> E1[EC2 Instance - AMI Based]
+    D --> E2[EC2 Instance - AMI Based]
+    D --> E3[EC2 Instance - AMI Based]
+
+    E1 --> F[Node.js App - PM2 Managed]
+    E2 --> F
+    E3 --> F
 ```
 
 ---
