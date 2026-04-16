@@ -12,15 +12,15 @@ The design follows a cloud-native progression:
 
 The final system reflects a production-aligned architecture pattern used in modern cloud environments.
 
-
+---
 
 ## Final Architecture
 
 ```text
-User → ALB → Target Group → EC2 Instances (AMI-based) → Node.js (PM2-managed)
+User → ALB → Target Group → Auto Scaling Group → EC2 Instances (AMI-based) → Node.js (PM2-managed)
 ```
 
-
+---
 
 ## 1. Compute Layer (EC2 Configuration)
 
@@ -42,46 +42,90 @@ Inbound Rules:
 - Custom TCP (3000) → Temporary (development validation only)
 ```
 
-The instance served as the foundational environment for application deployment and system configuration.
+---
 
+## 2. EC2 Access (SSH Connection Workflow)
 
+Before any configuration can begin, secure access to the EC2 instance is established using SSH key-based authentication.
 
-## 2. System Initialization
+### Step 1: Set correct key permissions (local machine)
 
-Once connected via SSH:
+```bash
+chmod 400 myServer1_Key.pem
+```
+
+This ensures the private key is not publicly readable, which is required by SSH.
+
+---
+
+### Step 2: Connect to EC2 instance
+
+```bash
+ssh -i myServer1_Key.pem ubuntu@<EC2_PUBLIC_IP>
+```
+
+### Explanation:
+- `ssh` → Secure Shell protocol
+- `-i` → Specifies identity file (private key)
+- `ubuntu` → Default username for Ubuntu AMIs
+- `<EC2_PUBLIC_IP>` → Public IPv4 address of EC2 instance
+
+Successful execution grants secure terminal access to the EC2 environment.
+
+---
+
+## 3. System Initialization
+
+Once connected via SSH, the first step is preparing the instance for software installation and application runtime.
+
+System packages are updated to ensure compatibility and security:
 
 ```bash
 sudo apt update -y
 sudo apt upgrade -y
 ```
 
-Node.js runtime installed:
+Node.js and npm are installed to provide the runtime environment required to execute JavaScript server-side applications:
 
 ```bash
 sudo apt install nodejs -y
 sudo apt install npm -y
 ```
 
-Verification:
+Verification confirms successful installation:
 
 ```bash
 node -v
 npm -v
 ```
 
+At this stage, the EC2 instance is fully prepared to host and execute a Node.js application.
 
+---
 
-## 3. Application Layer (Node.js Service)
+## 4. Application Layer (Node.js Service)
 
-Application structure:
+The application is structured inside a dedicated working directory to isolate project files from the system environment.
 
 ```bash
 mkdir app
+```
+
+Creates a dedicated application folder where all source code will reside.
+
+```bash
 cd app
+```
+
+Moves into the application directory to ensure all subsequent operations occur within the project scope.
+
+```bash
 vim app.js
 ```
 
-Core service implementation:
+Creates the main application entry file responsible for handling HTTP requests.
+
+### Application Implementation
 
 ```javascript
 const http = require("http");
@@ -95,171 +139,185 @@ server.listen(3000, "0.0.0.0", () => {
 });
 ```
 
-At this stage, the service is bound to the instance on port 3000.
+---
 
+## 5. Runtime Execution Model
 
-
-## 4. Runtime Execution Model
-
-Initial execution:
+The application is executed using the Node.js runtime:
 
 ```bash
 node app.js
 ```
 
-Observation:
-- Foreground process execution
-- No fault tolerance
-- No persistence layer
+### Key limitation identified:
+- Foreground execution blocks terminal session
+- No persistence across reboots
+- No automatic recovery on failure
 
-This defined the need for a managed process runtime.
+This establishes the need for a process manager.
 
+---
 
+## 6. Process Management Layer (PM2)
 
-## 5. Process Management Layer (PM2)
+PM2 (Process Manager 2) is a production-grade process manager for Node.js applications. It manages application execution as a background service.
 
-PM2 introduced to transition from manual execution to managed runtime:
+### Core capabilities:
+- Daemonized (background) execution
+- Automatic restart on crash
+- Process monitoring
+- Persistent startup after reboot
+
+### Installation:
 
 ```bash
 sudo npm install -g pm2
+```
+
+### Start application:
+
+```bash
 pm2 start app.js
 ```
 
-Operational control:
+### Process inspection:
+
+```bash
+pm2 list
+```
+
+### Enable persistence:
 
 ```bash
 pm2 save
 pm2 startup
-pm2 list
 ```
 
-PM2 provides:
-- Process persistence across reboots
-- Automatic restart on failure
-- Background execution model
-- Basic runtime observability
+PM2 transitions the application from a manually executed script into a managed service.
 
 ---
 
-## 6. Validation and Observability
-
-Local verification:
+## 7. Application Validation
 
 ```bash
 curl http://localhost:3000
 ```
 
-Process inspection:
+Expected output:
+
+```
+Hello from AWS Node.js deployment 🚀
+```
+
+Process verification:
 
 ```bash
 sudo ss -tulnp | grep 3000
 ```
 
-Confirms:
-- Active Node.js listener
-- Stable runtime process
+---
 
+## 8. Security Posture Hardening
 
+Security is progressively enforced as the architecture evolves.
 
-## 7. Security Posture Hardening
+### Initial state:
+- EC2 publicly reachable via IP
+- Port 3000 exposed for testing purposes
+- SSH restricted to personal IP
 
-Security model transitioned from development exposure to controlled access:
+### Hardened state:
+- Direct EC2 public access removed for application traffic
+- Only ALB is publicly accessible
+- EC2 instances only accept traffic from ALB security group
 
-### Development state:
-- Direct access to port 3000 allowed temporarily
+This enforces a layered security model:
 
-### Final state:
-- EC2 instances not exposed to public traffic
-- Only ALB permitted to communicate with backend instances
-- SSH restricted to controlled IP access
+- Public Layer → ALB only
+- Private Layer → EC2 instances
+- Compute Layer → Isolated backend execution
 
-This enforces a proper separation between compute and traffic layers.
+---
 
+## 9. Immutable Infrastructure (AMI Strategy)
 
-
-## 8. Immutable Infrastructure (AMI Strategy)
-
-Once the EC2 instance reached a stable configuration (Node.js + application + PM2), it was captured as a reusable machine image.
-
-AMI creation path:
+Once the EC2 instance is fully configured, it is captured as an Amazon Machine Image (AMI).
 
 ```text
 EC2 → Instance → Actions → Image and templates → Create Image
 ```
 
-Captured state includes:
-- Operating system configuration
-- Node.js runtime environment
-- Application source code
-- PM2 process configuration
+### AMI includes:
+- Ubuntu OS configuration
+- Node.js runtime
+- Application code
+- PM2 configuration
 
-Engineering outcome:
+### Outcome:
 - Reproducible infrastructure
-- Zero-touch provisioning for new instances
-- Elimination of manual configuration drift
+- Eliminates manual setup
+- Enables rapid provisioning of identical servers
 
+---
 
+## 10. Scaling Layer (Auto Scaling Group + ALB)
 
-## 9. Scaling Layer (Application Load Balancer)
+A new EC2 instance is launched from the AMI to validate reproducibility.
 
-An ALB was introduced to abstract traffic routing from compute infrastructure.
+This confirms that infrastructure can be duplicated without manual configuration.
 
-Configuration:
+### Auto Scaling Group (ASG):
+- Maintains desired number of instances
+- Replaces unhealthy instances
+- Launches instances from AMI automatically
+
+### Application Load Balancer (ALB):
 
 ```text
 Type: Application Load Balancer
 Scheme: Internet-facing
 Listener: HTTP (80)
 Target Group: EC2 instances (port 3000)
-Health Check: /
+Health Check Path: /
 ```
 
-Responsibilities:
-- Traffic distribution across instances
-- Health-based routing decisions
-- Horizontal scaling enablement
-- Single entry point for system access
-
-
-
-## 10. Operational Model
-
-The system operates as a decoupled multi-layer architecture:
-
-- ALB handles request routing
-- Target Group manages instance selection
-- EC2 instances execute compute workload
-- PM2 ensures application lifecycle stability
-- AMI ensures infrastructure reproducibility
+### Behavior:
+- ALB distributes traffic across EC2 instances
+- ASG ensures availability and scaling
+- Instances automatically join based on health status
 
 ---
 
-## 11. Engineering Challenges Addressed
+## 11. Final Architecture
 
-Throughout the implementation, the following system-level issues were resolved:
-
-- SSH authentication mismatches (key association and user configuration)
-- Network accessibility constraints due to security group rules
-- Application exposure control (port-level access management)
-- Process lifecycle limitations in foreground execution
-- Load balancer health check configuration requirements
-
-Each issue was resolved through iterative infrastructure-level debugging.
+```text
+User → ALB → Target Group → Auto Scaling Group → EC2 Instances (AMI-based) → Node.js (PM2-managed)
+```
 
 ---
 
-## 12. Final System State
+## 12. Key Engineering Concepts
 
-The final deployed system represents a fully functional cloud architecture with:
-
-- Immutable EC2 provisioning via AMI
-- Managed Node.js runtime via PM2
-- Load-balanced traffic distribution via ALB
-- Secure backend compute isolation
-- Repeatable and scalable deployment model
+- EC2 provisioning and lifecycle management
+- Secure SSH-based remote access
+- Linux system initialization and configuration
+- Node.js backend service deployment
+- Process management using PM2
+- Immutable infrastructure using AMI
+- Horizontal scaling using Auto Scaling Groups
+- Load balancing using ALB
+- Network security using AWS Security Groups
+- Infrastructure reproducibility principles
 
 ---
 
-## Conclusion
+## 13. Final Outcome
 
-This implementation demonstrates a complete cloud deployment lifecycle, transitioning from single-instance execution to a scalable distributed system using AWS-native components and Linux-based process management strategies.
+A fully scalable AWS deployment architecture featuring:
+
+- Immutable infrastructure using AMI
+- Managed Node.js runtime using PM2
+- Load-balanced application layer via ALB
+- Auto Scaling Group for elasticity
+- Secure backend isolation from public access
+- Fully reproducible deployment pipeline
