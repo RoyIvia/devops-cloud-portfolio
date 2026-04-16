@@ -69,7 +69,7 @@ node -v
 npm -v
 ```
 
----
+
 
 ## 3. Application Layer (Node.js Service)
 
@@ -97,7 +97,7 @@ server.listen(3000, "0.0.0.0", () => {
 
 At this stage, the service is bound to the instance on port 3000.
 
----
+
 
 ## 4. Runtime Execution Model
 
@@ -114,7 +114,7 @@ Observation:
 
 This defined the need for a managed process runtime.
 
----
+
 
 ## 5. Process Management Layer (PM2)
 
