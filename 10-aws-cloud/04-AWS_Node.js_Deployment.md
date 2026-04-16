@@ -29,7 +29,7 @@ A baseline EC2 instance was provisioned using:
 AMI: Ubuntu Server 24.04 LTS (HVM)
 Instance Type: t3.micro
 Network: Default VPC (public subnet enabled)
-Key Pair: SSH authentication (.pem)
+Key Pair: SSH authentication (.pem)  #downloaded to local machone
 ```
 
 Security Group configuration:
@@ -126,6 +126,8 @@ Creates the main application entry file responsible for handling HTTP requests.
 
 ### Application Implementation
 
+The following  code is written using vim inside app.js
+
 ```javascript
 const http = require("http");
 
@@ -136,6 +138,11 @@ const server = http.createServer((req, res) => {
 server.listen(3000, "0.0.0.0", () => {
   console.log("Application running on port 3000");
 });
+```
+Press ESC and input the following to save the code and exit vim editor
+
+```
+:wq!
 ```
 
 ---
@@ -149,7 +156,7 @@ node app.js
 ```
 
 ### Key limitation identified:
-- Foreground execution blocks terminal session
+- Foreground execution blocks the terminal session
 - No persistence across reboots
 - No automatic recovery on failure
 
