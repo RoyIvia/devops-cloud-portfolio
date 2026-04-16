@@ -159,7 +159,7 @@ Confirms:
 - Active Node.js listener
 - Stable runtime process
 
----
+
 
 ## 7. Security Posture Hardening
 
@@ -175,7 +175,7 @@ Security model transitioned from development exposure to controlled access:
 
 This enforces a proper separation between compute and traffic layers.
 
----
+
 
 ## 8. Immutable Infrastructure (AMI Strategy)
 
@@ -198,7 +198,7 @@ Engineering outcome:
 - Zero-touch provisioning for new instances
 - Elimination of manual configuration drift
 
----
+
 
 ## 9. Scaling Layer (Application Load Balancer)
 
@@ -220,7 +220,7 @@ Responsibilities:
 - Horizontal scaling enablement
 - Single entry point for system access
 
----
+
 
 ## 10. Operational Model
 
