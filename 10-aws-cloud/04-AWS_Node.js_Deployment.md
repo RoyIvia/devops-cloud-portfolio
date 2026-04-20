@@ -35,8 +35,6 @@ graph TD
     E3 --> F
 ```
 
-
-
 ## 1. Compute Layer (EC2 Configuration)
 
 A baseline EC2 instance was provisioned using:
