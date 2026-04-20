@@ -64,7 +64,6 @@ graph TD
     LB --> EC22[EC2 Instance 2]
 ```
 
-
 ### Benefits
 
 * Increased capacity
