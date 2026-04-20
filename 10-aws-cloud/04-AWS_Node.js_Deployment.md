@@ -18,7 +18,6 @@ The design follows a cloud-native progression:
 The final system reflects a production-aligned architecture pattern used in modern cloud environments.
 
 
-
 ### System Architecture:
 
 ```mermaid
