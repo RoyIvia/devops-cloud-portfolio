@@ -5,7 +5,6 @@ I’m building hands-on skills in DevOps and Cloud Engineering with a strong foc
 
 This repository serves as my **central DevOps portfolio**, connecting all my projects, experiments, and production-style implementations.
 
----
 
 ## What I’m Working Towards
 
@@ -15,7 +14,6 @@ This repository serves as my **central DevOps portfolio**, connecting all my pro
 - Kubernetes-based deployments
 - AI-enhanced monitoring and operations
 
----
 
 ## Core Skills
 
