@@ -25,7 +25,6 @@ This repository serves as my **central DevOps portfolio**, connecting all my pro
 - Python for automation
 - Observability & AIOps
 
----
 
 ## Portfolio Structure
 This repository will evolve as I progress through a structured DevOps roadmap.
@@ -38,7 +37,6 @@ Planned sections include:
 - Monitoring & Reliability
 - Capstone DevOps Project
 
----
 
 ## Learning Approach
 
@@ -46,14 +44,12 @@ Planned sections include:
 - Real-world architectures
 - Clear documentation over complexity
 
----
 
 ## Blog & Professional Profiles
 
 - Medium: [https://medium.com/@royiviah](https://medium.com/@royiviah)  
 - LinkedIn: [https://www.linkedin.com/in/roy-ivia/](https://www.linkedin.com/in/roy-ivia/)
 
----
 
 ## Status
 
