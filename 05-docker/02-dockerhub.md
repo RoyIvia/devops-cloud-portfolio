@@ -2,7 +2,7 @@
 
 ### Registry Context
 
-:contentReference[oaicite:0]{index=0} is used as the image registry for distributing built artifacts.
+Dockerhub is used as the image registry for distributing built artifacts.
 
 In this workflow, it serves as:
 - A central repository for container images
