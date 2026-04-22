@@ -43,7 +43,7 @@ docker images
 ```
 
 
-### Step 4: Run Container
+### Step 4: Running Container
 
 ```bash
 docker run my-first-image
@@ -55,7 +55,6 @@ Expected output:
 Hello from my first Docker container
 ```
 
----
 
 ### Step 5: Inspect Containers
 
