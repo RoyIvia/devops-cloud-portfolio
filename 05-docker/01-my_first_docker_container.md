@@ -128,3 +128,12 @@ docker stop <container_id>
 docker rm <container_id>
 docker rmi my-first-image
 ```
+- `docker stop` → stops running container
+- `docker rm` → removes container
+- `docker rmi` → removes image
+
+###Significance:
+
+- Prevents resource waste
+- Keeps environment clean
+- Important in CI/CD pipelines
