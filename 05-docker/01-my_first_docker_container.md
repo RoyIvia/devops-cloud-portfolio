@@ -132,7 +132,7 @@ docker rmi my-first-image
 - `docker rm` → removes container
 - `docker rmi` → removes image
 
-###Significance:
+### Significance:
 
 - Prevents resource waste
 - Keeps environment clean
