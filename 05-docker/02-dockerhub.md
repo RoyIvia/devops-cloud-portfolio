@@ -1,7 +1,5 @@
 ## Image Distribution – Docker Hub
 
-### Registry Context
-
 Dockerhub is used as the image registry for distributing built artifacts.
 
 In this workflow, it serves as:
