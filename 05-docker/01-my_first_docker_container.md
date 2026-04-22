@@ -34,7 +34,38 @@ COPY app.py .
 
 CMD ["python", "app.py"]
 ```
+The Dockerfile defines **how the image is built**.
 
+Each instruction creates a **layer** in the final image.
+
+#### Instruction breakdown
+
+**FROM python:3.10-slim**
+- Sets the base image
+- This already contains:
+  - Python runtime
+  - minimal OS dependencies
+- Docker pulls this image from a registry if not available locally
+
+---
+
+**WORKDIR /app**
+- Creates (if not exists) and sets `/app` as the working directory
+- All subsequent instructions execute relative to this path
+
+---
+
+**COPY app.py .**
+- Copies `app.py` from host → container image
+- Source = build context (`.`)
+- Destination = `/app`
+
+---
+
+**CMD ["python", "app.py"]**
+- Defines the default command when the container starts
+- This is **not executed during build**
+- It runs only when the container is started
 
 ### Step 3: Building Image
 
