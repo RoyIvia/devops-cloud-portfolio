@@ -103,6 +103,11 @@ Expected output:
 ```
 Hello from my first Docker container
 ```
+- Docker creates a container from the image
+- Applies isolation using:
+  - namespaces
+  - cgroups
+- Executes the `CMD` defined in the Dockerfile
 
 
 ### Step 5: Inspecting Containers
