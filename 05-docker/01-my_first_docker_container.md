@@ -12,9 +12,8 @@ nano app.py
 print("Hello from my first Docker container")
 ```
 
----
 
-### Step 2: Create Dockerfile
+### Step 2: Creating Dockerfile
 
 ```bash
 nano Dockerfile
