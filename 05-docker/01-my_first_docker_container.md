@@ -47,20 +47,17 @@ CMD ["python", "app.py"]
   - minimal OS dependencies
 - Docker pulls this image from a registry if not available locally
 
----
 
 **WORKDIR /app**
 - Creates (if not exists) and sets `/app` as the working directory
 - All subsequent instructions execute relative to this path
 
----
 
 **COPY app.py .**
 - Copies `app.py` from host → container image
 - Source = build context (`.`)
 - Destination = `/app`
 
----
 
 **CMD ["python", "app.py"]**
 - Defines the default command when the container starts
