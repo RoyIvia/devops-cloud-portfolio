@@ -12,7 +12,6 @@ In this workflow, it serves as:
 My repository:
 https://hub.docker.com/repositories/royivia
 
----
 
 ## Image Tagging and Push Execution
 
@@ -36,7 +35,6 @@ docker tag my-first-image royivia/my-first-image:latest
 - Only a new reference is added
 - Both tags point to the same image ID
 
----
 
 ## Authentication
 
@@ -48,7 +46,6 @@ docker login
 
 This establishes a session for pushing images to the registry.
 
----
 
 ## Push Operation
 
@@ -69,7 +66,6 @@ This confirms:
 - Layered architecture efficiency
 - Content-addressable storage behavior
 
----
 
 ## Verification
 
@@ -84,7 +80,6 @@ docker pull royivia/my-first-image:latest
 docker run royivia/my-first-image
 ```
 
----
 
 ## System-Level Understanding
 
@@ -93,7 +88,6 @@ docker run royivia/my-first-image
 - Tagging defines human-readable references to those artifacts
 - Distribution is optimized via layer reuse
 
----
 
 ## Role in DevOps Workflow
 
