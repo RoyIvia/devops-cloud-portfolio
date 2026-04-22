@@ -34,11 +34,11 @@ COPY app.py .
 
 CMD ["python", "app.py"]
 ```
-The Dockerfile defines **how the image is built**.
+- The Dockerfile defines **how the image is built**.
 
-Each instruction creates a **layer** in the final image.
+- Each instruction creates a **layer** in the final image.
 
-#### Instruction breakdown
+### Instruction breakdown:
 
 **FROM python:3.10-slim**
 - Sets the base image
