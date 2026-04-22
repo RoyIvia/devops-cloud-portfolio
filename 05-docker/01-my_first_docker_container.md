@@ -42,7 +42,6 @@ Verify:
 docker images
 ```
 
----
 
 ### Step 4: Run Container
 
