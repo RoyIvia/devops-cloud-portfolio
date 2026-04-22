@@ -11,6 +11,12 @@ nano app.py
 ```python
 print("Hello from my first Docker container")
 ```
+- This is a minimal Python application
+- It serves as the workload we want to containerise
+- In real scenarios, this would be:
+  - an API
+  - a service
+  - a background worker
 
 
 ### Step 2: Creating Dockerfile
