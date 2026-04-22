@@ -1,7 +1,5 @@
 # Docker Fundamentals – From Zero to First Container
 
-## Overview
-This repository documents my hands-on learning of Docker as part of my DevOps engineering journey.
 
 The goal is not just to run containers, but to understand:
 - How containers actually work
