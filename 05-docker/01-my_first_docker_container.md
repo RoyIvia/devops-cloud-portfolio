@@ -2,7 +2,7 @@
 
 This section demonstrates a minimal end-to-end workflow.
 
-### Step 1: Create Application
+### Step 1: Creating Application
 
 ```bash
 nano app.py
