@@ -75,6 +75,12 @@ Verify:
 ```bash
 docker images
 ```
+- Docker reads the `Dockerfile`
+- Executes instructions sequentially
+- Creates an **image composed of layers**
+- `docker build` → starts the build process
+- `-t my-first-image` → tags the image
+- `.` → build context (current directory)
 
 
 ### Step 4: Running Container
