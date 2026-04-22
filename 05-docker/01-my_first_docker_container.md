@@ -56,14 +56,14 @@ Hello from my first Docker container
 ```
 
 
-### Step 5: Inspect Containers
+### Step 5: Inspecting Containers
 
 ```bash
 docker ps
 docker ps -a
 ```
 
----
+
 
 ### Step 6: Cleanup
 
