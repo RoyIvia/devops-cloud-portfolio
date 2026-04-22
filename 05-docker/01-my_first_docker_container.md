@@ -117,6 +117,8 @@ docker ps
 docker ps -a
 ```
 
+- `docker ps` → shows running containers
+- `docker ps -a` → shows all containers (including stopped)
 
 
 ### Step 6: Cleanup
