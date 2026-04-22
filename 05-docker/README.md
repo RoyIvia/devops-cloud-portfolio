@@ -1,9 +1,9 @@
 # Docker – Concepts, Architecture, and Practical Implementation
 
-## Overview
 This repository captures my understanding of Docker as a Cloud and DevOps Engineer.
 
-It focuses on how containerization works under the hood, how Docker leverages core Linux primitives, and how containerized applications are built, executed, and managed in real environments.
+It focuses on how containerization works under the hood, how Docker leverages core Linux primitives, and how containerized applications are built, executed, 
+and managed in real environments.
 
 ---
 
