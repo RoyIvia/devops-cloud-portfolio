@@ -70,11 +70,7 @@ CMD ["python", "app.py"]
 docker build -t my-first-image .
 ```
 
-Verify:
 
-```bash
-docker images
-```
 - Docker reads the `Dockerfile`
 - Executes instructions sequentially
 - Creates an **image composed of layers**
@@ -82,6 +78,19 @@ docker images
 - `-t my-first-image` → tags the image
 - `.` → build context (current directory)
 
+Verify:
+
+```bash
+docker images
+```
+
+- Lists locally available images
+- Confirms that the image was successfully built
+  
+Images are:
+- immutable
+- reusable
+- versionable (via tags)
 
 ### Step 4: Running Container
 
