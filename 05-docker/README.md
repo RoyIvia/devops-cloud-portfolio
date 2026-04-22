@@ -2,10 +2,9 @@
 
 This repository captures my understanding of Docker as a Cloud and DevOps Engineer.
 
-It focuses on how containerization works under the hood, how Docker leverages core Linux primitives, and how containerized applications are built, executed, 
+It focuses on how containerization works under the hood, how Docker leverages core Linux primitives, and how containerised applications are built, executed, 
 and managed in real environments.
 
----
 
 ## What is a Container?
 
@@ -21,7 +20,6 @@ Containers run as processes on the host system while maintaining isolation throu
 Container = Process + Namespaces + cgroups
 ```
 
----
 
 ## Containers vs Virtual Machines
 
@@ -35,7 +33,7 @@ Container = Process + Namespaces + cgroups
 
 Containers trade stronger isolation (VMs) for efficiency and speed.
 
----
+
 
 ## Why Containers Are Lightweight
 
@@ -52,7 +50,6 @@ This results in:
 - Faster startup times
 - Efficient resource utilization
 
----
 
 ## Docker
 
@@ -66,7 +63,6 @@ Docker is a platform that simplifies containerization by providing tooling for:
 - Containerization → concept
 - Docker → implementation
 
----
 
 ## Docker Architecture
 
@@ -83,7 +79,6 @@ docker CLI → Docker Daemon → Container Runtime
 
 If the Docker daemon is not running, Docker operations fail.
 
----
 
 ## Docker Lifecycle
 
@@ -99,23 +94,21 @@ Commands:
 - `docker run` → creates and starts a container
 - `docker push` → uploads image to a registry
 
----
 
 ## Core Docker Objects
 
 ### Dockerfile
-Defines the instructions to build an image.
+Defines the instructions/comands to build an image.
 
 ### Images
 - Read-only templates
 - Built in layers
-- Optimized for reuse and caching
+- Optimised for reuse and caching
 
 ### Containers
 - Running instances of images
 - Ephemeral by default
 
----
 
 ## Installing Docker (Ubuntu)
 
@@ -124,7 +117,6 @@ sudo apt update
 sudo apt install docker.io -y
 ```
 
----
 
 ## Starting and Verifying Docker
 
@@ -141,7 +133,6 @@ Verify:
 sudo systemctl status docker
 ```
 
----
 
 ## Granting User Access
 
@@ -153,7 +144,6 @@ sudo usermod -aG docker $USER
 
 Log out and log back in for changes to take effect.
 
----
 
 ## Verifying Installation
 
@@ -166,6 +156,5 @@ Successful output confirms:
 - Image pull works
 - Containers execute correctly
 
----
 
 
