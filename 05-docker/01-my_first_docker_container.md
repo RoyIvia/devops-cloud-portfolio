@@ -29,9 +29,8 @@ COPY app.py .
 CMD ["python", "app.py"]
 ```
 
----
 
-### Step 3: Build Image
+### Step 3: Building Image
 
 ```bash
 docker build -t my-first-image .
