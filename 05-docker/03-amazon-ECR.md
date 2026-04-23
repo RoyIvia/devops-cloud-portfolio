@@ -200,7 +200,7 @@ docker push 731245678901.dkr.ecr.eu-west-1.amazonaws.com/ecs-fargate-app:latest
 - The task definition **does not contain the image itself** , It contains a reference to an image stored in ECR.
 
 
-## Runtime Execution (
+## Runtime Execution
 
 When the ECS service starts:
 
