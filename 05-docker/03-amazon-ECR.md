@@ -266,7 +266,6 @@ Client Request → Response
 ```
 
 
-
 ## Validation
 
 Application accessed via ALB DNS:
