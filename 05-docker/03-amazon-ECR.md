@@ -126,8 +126,6 @@ docker tag royivia/ecs-fargate-app:latest royivia/ecs-fargate-app:latest
 docker push royivia/ecs-fargate-app:latest
 ```
 
-Observation:
-- Layers reused if already present
 - Image becomes globally pullable
 
 
