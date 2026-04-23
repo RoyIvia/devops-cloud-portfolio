@@ -11,7 +11,6 @@ The implementation covers:
 
 This reflects a production-aligned pattern for deploying stateless services.
 
----
 
 ## Architecture
 
@@ -53,7 +52,7 @@ This reflects a production-aligned pattern for deploying stateless services.
 
 ```
 
----
+
 
 ## Application Implementation
 
