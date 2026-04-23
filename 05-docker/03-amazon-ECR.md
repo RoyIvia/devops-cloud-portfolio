@@ -101,12 +101,6 @@ CMD ["python", "app.py"]
 docker build -t royivia/ecs-fargate-app:latest .
 ```
 
-Observation:
-- Image built in layers
-- Base image pulled from public registry
-- Final image includes only runtime + app
-
-
 
 ## Image Distribution – Docker Hub
 
