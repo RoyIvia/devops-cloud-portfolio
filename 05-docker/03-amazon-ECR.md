@@ -17,10 +17,41 @@ This reflects a production-aligned pattern for deploying stateless services.
 ## Architecture
 
 ```
-Client → ALB → ECS Service (Fargate Tasks) → Container
-                         ↑
-                         |
-                        ECR
+                        ┌───────────────────────────────┐
+                        │           Internet            │
+                        └──────────────┬────────────────┘
+                                       │
+                                       ▼
+                        ┌───────────────────────────────┐
+                        │   Application Load Balancer   │
+                        │        (Public Subnet)        │
+                        │        Port 80 (HTTP)         │
+                        └──────────────┬────────────────┘
+                                       │
+                        ┌──────────────▼──────────────┐
+                        │        Target Group         │
+                        │     (Health Check /health)  │
+                        └──────────────┬──────────────┘
+                                       │
+                ┌──────────────────────▼──────────────────────┐
+                │              ECS Service                    │
+                │           (Fargate Launch Type)             │
+                │                                             │
+                │   ┌──────────────────────────────────────┐  │
+                │   │            ECS Tasks                 │  │
+                │   │     (Private Subnets - awsvpc)       │  │
+                │   │                                      │  │
+                │   │   Container: Flask API (Port 5000)   │  │
+                │   └──────────────────────────────────────┘  │
+                └──────────────────────┬──────────────────────┘
+                                       │
+                                       ▼
+                        ┌───────────────────────────────┐
+                        │     Amazon ECR Repository     │
+                        │   (Image Storage - Private)   │
+                        └───────────────────────────────┘
+
+
 ```
 
 ---
