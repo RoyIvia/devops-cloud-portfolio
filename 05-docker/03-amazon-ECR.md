@@ -167,9 +167,6 @@ docker tag royivia/ecs-fargate-app:latest \
 docker push 731245678901.dkr.ecr.eu-west-1.amazonaws.com/ecs-fargate-app:latest
 ```
 
-Observation:
-- Only missing layers uploaded
-- Image registered with digest
 - Accessible via ECS
 
 
