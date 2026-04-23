@@ -247,9 +247,19 @@ Observation:
 ## Execution Flow
 
 ```
-docker build → docker tag → docker push (ECR)
-            → ECS Task Definition → ECS Service
-            → ALB → Client Request
+Local Build
+    ↓
+Docker Image (royivia/ecs-fargate-app)
+    ↓
+Push to ECR
+    ↓
+ECS Task Definition (references image)
+    ↓
+ECS Service (Fargate runs container)
+    ↓
+Application Load Balancer
+    ↓
+Client Request → Response
 ```
 
 ---
