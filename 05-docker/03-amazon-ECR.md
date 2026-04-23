@@ -208,7 +208,7 @@ Observation:
 }
 ```
 
----
+
 
 ### Service Configuration
 
@@ -218,7 +218,7 @@ Observation:
 - Networking: awsvpc
 - Load balancer attached
 
----
+
 
 ## Load Balancer Configuration
 
@@ -227,7 +227,7 @@ Observation:
 - Target group: ECS tasks
 - Health check path: `/health`
 
----
+
 
 ## Networking
 
@@ -237,7 +237,7 @@ Observation:
   - HTTP (80) inbound to ALB
   - ALB → ECS traffic on port 5000
 
----
+
 
 ## Execution Flow
 
@@ -257,7 +257,7 @@ Application Load Balancer
 Client Request → Response
 ```
 
----
+
 
 ## Validation
 
@@ -279,13 +279,5 @@ Health check:
 /health → 200 OK
 ```
 
----
 
-## Observations
-
-- Fargate abstracts infrastructure completely
-- ECS handles scheduling and lifecycle
-- ECR integrates with IAM for secure image access
-- ALB routes traffic to ephemeral container instances
-- Containers are replaceable and stateless
 
