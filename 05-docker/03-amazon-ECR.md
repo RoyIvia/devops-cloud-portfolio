@@ -154,7 +154,6 @@ aws ecr get-login-password --region eu-west-1 \
 | docker login --username AWS --password-stdin 731245678901.dkr.ecr.eu-west-1.amazonaws.com
 ```
 
----
 
 ### Tagging for ECR
 
@@ -163,7 +162,6 @@ docker tag royivia/ecs-fargate-app:latest \
 731245678901.dkr.ecr.eu-west-1.amazonaws.com/ecs-fargate-app:latest
 ```
 
----
 
 ### Push to ECR
 
@@ -176,7 +174,6 @@ Observation:
 - Image registered with digest
 - Accessible via ECS
 
----
 
 ## ECS Deployment
 
@@ -185,7 +182,6 @@ Observation:
 - Name: `royivia-ecs-cluster`
 - Launch type: Fargate
 
----
 
 ### Task Definition
 
