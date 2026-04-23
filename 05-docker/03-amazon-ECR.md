@@ -203,6 +203,19 @@ docker push 731245678901.dkr.ecr.eu-west-1.amazonaws.com/ecs-fargate-app:latest
 }
 ```
 
+- The task definition **does not contain the image itself** , It contains a reference to an image stored in ECR.
+
+
+## Runtime Execution (
+
+When the ECS service starts:
+
+1. ECS reads the task definition  
+2. Identifies the image in ECR  
+3. Authenticates to ECR using IAM role  
+4. Pulls the image from ECR  
+5. Fargate provisions compute resources  
+6. Container is started  
 
 
 ### Service Configuration
