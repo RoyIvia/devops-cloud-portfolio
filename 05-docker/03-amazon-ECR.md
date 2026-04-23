@@ -1,8 +1,7 @@
 # Containerized API Deployment on ECS Fargate with ECR and ALB
 
-## Overview
 
-This project captures the deployment of a containerized application on AWS using a managed container workflow.
+This project captures the deployment of a containerised application on AWS using a managed container workflow.
 
 The implementation covers:
 - Container build using Docker
