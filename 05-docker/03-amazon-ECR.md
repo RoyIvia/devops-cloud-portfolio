@@ -130,7 +130,6 @@ Observation:
 - Layers reused if already present
 - Image becomes globally pullable
 
----
 
 ## Image Distribution – Amazon ECR
 
@@ -146,7 +145,7 @@ Repository URI:
 731245678901.dkr.ecr.eu-west-1.amazonaws.com/ecs-fargate-app
 ```
 
----
+
 
 ### Authentication
 
