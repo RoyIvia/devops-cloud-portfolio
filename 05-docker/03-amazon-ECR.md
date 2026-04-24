@@ -15,6 +15,7 @@ This reflects a production-aligned pattern for deploying stateless services.
 ## Architecture
 
 ```
+
                         ┌───────────────────────────────┐
                         │           Internet            │
                         └──────────────┬────────────────┘
