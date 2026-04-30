@@ -1,6 +1,5 @@
 # DevOps Fundamentals
 
-## Overview
 DevOps is a culture and set of practices that improves an organization’s ability to deliver applications and services at high velocity. It bridges the gap between development and operations teams, enabling faster, more reliable, and scalable software delivery.
 
 
