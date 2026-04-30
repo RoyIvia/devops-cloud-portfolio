@@ -48,7 +48,6 @@ The SDLC defines the stages a software application goes through from concept to 
 5. **Release/Deployment** – Moving code to production.
 6. **Operations/Monitoring** – Running the application and capturing feedback.
 
----
 
 ### Key Roles in the Software Development Lifecycle
 
@@ -68,7 +67,7 @@ The SDLC defines the stages a software application goes through from concept to 
 | **UI / UX Designers** | Design user interfaces and experiences that are intuitive and meet user needs. |
 | **Project Manager (PM)** | Oversees the overall project execution, coordinates between teams, manages timelines, and ensures delivery within scope and budget. |
 
----
+
 
 ### How DevOps Interacts With These Roles
 - **Developers and DevOps engineers collaborate** on deployment automation, containerization, and infrastructure as code.  
