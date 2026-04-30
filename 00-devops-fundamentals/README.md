@@ -77,7 +77,7 @@ The SDLC defines the stages a software application goes through from concept to 
 
 > DevOps sits at the **intersection of development, operations, and reliability**, ensuring smooth delivery of software.
 
----
+
 
 ## 4. Key Takeaways
 - DevOps is a culture that emphasizes collaboration, automation, and continuous improvement.
