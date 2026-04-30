@@ -33,8 +33,7 @@ DevOps solves these problems by introducing:
 - Continuous integration and continuous delivery (CI/CD)
 - Shared responsibility for reliability and performance
 - Monitoring and continuous feedback loops
-- 
----
+  
 
 ## 3. Software Development Lifecycle (SDLC) and Roles in a Software Company
 
