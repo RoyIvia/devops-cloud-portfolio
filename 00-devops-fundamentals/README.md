@@ -12,7 +12,6 @@ DevOps is a culture and set of practices that improves an organization’s abili
   - **Continuous testing and monitoring**
   - **Reliable and scalable infrastructure**
 
----
 
 ## 2. Why DevOps is Important
 
