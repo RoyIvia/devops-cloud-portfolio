@@ -56,7 +56,6 @@ Cloud providers like AWS, Azure, and GCP rely heavily on virtualization:
 - **Automation**: VMs can be created, destroyed, and scaled programmatically using infrastructure-as-code tools like Terraform.
 - **Foundation for Containers and Cloud**: Understanding VMs is essential before moving to containers (Docker) and cloud infrastructure.
 
----
 
 ## Key Takeaways
 
