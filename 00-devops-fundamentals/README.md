@@ -43,7 +43,7 @@ The SDLC defines the stages a software application goes through from concept to 
 
 1. **Planning** – Understanding what the business needs.
 2. **Coding/Development** – Writing the software.
-3. **Build** – Compiling code and creating deployable artifacts.
+3. **Build** – Compiling code and creating deployable artefacts.
 4. **Testing** – Ensuring functionality, security, and performance.
 5. **Release/Deployment** – Moving code to production.
 6. **Operations/Monitoring** – Running the application and capturing feedback.
