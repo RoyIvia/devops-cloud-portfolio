@@ -48,7 +48,6 @@ Cloud providers like AWS, Azure, and GCP rely heavily on virtualization:
 - Without virtualization, only one team uses the server; the rest of the resources remain idle.
 - With virtualization, 8 VMs can run, each with 8 CPUs and 32 GB RAM, allowing multiple teams or applications to share the same hardware efficiently.
 
----
 
 ## Why Virtual Machines Matter for DevOps
 
