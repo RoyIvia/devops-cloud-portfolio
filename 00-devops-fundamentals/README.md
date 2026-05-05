@@ -54,7 +54,7 @@ The SDLC defines the stages a software application goes through from concept to 
 | Role | Responsibilities |
 |------|-----------------|
 | **Business Analyst (BA)** | Interfaces with the customer or market to gather product requirements, prepares the Business Requirements Document (BRD), and ensures the product meets business goals. |
-| **Product Manager (PM)** | Receives requirements from the BA, prioritizes features based on business value and organisational capacity, and creates a roadmap for development. |
+| **Product Manager (PM)** | Receives requirements from the BA, prioritises features based on business value and organisational capacity, and creates a roadmap for development. |
 | **Product Owner (PO)** | More technically-oriented; breaks down high-level requirements into actionable items called **EPICS** and user stories for development. |
 | **Solutions Architect / Software Architect** | Translates EPICS into a **high-level design (HLD)** and **low-level design (LLD)**, specifying how components interact and how infrastructure supports the application. |
 | **Developers / Software Engineers** | Implement features according to requirements and designs, using tools such as Git, Dockerfiles, Kubernetes manifests, and collaborating with DevOps engineers for smooth deployment. |
