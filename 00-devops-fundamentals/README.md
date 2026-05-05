@@ -79,7 +79,7 @@ The SDLC defines the stages a software application goes through from concept to 
 
 
 ## 4. Key Takeaways
-- DevOps is a culture that emphasizes collaboration, automation, and continuous improvement.
+- DevOps is a culture that emphasises collaboration, automation, and continuous improvement.
 - It solves problems caused by manual, siloed processes in traditional SDLC.
 - Understanding SDLC and roles is critical to applying DevOps practices effectively.
 - Modern DevOps pipelines rely on tools and practices that will be explored in this portfolio, including cloud platforms, containerization, orchestration, CI/CD, automation, and monitoring.
