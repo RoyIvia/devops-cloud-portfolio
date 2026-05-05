@@ -62,7 +62,7 @@ The SDLC defines the stages a software application goes through from concept to 
 | **Database Administrators (DBA)** | Design, deploy, and manage databases required by the application; maintain integrity, backups, and performance tuning. |
 | **DevOps Engineers** | Automate infrastructure, build CI/CD pipelines, ensure reliable deployments, manage cloud resources, and collaborate with development and operations teams. |
 | **Site Reliability Engineers (SRE)** | Focus on system reliability, scalability, and performance; monitor production systems and resolve incidents quickly. |
-| **Release Managers** | Plan and coordinate releases, ensuring deployment processes are smooth and rollback strategies exist. |
+| **Release Managers** | Plan and coordinate releases, ensuring deployment processes are smooth, and rollback strategies exist. |
 | **Technical Writers** | Document systems, APIs, and processes for both internal teams and end-users. |
 | **UI / UX Designers** | Design user interfaces and experiences that are intuitive and meet user needs. |
 | **Project Manager (PM)** | Oversees the overall project execution, coordinates between teams, manages timelines, and ensures delivery within scope and budget. |
