@@ -71,7 +71,9 @@ Data is simply sent to the destination.
 There is **no guarantee** that:
 
 - the data will arrive
+  
 - the data will arrive in order
+  
 - the data will arrive at all
 
 ### Real World Analogy
