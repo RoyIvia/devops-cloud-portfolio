@@ -12,7 +12,7 @@ At a high level, these protocols can be grouped into three categories:
 Most application protocols operate at the **Application Layer (Layer 7)** of the OSI model, while some support protocols operate at lower layers depending on their function.
 
 
-# Application Protocols
+## Application Protocols
 
 Application protocols define how software applications communicate over a network.
 
@@ -38,7 +38,7 @@ These protocols allow users and systems to perform tasks such as:
 - resolving domain names
 
 
-# HTTP
+## HTTP
 
 **HTTP (Hypertext Transfer Protocol)** is the protocol used to access web pages and transfer web content.
 
@@ -67,7 +67,7 @@ Default port:
 HTTP itself is **not encrypted**, which means data is sent in plain text unless additional security is applied.
 
 
-# HTTPS
+## HTTPS
 
 **HTTPS (Hypertext Transfer Protocol Secure)** is the secure version of HTTP.
 
@@ -97,7 +97,7 @@ HTTPS protects data in transit using three core security properties:
 Without HTTPS, attackers may intercept or tamper with data being transmitted between a user and a website.
 
 
-# SSL and TLS
+## SSL and TLS
 
 **SSL (Secure Sockets Layer)** and **TLS (Transport Layer Security)** are protocols used to secure communication between systems.
 
@@ -115,7 +115,7 @@ TLS is widely used for:
 Many security standards require modern TLS versions, especially **TLS 1.2 or higher**.
 
 
-# TLS Handshake
+## TLS Handshake
 
 A **TLS handshake** is the process that starts a secure encrypted session between two systems.
 
@@ -138,7 +138,7 @@ Secure Session Established
 TLS handshakes are foundational to how **HTTPS works**.
 
 
-# AWS Certificate Manager (ACM)
+## AWS Certificate Manager (ACM)
 
 In AWS, certificates used for HTTPS and TLS-based services are commonly managed with **AWS Certificate Manager (ACM)**.
 
@@ -156,7 +156,7 @@ ACM is commonly used with services such as:
 This is important in DevOps because secure certificate management is a core part of production infrastructure.
 
 
-# SMTP
+## SMTP
 
 **SMTP (Simple Mail Transfer Protocol)** is used to send email between mail servers.
 
@@ -176,7 +176,7 @@ Default ports commonly include:
 SMTP is used for **sending mail**, not retrieving it.
 
 
-# POP and IMAP
+## POP and IMAP
 
 Email clients use **POP** and **IMAP** to retrieve messages from a mail server.
 
@@ -199,7 +199,7 @@ Use case:
 Both operate at the **Application Layer (Layer 7)**.
 
 
-# RDP
+## RDP
 
 **RDP (Remote Desktop Protocol)** is used to remotely access the desktop of a Microsoft Windows computer.
 
@@ -218,7 +218,7 @@ RDP is commonly used for:
 Because RDP provides graphical desktop access, it should be secured carefully and never exposed broadly to the internet.
 
 
-# SSH
+## SSH
 
 **SSH (Secure Shell)** is a secure protocol used to remotely access a command-line interface on a Linux or Unix system.
 
@@ -233,14 +233,14 @@ SSH is commonly used for:
 - remote Linux administration
 - server management
 - secure command execution
-- tunneling and secure file transfer
+- tunnelling and secure file transfer
 
 SSH is essential in DevOps for managing cloud servers, troubleshooting systems, and automating infrastructure workflows.
 
 Although traditionally associated with Linux and Unix, SSH is also supported on modern Windows systems through **OpenSSH**.
 
 
-# RDP vs SSH
+## RDP vs SSH
 
 Both RDP and SSH are used for remote access, but they serve different purposes.
 
@@ -255,7 +255,7 @@ In cloud environments:
 - Linux servers are often accessed with **SSH**
 
 
-# FTP
+## FTP
 
 **FTP (File Transfer Protocol)** is used to transfer files between computers over a network.
 
@@ -279,7 +279,7 @@ In modern production systems, engineers often prefer more secure alternatives su
 - HTTPS-based file transfer
 
 
-# DNS
+## DNS
 
 **DNS (Domain Name System)** translates human-readable domain names into IP addresses.
 
@@ -306,7 +306,7 @@ DNS is critical for:
 - cloud application routing
 
 
-# ICMP
+## ICMP
 
 **ICMP (Internet Control Message Protocol)** is used by network devices to diagnose communication issues and generate error responses.
 
@@ -323,7 +323,7 @@ A common example is the **ping** utility, which sends an ICMP request and waits 
 If a host or route is unreachable, ICMP may return an error message.
 
 
-# DHCP
+## DHCP
 
 **DHCP (Dynamic Host Configuration Protocol)** automatically assigns IP configuration to devices on a network.
 
@@ -344,7 +344,7 @@ Typical use case:
 In practical networking terms, DHCP is often treated as an application/service protocol, even though it supports lower-level network configuration.
 
 
-# Management and Support Protocols
+## Management and Support Protocols
 
 Management and support protocols are used to configure, maintain, troubleshoot, and improve communication across a network.
 
@@ -358,7 +358,7 @@ Examples include:
 These protocols are essential for day-to-day operations in cloud and enterprise environments.
 
 
-# Ports and Application Protocols
+## Ports and Application Protocols
 
 Application protocols usually have assigned **port numbers**.
 
@@ -378,7 +378,7 @@ A computer can communicate with many services at once because each service uses 
 Unused ports are usually **closed for security reasons** because open ports can become attack paths.
 
 
-# Common Network Utilities
+## Common Network Utilities
 
 When working with networks, engineers use diagnostic tools to check connectivity, performance, and service availability.
 
@@ -529,7 +529,7 @@ Understanding these protocols allows engineers to:
 - support distributed applications in the cloud
 
 
-# Summary
+## Summary
 
 Key takeaways:
 
