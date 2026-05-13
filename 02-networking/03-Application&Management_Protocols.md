@@ -115,7 +115,7 @@ TLS is widely used for:
 Many security standards require modern TLS versions, especially **TLS 1.2 or higher**.
 
 
-## TLS Handshake
+### TLS Handshake
 
 A **TLS handshake** is the process that starts a secure encrypted session between two systems.
 
