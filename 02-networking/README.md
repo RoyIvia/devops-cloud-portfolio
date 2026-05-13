@@ -127,6 +127,7 @@ Core components of a production-grade VPC:
 - **Route Tables** → Traffic control
 
 **Engineering Insight:**  
+
 A secure architecture always places critical resources (databases, internal APIs) in private subnets.
 
 
