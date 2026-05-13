@@ -138,6 +138,7 @@ Secure Session Established
 TLS handshakes are foundational to how **HTTPS works**.
 
 
+
 ## AWS Certificate Manager (ACM)
 
 In AWS, certificates used for HTTPS and TLS-based services are commonly managed with **AWS Certificate Manager (ACM)**.
@@ -180,7 +181,7 @@ SMTP is used for **sending mail**, not retrieving it.
 
 Email clients use **POP** and **IMAP** to retrieve messages from a mail server.
 
-## POP
+### POP
 
 **POP (Post Office Protocol)** retrieves messages from the mail server, often downloading them to the client.
 
@@ -188,7 +189,7 @@ Use case:
 
 - local mail retrieval
 
-## IMAP
+### IMAP
 
 **IMAP (Internet Message Access Protocol)** allows email to remain on the server while synchronizing across devices.
 
