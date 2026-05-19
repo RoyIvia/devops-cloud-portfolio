@@ -1,6 +1,5 @@
 # Git & GitHub Fundamentals
 
-## Overview
 Version control is a core skill for every DevOps engineer. Git allows teams to track changes in code, collaborate efficiently, and maintain stable production systems, while GitHub provides a platform for hosting repositories, collaboration, and CI/CD integrations.
 
 This section documents my learning and practical understanding of Git and GitHub as part of my DevOps engineering journey.
