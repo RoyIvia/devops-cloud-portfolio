@@ -14,7 +14,7 @@ Git is a distributed version control system that helps developers:
 - Manage parallel development using branches
 
 
-## What is GitHub?
+## GitHub?
 GitHub is a cloud-based hosting platform for Git repositories that enables:
 - Remote code storage
 - Team collaboration
