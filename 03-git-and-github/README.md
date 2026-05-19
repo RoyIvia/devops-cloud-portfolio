@@ -32,7 +32,6 @@ GitHub is a cloud-based hosting platform for Git repositories that enables:
 - Clone
 - Pull & Push
 
----
 
 ## Common Git Commands
 ```bash
