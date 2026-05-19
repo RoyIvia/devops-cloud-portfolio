@@ -21,7 +21,6 @@ GitHub is a cloud-based hosting platform for Git repositories that enables:
 - Issue tracking and pull requests
 - Integration with CI/CD pipelines
 
----
 
 ## Key Git Concepts
 - Repository (repo)
