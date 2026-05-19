@@ -6,7 +6,7 @@ This section documents my learning and practical understanding of Git and GitHub
 
 
 
-## Git?
+## Git
 Git is a distributed version control system that helps developers:
 - Track changes in source code
 - Collaborate with multiple contributors
