@@ -4,14 +4,14 @@ A **Virtual Machine (VM)** is a logically isolated environment that acts like a 
 
 VMs provide:
 - **Isolation**: Each VM is independent; one VM cannot directly interfere with another.
-- **Efficient resource utilization**: Large physical servers are often underutilized. VMs allow these resources to be shared across multiple workloads.
-- **Flexibility**: Teams or organizations can deploy their applications without requiring dedicated hardware.
+- **Efficient resource utilisation**: Large physical servers are often underutilised. VMs allow these resources to be shared across multiple workloads.
+- **Flexibility**: Teams or organisations can deploy their applications without requiring dedicated hardware.
 - **Scalability**: VMs can be created, resized, or destroyed quickly based on demand.
 
 
 ## How Virtual Machines Work
 
-Virtualization is enabled by a **Hypervisor**, which is software that creates and manages VMs on a physical server (also called **bare-metal**).
+Virtualisation is enabled by a **Hypervisor**, which is software that creates and manages VMs on a physical server (also called **bare-metal**).
 
 ### Types of Hypervisors
 1. **Type 1 (Bare-metal)**: Runs directly on the physical server hardware. Examples:
@@ -32,10 +32,10 @@ The hypervisor manages:
 
 
 ## VMs in the Cloud
-Cloud providers like AWS, Azure, and GCP rely heavily on virtualization:
+Cloud providers like AWS, Azure, and GCP rely heavily on virtualisation:
 
 - **AWS uses Nitro Hypervisor** to run EC2 instances.
-- Large **data centers** are divided into regions and availability zones, each containing thousands of physical servers.
+- Large **data centres** are divided into regions and availability zones, each containing thousands of physical servers.
 - Users create VMs (instances) in regions close to their customers to reduce latency.
 - Cloud VMs provide:
   - Pay-as-you-go pricing
@@ -45,8 +45,8 @@ Cloud providers like AWS, Azure, and GCP rely heavily on virtualization:
 **Example Scenario**:
 
 - A physical server has 64 CPU cores and 256 GB RAM.
-- Without virtualization, only one team uses the server; the rest of the resources remain idle.
-- With virtualization, 8 VMs can run, each with 8 CPUs and 32 GB RAM, allowing multiple teams or applications to share the same hardware efficiently.
+- Without virtualisation, only one team uses the server; the rest of the resources remain idle.
+- With virtualisation, 8 VMs can run, each with 8 CPUs and 32 GB RAM, allowing multiple teams or applications to share the same hardware efficiently.
 
 
 ## Why Virtual Machines Matter for DevOps
