@@ -392,6 +392,7 @@ Avoid Alpine when:
 
 ## Comparison with Related Distributions
 
+
 | Distribution      | Typical Use                            |
 | ----------------- | -------------------------------------- |
 | Ubuntu            | general servers and cloud environments |
@@ -409,7 +410,7 @@ DevOps engineers should be comfortable working with:
 
 * Ubuntu for general server environments
 * Amazon Linux for AWS infrastructure
-* Alpine Linux for containerized workloads
+* Alpine Linux for containerised workloads
 
 Together, these distributions cover most real-world DevOps environments.
 
