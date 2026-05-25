@@ -334,6 +334,7 @@ WORKDIR /app
 COPY . .
 
 CMD ["python3", "app.py"]
+
 ```
 
 Using Alpine significantly reduces container image size.
