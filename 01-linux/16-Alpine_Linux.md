@@ -39,6 +39,7 @@ Pull the official Alpine image:
 
 ```bash
 docker pull alpine
+
 ```
 
 Run the container:
