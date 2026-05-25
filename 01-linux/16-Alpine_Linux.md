@@ -46,6 +46,7 @@ Run the container:
 
 ```bash
 docker run -it alpine sh
+
 ```
 
 Note that Alpine uses **`sh` instead of `bash`** by default.
