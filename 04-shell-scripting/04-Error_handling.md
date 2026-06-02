@@ -19,6 +19,7 @@ set -x
 This enables command tracing. Bash prints each command before executing it.
 
 ### Example
+
 ```bash
 set -x
 echo "Hello"
