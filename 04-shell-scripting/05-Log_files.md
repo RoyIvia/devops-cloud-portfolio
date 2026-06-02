@@ -26,11 +26,13 @@ This command:
 ### Common Use Cases
 
 #### Find logs modified in the last 1 day
+
 ```bash
 find /var/log -name "*.log" -mtime -1
 ```
 
 #### Find large log files
+
 ```bash
 find /var/log -type f -size +100M
 ```
