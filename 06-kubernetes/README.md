@@ -10,6 +10,4 @@ Kubernetes orchestration and deployments, including AWS EKS integration.
 - Helm Charts
 - EKS - AWS
 
-## Status
 
-🚧 In progress
