@@ -5,7 +5,6 @@ This repository captures my understanding of Docker as a Cloud and DevOps Engine
 It focuses on how containerization works under the hood, how Docker leverages core Linux primitives, and how containerised applications are built, executed, 
 and managed in real environments.
 
-
 ## What is a Container?
 
 A container is an isolated runtime environment that packages:
