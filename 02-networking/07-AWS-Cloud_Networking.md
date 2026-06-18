@@ -741,7 +741,6 @@ When diagnosing networking issues, engineers typically verify:
 
 Systematic troubleshooting helps quickly isolate networking failures.
 
----
 
 
 # AWS Services That Use Amazon VPC
