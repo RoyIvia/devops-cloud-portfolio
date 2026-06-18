@@ -82,7 +82,7 @@ Entire network environments can be created in minutes instead of requiring physi
 
 ### Cost Efficiency
 
-Organizations only pay for the resources they use rather than maintaining physical networking equipment.
+Organisations only pay for the resources they use rather than maintaining physical networking equipment.
 
 ### Scalability
 
@@ -109,7 +109,7 @@ You can create multiple VPCs for:
 
 # Key Features of Amazon VPC
 
-An Amazon VPC has several defining characteristics.
+
 
 ### Account Scoped
 
