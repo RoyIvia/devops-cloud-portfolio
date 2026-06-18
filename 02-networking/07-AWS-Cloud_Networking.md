@@ -161,7 +161,7 @@ to
 ```
 
 
-# Private IP Address Ranges (RFC 1918)
+## Private IP Address Ranges (RFC 1918)
 
 AWS recommends using private IPv4 address ranges defined in **RFC 1918**.
 
@@ -174,7 +174,7 @@ AWS recommends using private IPv4 address ranges defined in **RFC 1918**.
 Using private ranges prevents conflicts with publicly routable internet addresses.
 
 
-# Reserved IP Addresses in AWS Subnets
+## Reserved IP Addresses in AWS Subnets
 
 Within each subnet, AWS reserves **five IP addresses**.
 
