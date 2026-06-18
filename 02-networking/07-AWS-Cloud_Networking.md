@@ -50,7 +50,7 @@ EC2 Instances
 ```
 
 
-# What is Amazon VPC
+# Amazon VPC
 
 **Amazon Virtual Private Cloud (Amazon VPC)** is a service that allows you to create a **logically isolated virtual network** inside the AWS Cloud.
 
