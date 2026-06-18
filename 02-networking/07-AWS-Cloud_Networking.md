@@ -6,7 +6,7 @@ Cloud networking follows the same fundamental principles as traditional networki
 AWS provides these networking capabilities primarily through **Amazon Virtual Private Cloud (Amazon VPC)**.
 
 
-# Traditional Networking vs AWS Networking
+## Traditional Networking vs AWS Networking
 
 Many AWS networking components correspond to familiar infrastructure components found in traditional data centers.
 
