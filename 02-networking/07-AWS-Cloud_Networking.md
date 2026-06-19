@@ -670,7 +670,7 @@ Example:
 
 DNS resolution can be enabled or disabled at the VPC level.
 
----
+
 
 # Load Balancers in VPC Architecture
 
@@ -695,7 +695,7 @@ Benefits:
 - traffic distribution
 - health checks for backend services
 
----
+
 
 # VPC Peering
 
@@ -719,7 +719,6 @@ This is often used for:
 - shared services networks
 - multi-account architectures
 
----
 
 # Common AWS Networking Troubleshooting Flow
 
@@ -754,7 +753,7 @@ Examples include:
 
 Because VPC is a foundational service, understanding it is essential to designing and operating AWS infrastructure.
 
----
+
 
 
 # Why VPC Networking Matters for DevOps
