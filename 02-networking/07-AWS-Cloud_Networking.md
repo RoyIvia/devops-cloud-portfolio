@@ -585,7 +585,7 @@ AWS Region
 This prevents a single Availability Zone failure from affecting the entire application.
 
 
-# CIDR Planning and Overlapping Networks
+## CIDR Planning and Overlapping Networks
 
 Proper **CIDR planning** is essential when designing VPCs.
 
@@ -737,7 +737,7 @@ Systematic troubleshooting helps quickly isolate networking failures.
 
 
 
-# AWS Services That Use Amazon VPC
+## AWS Services That Use Amazon VPC
 
 Many AWS services integrate with VPC networking.
 
@@ -756,7 +756,7 @@ Because VPC is a foundational service, understanding it is essential to designin
 
 
 
-# Why VPC Networking Matters for DevOps
+## Why VPC Networking Matters for DevOps
 
 DevOps engineers frequently work with VPC networking when:
 
