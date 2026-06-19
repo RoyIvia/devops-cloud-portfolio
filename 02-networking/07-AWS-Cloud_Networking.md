@@ -526,7 +526,7 @@ Both Security Groups and Network ACLs provide network security but operate diffe
 - useful for broader network-level policies
 
 
-# VPC Endpoints
+## VPC Endpoints
 
 A **VPC endpoint** enables private connectivity between your VPC and AWS services without using the public internet.
 
@@ -558,7 +558,7 @@ Traffic remains entirely inside the AWS network.
 
 
 
-# Multi-Availability Zone Design
+## Multi-Availability Zone Design
 
 High availability in AWS is achieved by distributing infrastructure across **multiple Availability Zones (AZs)**.
 
@@ -584,7 +584,6 @@ AWS Region
 
 This prevents a single Availability Zone failure from affecting the entire application.
 
----
 
 # CIDR Planning and Overlapping Networks
 
@@ -605,9 +604,8 @@ Overlapping CIDR ranges can prevent:
 
 Poor IP planning is one of the most common architectural mistakes in cloud networking.
 
----
 
-# Default VPC vs Custom VPC
+## Default VPC vs Custom VPC
 
 AWS automatically creates a **default VPC** in every region.
 
@@ -632,9 +630,9 @@ Advantages:
 
 Most real-world deployments use **custom VPCs**.
 
----
 
-# Elastic IP Addresses
+
+## Elastic IP Addresses
 
 An **Elastic IP (EIP)** is a static public IPv4 address allocated by AWS.
 
@@ -646,9 +644,9 @@ Characteristics:
 
 Elastic IPs are useful when services require **stable public IP addresses**.
 
----
 
-# DNS in Amazon VPC
+
+## DNS in Amazon VPC
 
 AWS provides built-in DNS services inside every VPC.
 
