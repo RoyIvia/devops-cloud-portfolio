@@ -196,7 +196,7 @@ Reserved addresses:
 These addresses cannot be assigned to instances.
 
 
-# Core Amazon VPC Components
+## Core Amazon VPC Components
 
 Several components work together to provide networking inside a VPC.
 
