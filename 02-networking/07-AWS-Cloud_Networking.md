@@ -556,7 +556,7 @@ Amazon S3
 
 Traffic remains entirely inside the AWS network.
 
----
+
 
 # Multi-Availability Zone Design
 
