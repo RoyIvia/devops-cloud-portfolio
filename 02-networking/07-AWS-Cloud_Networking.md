@@ -525,7 +525,6 @@ Both Security Groups and Network ACLs provide network security but operate diffe
 - stateless firewall
 - useful for broader network-level policies
 
----
 
 # VPC Endpoints
 
