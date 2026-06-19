@@ -323,7 +323,7 @@ Application Servers
 This allows private instances to download updates or access external APIs without being publicly reachable.
 
 
-# Security Groups
+## Security Groups
 
 **Security Groups** act as firewalls at the **instance level**.
 
