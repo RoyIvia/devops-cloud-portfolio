@@ -499,7 +499,6 @@ Important details:
 - NAT Gateway requires an **Elastic IP**
 - Private instances **do not need public IP addresses**
 
----
 
 # Security Groups vs Network ACLs
 
