@@ -294,7 +294,7 @@ Target: Internet Gateway
 Instances must also have a **public IP address** or **Elastic IP** to communicate with the internet.
 
 
-# NAT Gateway
+## NAT Gateway
 
 A **NAT Gateway** allows instances in private subnets to access the internet **without exposing them to inbound internet traffic**.
 
