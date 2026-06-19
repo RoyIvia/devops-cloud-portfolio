@@ -110,7 +110,6 @@ You can create multiple VPCs for:
 # Key Features of Amazon VPC
 
 
-
 ### Account Scoped
 
 A VPC belongs to a specific AWS account.
@@ -213,7 +212,7 @@ Key components include:
 - VPC endpoints
 
 
-# Subnets
+## Subnets
 
 A **subnet** is a range of IP addresses inside a VPC.
 
@@ -251,7 +250,7 @@ Resources inside are typically internal services such as:
 Private subnets can still reach the internet using a **NAT gateway**.
 
 
-# Route Tables
+## Route Tables
 
 A **route table** defines how traffic moves within the VPC.
 
