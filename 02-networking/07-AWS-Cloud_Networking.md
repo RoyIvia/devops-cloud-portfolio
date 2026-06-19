@@ -269,7 +269,7 @@ Example:
 Route tables are associated with subnets to control how their traffic is routed.
 
 
-# Internet Gateway
+## Internet Gateway
 
 An **Internet Gateway (IGW)** allows resources in a VPC to communicate with the internet.
 
