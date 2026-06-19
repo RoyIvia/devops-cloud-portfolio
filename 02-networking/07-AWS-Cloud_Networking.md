@@ -342,7 +342,7 @@ Example rule:
 If an outbound request is allowed, the response traffic is automatically allowed back.
 
 
-# Network ACLs
+## Network ACLs
 
 **Network Access Control Lists (NACLs)** act as firewalls at the **subnet level**.
 
@@ -362,7 +362,7 @@ Example rule:
 Because they are stateless, return traffic must also be explicitly allowed.
 
 
-# Example Amazon VPC Architecture
+## Example Amazon VPC Architecture
 
 A typical production VPC architecture might look like:
 
