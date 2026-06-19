@@ -464,9 +464,9 @@ Public Subnet ≠ Public Instance
 
 Instances inside a public subnet can still remain private if they do not have public IP addresses.
 
----
 
-# NAT Gateway Traffic Flow
+
+## NAT Gateway Traffic Flow
 
 A **NAT Gateway** allows instances in private subnets to access the internet while preventing inbound internet connections.
 
