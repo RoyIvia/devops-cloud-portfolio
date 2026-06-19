@@ -139,7 +139,7 @@ AWS Region
 Each VPC functions as an independent network.
 
 
-# IP Addressing in Amazon VPC
+## IP Addressing in Amazon VPC
 
 When creating a VPC, you must define an **IPv4 CIDR block** that determines the address space of the network.
 
@@ -160,7 +160,7 @@ to
 ```
 
 
-## Private IP Address Ranges (RFC 1918)
+### Private IP Address Ranges (RFC 1918)
 
 AWS recommends using private IPv4 address ranges defined in **RFC 1918**.
 
