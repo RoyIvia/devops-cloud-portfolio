@@ -203,6 +203,7 @@ docker push 731245678901.dkr.ecr.eu-west-1.amazonaws.com/ecs-fargate-app:latest
 
 ## Runtime Execution
 
+
 When the ECS service starts:
 
 1. ECS reads the task definition  
