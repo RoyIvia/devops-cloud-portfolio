@@ -1,4 +1,4 @@
-# Kubernetes / EKS Projects
+# Kubernetes / EKS / ECS Projects
 
 Kubernetes orchestration and deployments, including AWS EKS integration.
 
