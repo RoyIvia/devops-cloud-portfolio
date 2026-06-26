@@ -40,6 +40,7 @@ Authenticated against Docker Hub via CLI:
 
 ```bash
 docker login
+
 ```
 
 This establishes a session for pushing images to the registry.
