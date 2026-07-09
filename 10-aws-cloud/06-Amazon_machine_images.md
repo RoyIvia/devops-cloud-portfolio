@@ -4,3 +4,24 @@ An Amazon Machine Image (AMI) is a preconfigured template used to launch Amazon 
 AMIs enable organizations to deploy identical EC2 instances repeatedly, ensuring consistency, scalability, and operational efficiency.
 
 AMIs are fundamental to Infrastructure as Code (IaC), Auto Scaling Groups, disaster recovery strategies, golden image pipelines, and automated infrastructure provisioning.
+
+An AMI consists of several components:
+
+ - Operating System
+   - Amazon Linux
+   - Ubuntu
+   - Windows Server
+   - Red Hat Enterprise Linux
+   - SUSE Linux
+   - Custom operating systems
+
+- Amazon EBS Snapshots
+  - Snapshots of the root volume
+  - Snapshots of additional EBS volumes (if included)
+    
+-Launch Permissions
+  - Private
+  - Shared with specific AWS accounts
+  - Public
+  - 
+-Block Device Mapping - Defines which EBS volumes or instance store volumes are attached during launch.
