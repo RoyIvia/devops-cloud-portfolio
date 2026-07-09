@@ -25,3 +25,26 @@ An AMI consists of several components:
    - Public
     
 - Block Device Mapping - Defines which EBS volumes or instance store volumes are attached during launch.
+
+
+AMI Architecture:
+
+                   Amazon Machine Image
+
+        +--------------------------------------+
+        |           AMI Metadata               |
+        +--------------------------------------+
+        | Operating System                     |
+        | Installed Applications               |
+        | Configuration Files                  |
+        | Boot Loader                          |
+        | Block Device Mapping                 |
+        +--------------------------------------+
+                       │
+                       ▼
+              Amazon EBS Snapshots
+                       │
+                       ▼
+                Launch EC2 Instance
+
+                
