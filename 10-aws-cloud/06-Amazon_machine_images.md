@@ -29,6 +29,8 @@ An AMI consists of several components:
 
 AMI Architecture:
 
+```
+
                    Amazon Machine Image
 
         +--------------------------------------+
@@ -48,3 +50,4 @@ AMI Architecture:
                 Launch EC2 Instance
 
                 
+```
