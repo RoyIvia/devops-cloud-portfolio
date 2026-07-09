@@ -16,12 +16,12 @@ An AMI consists of several components:
    - Custom operating systems
 
 - Amazon EBS Snapshots
-  - Snapshots of the root volume
-  - Snapshots of additional EBS volumes (if included)
+   - Snapshots of the root volume
+   - Snapshots of additional EBS volumes (if included)
     
--Launch Permissions
-  - Private
-  - Shared with specific AWS accounts
-  - Public
-  - 
--Block Device Mapping - Defines which EBS volumes or instance store volumes are attached during launch.
+- Launch Permissions
+   - Private
+   - Shared with specific AWS accounts
+   - Public
+    
+- Block Device Mapping - Defines which EBS volumes or instance store volumes are attached during launch.
