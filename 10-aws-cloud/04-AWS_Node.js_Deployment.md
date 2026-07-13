@@ -303,7 +303,8 @@ Target Group: EC2 instances (port 3000)
 Health Check Path: /
 ```
 
-### Behavior:
+### Behaviour:
+
 - ALB distributes traffic across EC2 instances
 - ASG ensures availability and scaling
 - Instances automatically join based on health status
