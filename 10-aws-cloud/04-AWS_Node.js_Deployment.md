@@ -327,7 +327,7 @@ A fully scalable AWS deployment architecture featuring:
 
 - EC2 provisioning and lifecycle management
 - Secure SSH-based remote access
-- Linux system initialization and configuration
+- Linux system initialisation and configuration
 - Node.js backend service deployment
 - Process management using PM2
 - Immutable infrastructure using AMI
