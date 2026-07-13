@@ -24,6 +24,7 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
 
 
 ``` 
+
 This script installs and configures the Unified Amazon CloudWatch Agent on an Amazon Linux 2 EC2 instance. 
 It launches the configuration wizard to define the metrics and logs to collect, creates the required collectd files, 
 and provides options to load the agent configuration either from AWS Systems Manager Parameter Store 
