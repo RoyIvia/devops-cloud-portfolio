@@ -9,9 +9,9 @@ Kubernetes orchestration and deployments, including AWS EKS integration.
 - ConfigMaps & Secrets
 - 
 - Ingress & Load Balancing
-- 
+  
 - Helm Charts
-- 
+  
 - EKS - AWS
 
 
