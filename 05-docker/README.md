@@ -15,12 +15,15 @@ A container is an isolated runtime environment that packages:
 Containers run as processes on the host system while maintaining isolation through kernel features.
 
 **Mental model:**
+
+
 ```
 Container = Process + Namespaces + cgroups
 ```
 
 
 ## Containers vs Virtual Machines
+
 
 | Feature            | Containers                         | Virtual Machines                  |
 |-------------------|-----------------------------------|----------------------------------|
@@ -29,6 +32,7 @@ Container = Process + Namespaces + cgroups
 | Size              | MBs                               | GBs                              |
 | Isolation         | Process-level                     | Hardware-level                   |
 | Performance       | Near-native                       | Slight overhead                  |
+
 
 Containers trade stronger isolation (VMs) for efficiency and speed.
 
