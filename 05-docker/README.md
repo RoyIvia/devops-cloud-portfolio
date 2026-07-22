@@ -67,6 +67,7 @@ This results in:
 - Efficient resource utilization
 
 
+Files and Folders in containers base images:
 
  ```
    /bin: contains binary executable files, such as the ls, cp, and ps commands.
