@@ -85,6 +85,9 @@ Files and Folders in containers base images:
     /root: is the home directory of the root user.
 ```
 
+Files and Folders that containers use from host operating system:
+
+
 ## Docker
 
 Docker is a platform that simplifies containerization by providing tooling for:
