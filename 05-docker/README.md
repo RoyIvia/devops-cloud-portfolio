@@ -23,7 +23,7 @@ Container = Process + Namespaces + cgroups
 ## Containers vs Virtual Machines
 
 
-| Feature            | Containers                         | Virtual Machines                 |
+| Feature            | Containers                         | Virtual Machines               |
 |-------------------|-----------------------------------|----------------------------------|
 | OS Overhead       | Shares host kernel                | Full OS per VM                   |
 | Startup Time      | Seconds                           | Minutes                          |
