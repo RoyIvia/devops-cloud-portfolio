@@ -35,6 +35,15 @@ Containers trade stronger isolation (VMs) for efficiency and speed.
 <img width="1662" height="718" alt="image" src="https://github.com/user-attachments/assets/23790ebd-d0dc-476c-9bae-6ef8edac6d42" />
 
 
+Containers and virtual machines are both technologies used to isolate applications and their dependencies, but they have some key differences:
+
+ 1. Resource Utilization: Containers share the host operating system kernel, making them lighter and faster than VMs. VMs have a full-fledged OS and hypervisor, making them more  resource-intensive.
+
+ 2. Portability: Containers are designed to be portable and can run on any system with a compatible host operating system. VMs are less portable as they need a compatible hypervisor to run.
+
+ 3. Security: VMs provide a higher level of security as each VM has its own operating system and can be isolated from the host and other VMs. Containers provide less isolation, as they share the host operating system.
+
+    
 ## Why Containers Are Lightweight
 
 Containers are lightweight because they rely on Linux kernel features instead of bundling a full operating system.
