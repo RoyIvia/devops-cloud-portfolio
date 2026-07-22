@@ -100,6 +100,9 @@ Files and Folders that containers use from host operating system:
     
 ```
 
+It's important to note that while a container uses resources from the host operating system, it is still isolated from the host and other containers, so changes to the container do not affect the host or other containers.
+
+
 ## Docker
 
 Docker is a platform that simplifies containerization by providing tooling for:
