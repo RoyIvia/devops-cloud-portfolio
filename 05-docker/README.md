@@ -39,6 +39,9 @@ Containers trade stronger isolation (VMs) for efficiency and speed.
 <img width="1662" height="718" alt="image" src="https://github.com/user-attachments/assets/23790ebd-d0dc-476c-9bae-6ef8edac6d42" />
 
 
+
+
+
 Containers and virtual machines are both technologies used to isolate applications and their dependencies, but they have some key differences:
 
  1. Resource Utilization: Containers share the host operating system kernel, making them lighter and faster than VMs. VMs have a full-fledged OS and hypervisor, making them more  resource-intensive.
