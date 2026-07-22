@@ -32,6 +32,7 @@ Container = Process + Namespaces + cgroups
 
 Containers trade stronger isolation (VMs) for efficiency and speed.
 
+<img width="1662" height="718" alt="image" src="https://github.com/user-attachments/assets/23790ebd-d0dc-476c-9bae-6ef8edac6d42" />
 
 
 ## Why Containers Are Lightweight
