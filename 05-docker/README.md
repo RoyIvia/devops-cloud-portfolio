@@ -1,4 +1,4 @@
-# Docker & Containers – Concepts, Architecture, and Practical Implementation
+# Docker & Containerization – Concepts, Architecture, and Practical Implementation
 
 This repository focuses on how containerization works under the hood, how Docker leverages core Linux primitives, and how containerised applications are built, executed, 
 and managed in real environments.
