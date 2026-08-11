@@ -24,6 +24,7 @@ Virtualisation is enabled by a **Hypervisor**, which is software that creates an
    - VMware Workstation
 
 The hypervisor manages:
+
 - CPU allocation
 - Memory
 - Storage
