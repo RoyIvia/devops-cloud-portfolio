@@ -33,6 +33,7 @@ The hypervisor manages:
 
 
 ## VMs in the Cloud
+
 Cloud providers like AWS, Azure, and GCP rely heavily on virtualisation:
 
 - **AWS uses Nitro Hypervisor** to run EC2 instances.
