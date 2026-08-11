@@ -3,6 +3,7 @@
 A **Virtual Machine (VM)** is a logically isolated environment that acts like a separate computer running on top of a physical server. Each VM has its own **CPU, memory, storage, and network interface**, allowing multiple VMs to run independently on the same physical hardware.
 
 VMs provide:
+
 - **Isolation**: Each VM is independent; one VM cannot directly interfere with another.
 - **Efficient resource utilisation**: Large physical servers are often underutilised. VMs allow these resources to be shared across multiple workloads.
 - **Flexibility**: Teams or organisations can deploy their applications without requiring dedicated hardware.
