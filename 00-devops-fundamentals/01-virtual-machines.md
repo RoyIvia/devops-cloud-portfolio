@@ -14,6 +14,7 @@ VMs provide:
 Virtualisation is enabled by a **Hypervisor**, which is software that creates and manages VMs on a physical server (also called **bare-metal**).
 
 ### Types of Hypervisors
+
 1. **Type 1 (Bare-metal)**: Runs directly on the physical server hardware. Examples:
    - VMware ESXi
    - Xen
