@@ -7,7 +7,6 @@ This section introduces two essential Linux text-processing tools: sed and awk. 
 
 ## sed – Stream Editor
 
-
 sed is a command-line utility used to perform text transformations on an input stream (a file or piped input).
 
 ### Syntax
