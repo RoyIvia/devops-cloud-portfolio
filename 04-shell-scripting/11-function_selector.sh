@@ -25,7 +25,7 @@ echo " This message is from function 3"
 
 # Beginning of the main script
 
-# prompt the user to get their choice
+# Prompt the user to get their choice
 echo "Enter a number from 1 to 3"
 read n
 
