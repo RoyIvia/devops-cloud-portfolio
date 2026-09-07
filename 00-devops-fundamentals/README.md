@@ -51,6 +51,7 @@ The SDLC defines the stages a software application goes through from concept to 
 
 ### Key Roles in the Software Development Lifecycle
 
+
 | Role | Responsibilities |
 |------|-----------------|
 | **Business Analyst (BA)** | Interfaces with the customer or market to gather product requirements, prepares the Business Requirements Document (BRD), and ensures the product meets business goals. |
