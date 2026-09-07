@@ -69,6 +69,7 @@ The SDLC defines the stages a software application goes through from concept to 
 
 
 ### How DevOps Interacts With These Roles
+
 - **Developers and DevOps engineers collaborate** on deployment automation, containerization, and infrastructure as code.  
 - **SREs and DevOps engineers** work together to monitor production systems and reduce downtime.  
 - **QA, developers, and DevOps** ensure continuous testing is integrated into the CI/CD pipeline.  
