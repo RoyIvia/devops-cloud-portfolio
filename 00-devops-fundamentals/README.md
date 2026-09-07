@@ -68,7 +68,6 @@ The SDLC defines the stages a software application goes through from concept to 
 | **Project Manager (PM)** | Oversees the overall project execution, coordinates between teams, manages timelines, and ensures delivery within scope and budget. |
 
 
-
 ### How DevOps Interacts With These Roles
 - **Developers and DevOps engineers collaborate** on deployment automation, containerization, and infrastructure as code.  
 - **SREs and DevOps engineers** work together to monitor production systems and reduce downtime.  
