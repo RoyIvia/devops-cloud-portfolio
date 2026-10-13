@@ -54,7 +54,6 @@ This reflects a production-aligned pattern for deploying stateless services.
 ```
 
 
-
 ## Application Implementation
 
 A minimal Flask API was used to validate the deployment.
