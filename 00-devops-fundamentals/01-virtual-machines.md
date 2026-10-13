@@ -33,7 +33,6 @@ The hypervisor manages:
 - Isolation between VMs
 
 
-
 ## VMs in the Cloud
 
 Cloud providers like AWS, Azure, and GCP rely heavily on virtualisation:
