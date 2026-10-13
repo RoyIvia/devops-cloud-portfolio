@@ -74,6 +74,7 @@ The SDLC defines the stages a software application goes through from concept to 
 - **QA, developers, and DevOps** ensure continuous testing is integrated into the CI/CD pipeline.  
 - The **Solutions Architect** provides the blueprint that guides both development and DevOps decisions.  
 
+
 > DevOps sits at the **intersection of development, operations, and reliability**, ensuring smooth delivery of software.
 
 
