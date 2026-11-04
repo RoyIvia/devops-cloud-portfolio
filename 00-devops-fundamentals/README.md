@@ -4,6 +4,7 @@ DevOps is a culture and set of practices that improves an organization’s abili
 
 
 ## 1. What is DevOps?
+
 - DevOps is **more than tools; it is a cultural shift** focused on collaboration, shared responsibility, and continuous improvement.
 - It connects **development** (developers writing code) with **operations** (managing infrastructure and deployments) to streamline the software delivery process.
 - Key objectives:
