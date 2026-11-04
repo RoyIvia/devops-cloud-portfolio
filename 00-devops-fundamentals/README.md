@@ -16,6 +16,7 @@ DevOps is a culture and set of practices that improves an organization’s abili
 ## 2. Why DevOps is Important
 
 Before DevOps:
+
 - Developers wrote code independently.
 - System administrators manually provisioned servers for testing and deployment.
 - Build and release engineers manually deployed applications from the repository.
