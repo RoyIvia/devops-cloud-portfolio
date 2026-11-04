@@ -23,6 +23,7 @@ Before DevOps:
 - Deployments were slow, error-prone, and lacked continuous feedback.
 
 Challenges:
+
 - Long release cycles
 - “It works on my machine” syndrome
 - Limited visibility into application health
