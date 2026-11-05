@@ -200,7 +200,6 @@ dash script.sh
 It rejects anything non-standard and breaks if there is.
 
 This ensures:
-
 - the script does NOT depend on bash
 - the script works in minimal environments
 - the script is safe for:
