@@ -14,14 +14,12 @@ Containers run as processes on the host system while maintaining isolation throu
 
 **Mental model:**
 
-
 ```
 Container = Process + Namespaces + cgroups
 ```
 
 
 ## Containers vs Virtual Machines
-
 
 | Feature            | Containers                         | Virtual Machines               |
 |-------------------|-----------------------------------|----------------------------------|
