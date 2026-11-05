@@ -26,7 +26,6 @@ In real-world environments such as CI/CD pipelines, Docker containers, and cloud
 While new scripts are typically written using POSIX sh or bash, understanding ksh is important when working with older systems and existing production scripts.
 
 
-
 ## Why POSIX Compliance Matters
 
 Shell scripts in DevOps environments often run in:
