@@ -4,8 +4,6 @@ Version control is a core skill for every DevOps engineer. Git allows teams to t
 
 This section documents my learning and practical understanding of Git and GitHub as part of my DevOps engineering journey.
 
-
-
 ## Git
 Git is a distributed version control system that helps developers:
 - Track changes in source code
